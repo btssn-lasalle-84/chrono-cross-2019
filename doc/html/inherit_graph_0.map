@@ -1,0 +1,9 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_q_object.html" title="QObject" alt="" coords="5,132,76,159"/>
+<area shape="rect" id="node2" href="$class_base_de_donnees.html" title="BaseDeDonnees" alt="" coords="124,5,245,32"/>
+<area shape="rect" id="node3" href="$class_chrono.html" title="Déclaration de la classe Chrono. " alt="" coords="153,56,217,83"/>
+<area shape="rect" id="node4" href="$class_coureur.html" title="Gérer les coureurs. " alt="" coords="151,107,219,133"/>
+<area shape="rect" id="node5" href="$class_course.html" title="Déclaration de la classe Course. " alt="" coords="153,157,217,184"/>
+<area shape="rect" id="node6" href="$class_gestion_b_d_d.html" title="Déclaration de la classe GestionBDD. " alt="" coords="137,208,233,235"/>
+<area shape="rect" id="node7" href="$class_resultat.html" title="Resultat" alt="" coords="149,259,220,285"/>
+</map>

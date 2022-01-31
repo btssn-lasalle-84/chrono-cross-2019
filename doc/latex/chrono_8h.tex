@@ -1,0 +1,276 @@
+\hypertarget{chrono_8h}{}\subsection{Référence du fichier chrono.\+h}
+\label{chrono_8h}\index{chrono.\+h@{chrono.\+h}}
+
+
+Déclaration de la classe \hyperlink{class_chrono}{Chrono}.  
+
+
+{\ttfamily \#include $<$Q\+Object$>$}\newline
+{\ttfamily \#include $<$Q\+Debug$>$}\newline
+{\ttfamily \#include $<$Qt\+Serial\+Port/\+Q\+Serial\+Port$>$}\newline
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_chrono}{Chrono}
+\begin{DoxyCompactList}\small\item\em Déclaration de la classe \hyperlink{class_chrono}{Chrono}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{chrono_8h_a614217d263be1fb1a5f76e2ff7be19a2}{P\+O\+RT}~\char`\"{}/dev/hl975\char`\"{}
+\item 
+\#define \hyperlink{chrono_8h_a51714542fe5fc5c442f126a96c568050}{M\+O\+D\+E\+C\+L\+O\+CK}~\char`\"{}\#WP 120 5\textbackslash{}t01\+A\+F\textbackslash{}r\textbackslash{}n\char`\"{}
+\item 
+\#define \hyperlink{chrono_8h_a6fd2c46c463ee5bf46edf6f117c277ec}{N\+E\+W\+S\+Y\+N\+C\+H\+RO}~\char`\"{}\#WC 007 02 00\+:00 01/01/01\textbackslash{}t048\+E\textbackslash{}r\textbackslash{}n\char`\"{}
+\item 
+\#define \hyperlink{chrono_8h_a4dcfb7100df159ff3082add0247cd3ee}{N\+E\+W\+R\+UN}~\char`\"{}\#WC 002\textbackslash{}t014\+C\textbackslash{}r\textbackslash{}n\char`\"{}
+\item 
+\#define \hyperlink{chrono_8h_a0130f9324a15a83d5609c874891d9d1f}{S\+T\+A\+R\+T\+M\+A\+N\+U\+A\+L\+S\+Y\+N\+C\+H\+RO}~\char`\"{}\#WC 008 01\textbackslash{}t01\+D3\textbackslash{}r\textbackslash{}n\char`\"{}
+\item 
+\#define \hyperlink{chrono_8h_aadc6271993e3725db8c6640289f8d2bb}{C\+L\+O\+S\+E\+R\+UN}~\char`\"{}\#WC 001\textbackslash{}t014\+B\textbackslash{}r\textbackslash{}n\char`\"{}
+\item 
+\#define \hyperlink{chrono_8h_a95708e00882b95a7b2d68b2f75c3913c}{M\+O\+D\+E\+ND}~\char`\"{}\#WP 120 3\textbackslash{}t01\+A\+D\textbackslash{}r\textbackslash{}n\char`\"{}
+\item 
+\#define \hyperlink{chrono_8h_a2c9f7b58ba826bd8365c9a611389fe42}{T\+R\+A\+M\+E\+\_\+\+A\+C\+Q\+U\+I\+T\+T\+E\+M\+E\+NT}~\char`\"{}AK\char`\"{}
+\item 
+\#define \hyperlink{chrono_8h_a1683bd797329c6abe147d1f3d5f2e67b}{T\+R\+A\+M\+E\+\_\+\+S\+Y\+N\+C\+H\+RO}~\char`\"{}TS\char`\"{}
+\item 
+\#define \hyperlink{chrono_8h_a58fe71fea35f1664c80e9a7b8f3a2b56}{T\+R\+A\+M\+E\+\_\+\+P\+A\+R\+A\+M\+E\+T\+R\+ES}~\char`\"{}\&P\char`\"{}
+\item 
+\#define \hyperlink{chrono_8h_af6d8d017aa1c07e0c9900e13a60959ba}{T\+R\+A\+M\+E\+\_\+\+T\+E\+M\+PS}~\char`\"{}TN\char`\"{}
+\item 
+\#define \hyperlink{chrono_8h_a24bef153968288b19cfda35989658fe1}{T\+R\+A\+M\+E\+\_\+\+C\+O\+U\+R\+S\+E\+\_\+\+T\+E\+R\+M\+I\+N\+EE}~\char`\"{}CL\char`\"{}
+\item 
+\#define \hyperlink{chrono_8h_af1a61de8ee28781dbc28e0d7d43c158e}{E\+T\+A\+T\+\_\+\+N\+O\+N\+S\+Y\+N\+C\+H\+RO}~0
+\item 
+\#define \hyperlink{chrono_8h_ac7f40e9c99ad9f32b52bbe642c29fa35}{E\+T\+A\+T\+\_\+\+M\+O\+D\+E\+C\+L\+O\+CK}~1
+\item 
+\#define \hyperlink{chrono_8h_ab4e7883be172f7dac0123a67e9c6c655}{E\+T\+A\+T\+\_\+\+N\+E\+W\+S\+Y\+N\+C\+H\+RO}~2
+\item 
+\#define \hyperlink{chrono_8h_a3870f0e4dd2af74ba5c110e419d65d99}{E\+T\+A\+T\+\_\+\+N\+E\+W\+R\+UN}~3
+\item 
+\#define \hyperlink{chrono_8h_ab6827e7b3f5ba7079e57df316b490544}{E\+T\+A\+T\+\_\+\+S\+T\+A\+R\+T\+M\+A\+N\+U\+A\+L\+S\+Y\+N\+C\+H\+RO}~4
+\item 
+\#define \hyperlink{chrono_8h_aedfd738fe89f9d5e1a9d2c8a08786815}{E\+T\+A\+T\+\_\+\+C\+L\+O\+S\+E\+R\+UN}~5
+\item 
+\#define \hyperlink{chrono_8h_a8d3c4247ab94fd8e6757811fb4001f1e}{E\+T\+A\+T\+\_\+\+M\+O\+D\+E\+ND}~6
+\item 
+\#define \hyperlink{chrono_8h_ad727a8a4b248052dfc12e6b4320d5f29}{C\+H\+A\+M\+P\+S\+\_\+\+T\+R\+A\+M\+E\+\_\+\+T\+E\+M\+PS}~3
+\item 
+\#define \hyperlink{chrono_8h_a45ba202b05caf39795aeca91b0ae547e}{T\+I\+M\+E\+O\+UT}~100000
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Déclaration de la classe \hyperlink{class_chrono}{Chrono}. 
+
+\begin{DoxyAuthor}{Auteur}
+Michael Andréo
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des macros}
+\mbox{\Hypertarget{chrono_8h_ad727a8a4b248052dfc12e6b4320d5f29}\label{chrono_8h_ad727a8a4b248052dfc12e6b4320d5f29}} 
+\index{chrono.\+h@{chrono.\+h}!C\+H\+A\+M\+P\+S\+\_\+\+T\+R\+A\+M\+E\+\_\+\+T\+E\+M\+PS@{C\+H\+A\+M\+P\+S\+\_\+\+T\+R\+A\+M\+E\+\_\+\+T\+E\+M\+PS}}
+\index{C\+H\+A\+M\+P\+S\+\_\+\+T\+R\+A\+M\+E\+\_\+\+T\+E\+M\+PS@{C\+H\+A\+M\+P\+S\+\_\+\+T\+R\+A\+M\+E\+\_\+\+T\+E\+M\+PS}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{C\+H\+A\+M\+P\+S\+\_\+\+T\+R\+A\+M\+E\+\_\+\+T\+E\+M\+PS}{CHAMPS\_TRAME\_TEMPS}}
+{\footnotesize\ttfamily \#define C\+H\+A\+M\+P\+S\+\_\+\+T\+R\+A\+M\+E\+\_\+\+T\+E\+M\+PS~3}
+
+
+
+Référencé par \hyperlink{class_chrono_a9a66b4e81385e2c354805548b94cdfb6}{Chrono\+::decoder\+Trame()}.
+
+\mbox{\Hypertarget{chrono_8h_aadc6271993e3725db8c6640289f8d2bb}\label{chrono_8h_aadc6271993e3725db8c6640289f8d2bb}} 
+\index{chrono.\+h@{chrono.\+h}!C\+L\+O\+S\+E\+R\+UN@{C\+L\+O\+S\+E\+R\+UN}}
+\index{C\+L\+O\+S\+E\+R\+UN@{C\+L\+O\+S\+E\+R\+UN}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{C\+L\+O\+S\+E\+R\+UN}{CLOSERUN}}
+{\footnotesize\ttfamily \#define C\+L\+O\+S\+E\+R\+UN~\char`\"{}\#WC 001\textbackslash{}t014\+B\textbackslash{}r\textbackslash{}n\char`\"{}}
+
+
+
+Référencé par \hyperlink{class_chrono_a2a0d899b09eb044caa83b41574ac5edf}{Chrono\+::arreter\+Course()}.
+
+\mbox{\Hypertarget{chrono_8h_aedfd738fe89f9d5e1a9d2c8a08786815}\label{chrono_8h_aedfd738fe89f9d5e1a9d2c8a08786815}} 
+\index{chrono.\+h@{chrono.\+h}!E\+T\+A\+T\+\_\+\+C\+L\+O\+S\+E\+R\+UN@{E\+T\+A\+T\+\_\+\+C\+L\+O\+S\+E\+R\+UN}}
+\index{E\+T\+A\+T\+\_\+\+C\+L\+O\+S\+E\+R\+UN@{E\+T\+A\+T\+\_\+\+C\+L\+O\+S\+E\+R\+UN}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{E\+T\+A\+T\+\_\+\+C\+L\+O\+S\+E\+R\+UN}{ETAT\_CLOSERUN}}
+{\footnotesize\ttfamily \#define E\+T\+A\+T\+\_\+\+C\+L\+O\+S\+E\+R\+UN~5}
+
+
+
+Référencé par \hyperlink{class_chrono_a9a66b4e81385e2c354805548b94cdfb6}{Chrono\+::decoder\+Trame()}.
+
+\mbox{\Hypertarget{chrono_8h_ac7f40e9c99ad9f32b52bbe642c29fa35}\label{chrono_8h_ac7f40e9c99ad9f32b52bbe642c29fa35}} 
+\index{chrono.\+h@{chrono.\+h}!E\+T\+A\+T\+\_\+\+M\+O\+D\+E\+C\+L\+O\+CK@{E\+T\+A\+T\+\_\+\+M\+O\+D\+E\+C\+L\+O\+CK}}
+\index{E\+T\+A\+T\+\_\+\+M\+O\+D\+E\+C\+L\+O\+CK@{E\+T\+A\+T\+\_\+\+M\+O\+D\+E\+C\+L\+O\+CK}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{E\+T\+A\+T\+\_\+\+M\+O\+D\+E\+C\+L\+O\+CK}{ETAT\_MODECLOCK}}
+{\footnotesize\ttfamily \#define E\+T\+A\+T\+\_\+\+M\+O\+D\+E\+C\+L\+O\+CK~1}
+
+
+
+Référencé par \hyperlink{class_chrono_a9a66b4e81385e2c354805548b94cdfb6}{Chrono\+::decoder\+Trame()}.
+
+\mbox{\Hypertarget{chrono_8h_a8d3c4247ab94fd8e6757811fb4001f1e}\label{chrono_8h_a8d3c4247ab94fd8e6757811fb4001f1e}} 
+\index{chrono.\+h@{chrono.\+h}!E\+T\+A\+T\+\_\+\+M\+O\+D\+E\+ND@{E\+T\+A\+T\+\_\+\+M\+O\+D\+E\+ND}}
+\index{E\+T\+A\+T\+\_\+\+M\+O\+D\+E\+ND@{E\+T\+A\+T\+\_\+\+M\+O\+D\+E\+ND}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{E\+T\+A\+T\+\_\+\+M\+O\+D\+E\+ND}{ETAT\_MODEND}}
+{\footnotesize\ttfamily \#define E\+T\+A\+T\+\_\+\+M\+O\+D\+E\+ND~6}
+
+
+
+Référencé par \hyperlink{class_chrono_a9a66b4e81385e2c354805548b94cdfb6}{Chrono\+::decoder\+Trame()}.
+
+\mbox{\Hypertarget{chrono_8h_a3870f0e4dd2af74ba5c110e419d65d99}\label{chrono_8h_a3870f0e4dd2af74ba5c110e419d65d99}} 
+\index{chrono.\+h@{chrono.\+h}!E\+T\+A\+T\+\_\+\+N\+E\+W\+R\+UN@{E\+T\+A\+T\+\_\+\+N\+E\+W\+R\+UN}}
+\index{E\+T\+A\+T\+\_\+\+N\+E\+W\+R\+UN@{E\+T\+A\+T\+\_\+\+N\+E\+W\+R\+UN}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{E\+T\+A\+T\+\_\+\+N\+E\+W\+R\+UN}{ETAT\_NEWRUN}}
+{\footnotesize\ttfamily \#define E\+T\+A\+T\+\_\+\+N\+E\+W\+R\+UN~3}
+
+
+
+Référencé par \hyperlink{class_chrono_a9a66b4e81385e2c354805548b94cdfb6}{Chrono\+::decoder\+Trame()}.
+
+\mbox{\Hypertarget{chrono_8h_ab4e7883be172f7dac0123a67e9c6c655}\label{chrono_8h_ab4e7883be172f7dac0123a67e9c6c655}} 
+\index{chrono.\+h@{chrono.\+h}!E\+T\+A\+T\+\_\+\+N\+E\+W\+S\+Y\+N\+C\+H\+RO@{E\+T\+A\+T\+\_\+\+N\+E\+W\+S\+Y\+N\+C\+H\+RO}}
+\index{E\+T\+A\+T\+\_\+\+N\+E\+W\+S\+Y\+N\+C\+H\+RO@{E\+T\+A\+T\+\_\+\+N\+E\+W\+S\+Y\+N\+C\+H\+RO}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{E\+T\+A\+T\+\_\+\+N\+E\+W\+S\+Y\+N\+C\+H\+RO}{ETAT\_NEWSYNCHRO}}
+{\footnotesize\ttfamily \#define E\+T\+A\+T\+\_\+\+N\+E\+W\+S\+Y\+N\+C\+H\+RO~2}
+
+
+
+Référencé par \hyperlink{class_chrono_a9a66b4e81385e2c354805548b94cdfb6}{Chrono\+::decoder\+Trame()}.
+
+\mbox{\Hypertarget{chrono_8h_af1a61de8ee28781dbc28e0d7d43c158e}\label{chrono_8h_af1a61de8ee28781dbc28e0d7d43c158e}} 
+\index{chrono.\+h@{chrono.\+h}!E\+T\+A\+T\+\_\+\+N\+O\+N\+S\+Y\+N\+C\+H\+RO@{E\+T\+A\+T\+\_\+\+N\+O\+N\+S\+Y\+N\+C\+H\+RO}}
+\index{E\+T\+A\+T\+\_\+\+N\+O\+N\+S\+Y\+N\+C\+H\+RO@{E\+T\+A\+T\+\_\+\+N\+O\+N\+S\+Y\+N\+C\+H\+RO}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{E\+T\+A\+T\+\_\+\+N\+O\+N\+S\+Y\+N\+C\+H\+RO}{ETAT\_NONSYNCHRO}}
+{\footnotesize\ttfamily \#define E\+T\+A\+T\+\_\+\+N\+O\+N\+S\+Y\+N\+C\+H\+RO~0}
+
+
+
+Référencé par \hyperlink{class_chrono_a9a66b4e81385e2c354805548b94cdfb6}{Chrono\+::decoder\+Trame()}.
+
+\mbox{\Hypertarget{chrono_8h_ab6827e7b3f5ba7079e57df316b490544}\label{chrono_8h_ab6827e7b3f5ba7079e57df316b490544}} 
+\index{chrono.\+h@{chrono.\+h}!E\+T\+A\+T\+\_\+\+S\+T\+A\+R\+T\+M\+A\+N\+U\+A\+L\+S\+Y\+N\+C\+H\+RO@{E\+T\+A\+T\+\_\+\+S\+T\+A\+R\+T\+M\+A\+N\+U\+A\+L\+S\+Y\+N\+C\+H\+RO}}
+\index{E\+T\+A\+T\+\_\+\+S\+T\+A\+R\+T\+M\+A\+N\+U\+A\+L\+S\+Y\+N\+C\+H\+RO@{E\+T\+A\+T\+\_\+\+S\+T\+A\+R\+T\+M\+A\+N\+U\+A\+L\+S\+Y\+N\+C\+H\+RO}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{E\+T\+A\+T\+\_\+\+S\+T\+A\+R\+T\+M\+A\+N\+U\+A\+L\+S\+Y\+N\+C\+H\+RO}{ETAT\_STARTMANUALSYNCHRO}}
+{\footnotesize\ttfamily \#define E\+T\+A\+T\+\_\+\+S\+T\+A\+R\+T\+M\+A\+N\+U\+A\+L\+S\+Y\+N\+C\+H\+RO~4}
+
+
+
+Référencé par \hyperlink{class_chrono_a9a66b4e81385e2c354805548b94cdfb6}{Chrono\+::decoder\+Trame()}.
+
+\mbox{\Hypertarget{chrono_8h_a51714542fe5fc5c442f126a96c568050}\label{chrono_8h_a51714542fe5fc5c442f126a96c568050}} 
+\index{chrono.\+h@{chrono.\+h}!M\+O\+D\+E\+C\+L\+O\+CK@{M\+O\+D\+E\+C\+L\+O\+CK}}
+\index{M\+O\+D\+E\+C\+L\+O\+CK@{M\+O\+D\+E\+C\+L\+O\+CK}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{M\+O\+D\+E\+C\+L\+O\+CK}{MODECLOCK}}
+{\footnotesize\ttfamily \#define M\+O\+D\+E\+C\+L\+O\+CK~\char`\"{}\#WP 120 5\textbackslash{}t01\+A\+F\textbackslash{}r\textbackslash{}n\char`\"{}}
+
+
+
+Référencé par \hyperlink{class_chrono_a74d85a4e856e2e59afacaa061feb7b75}{Chrono\+::creer()}.
+
+\mbox{\Hypertarget{chrono_8h_a95708e00882b95a7b2d68b2f75c3913c}\label{chrono_8h_a95708e00882b95a7b2d68b2f75c3913c}} 
+\index{chrono.\+h@{chrono.\+h}!M\+O\+D\+E\+ND@{M\+O\+D\+E\+ND}}
+\index{M\+O\+D\+E\+ND@{M\+O\+D\+E\+ND}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{M\+O\+D\+E\+ND}{MODEND}}
+{\footnotesize\ttfamily \#define M\+O\+D\+E\+ND~\char`\"{}\#WP 120 3\textbackslash{}t01\+A\+D\textbackslash{}r\textbackslash{}n\char`\"{}}
+
+
+
+Référencé par \hyperlink{class_chrono_a5e2781ab78dcaa0ecb37e301399d819b}{Chrono\+::arreter\+Chrono()}.
+
+\mbox{\Hypertarget{chrono_8h_a4dcfb7100df159ff3082add0247cd3ee}\label{chrono_8h_a4dcfb7100df159ff3082add0247cd3ee}} 
+\index{chrono.\+h@{chrono.\+h}!N\+E\+W\+R\+UN@{N\+E\+W\+R\+UN}}
+\index{N\+E\+W\+R\+UN@{N\+E\+W\+R\+UN}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{N\+E\+W\+R\+UN}{NEWRUN}}
+{\footnotesize\ttfamily \#define N\+E\+W\+R\+UN~\char`\"{}\#WC 002\textbackslash{}t014\+C\textbackslash{}r\textbackslash{}n\char`\"{}}
+
+
+
+Référencé par \hyperlink{class_chrono_a0d7e3e50fcef0f2b0b7bfadc3d4f737d}{Chrono\+::creer\+Classement()}.
+
+\mbox{\Hypertarget{chrono_8h_a6fd2c46c463ee5bf46edf6f117c277ec}\label{chrono_8h_a6fd2c46c463ee5bf46edf6f117c277ec}} 
+\index{chrono.\+h@{chrono.\+h}!N\+E\+W\+S\+Y\+N\+C\+H\+RO@{N\+E\+W\+S\+Y\+N\+C\+H\+RO}}
+\index{N\+E\+W\+S\+Y\+N\+C\+H\+RO@{N\+E\+W\+S\+Y\+N\+C\+H\+RO}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{N\+E\+W\+S\+Y\+N\+C\+H\+RO}{NEWSYNCHRO}}
+{\footnotesize\ttfamily \#define N\+E\+W\+S\+Y\+N\+C\+H\+RO~\char`\"{}\#WC 007 02 00\+:00 01/01/01\textbackslash{}t048\+E\textbackslash{}r\textbackslash{}n\char`\"{}}
+
+
+
+Référencé par \hyperlink{class_chrono_a858a209a6d366b3adb95bcf593645d6a}{Chrono\+::synchroniser()}.
+
+\mbox{\Hypertarget{chrono_8h_a614217d263be1fb1a5f76e2ff7be19a2}\label{chrono_8h_a614217d263be1fb1a5f76e2ff7be19a2}} 
+\index{chrono.\+h@{chrono.\+h}!P\+O\+RT@{P\+O\+RT}}
+\index{P\+O\+RT@{P\+O\+RT}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{P\+O\+RT}{PORT}}
+{\footnotesize\ttfamily \#define P\+O\+RT~\char`\"{}/dev/hl975\char`\"{}}
+
+
+
+Référencé par \hyperlink{class_chrono_a01eb40847915c49c48c7dc9ca63cbd99}{Chrono\+::\+Chrono()}.
+
+\mbox{\Hypertarget{chrono_8h_a0130f9324a15a83d5609c874891d9d1f}\label{chrono_8h_a0130f9324a15a83d5609c874891d9d1f}} 
+\index{chrono.\+h@{chrono.\+h}!S\+T\+A\+R\+T\+M\+A\+N\+U\+A\+L\+S\+Y\+N\+C\+H\+RO@{S\+T\+A\+R\+T\+M\+A\+N\+U\+A\+L\+S\+Y\+N\+C\+H\+RO}}
+\index{S\+T\+A\+R\+T\+M\+A\+N\+U\+A\+L\+S\+Y\+N\+C\+H\+RO@{S\+T\+A\+R\+T\+M\+A\+N\+U\+A\+L\+S\+Y\+N\+C\+H\+RO}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{S\+T\+A\+R\+T\+M\+A\+N\+U\+A\+L\+S\+Y\+N\+C\+H\+RO}{STARTMANUALSYNCHRO}}
+{\footnotesize\ttfamily \#define S\+T\+A\+R\+T\+M\+A\+N\+U\+A\+L\+S\+Y\+N\+C\+H\+RO~\char`\"{}\#WC 008 01\textbackslash{}t01\+D3\textbackslash{}r\textbackslash{}n\char`\"{}}
+
+
+
+Référencé par \hyperlink{class_chrono_a2ee875c24eb14f09011a40dfb3f1921f}{Chrono\+::demarrer()}.
+
+\mbox{\Hypertarget{chrono_8h_a45ba202b05caf39795aeca91b0ae547e}\label{chrono_8h_a45ba202b05caf39795aeca91b0ae547e}} 
+\index{chrono.\+h@{chrono.\+h}!T\+I\+M\+E\+O\+UT@{T\+I\+M\+E\+O\+UT}}
+\index{T\+I\+M\+E\+O\+UT@{T\+I\+M\+E\+O\+UT}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{T\+I\+M\+E\+O\+UT}{TIMEOUT}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+O\+UT~100000}
+
+
+
+Référencé par \hyperlink{class_chrono_ae7c3c8494ace02f4c9dd714f6f0e574a}{Chrono\+::lire\+Trame()}, et \hyperlink{class_chrono_a858a209a6d366b3adb95bcf593645d6a}{Chrono\+::synchroniser()}.
+
+\mbox{\Hypertarget{chrono_8h_a2c9f7b58ba826bd8365c9a611389fe42}\label{chrono_8h_a2c9f7b58ba826bd8365c9a611389fe42}} 
+\index{chrono.\+h@{chrono.\+h}!T\+R\+A\+M\+E\+\_\+\+A\+C\+Q\+U\+I\+T\+T\+E\+M\+E\+NT@{T\+R\+A\+M\+E\+\_\+\+A\+C\+Q\+U\+I\+T\+T\+E\+M\+E\+NT}}
+\index{T\+R\+A\+M\+E\+\_\+\+A\+C\+Q\+U\+I\+T\+T\+E\+M\+E\+NT@{T\+R\+A\+M\+E\+\_\+\+A\+C\+Q\+U\+I\+T\+T\+E\+M\+E\+NT}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{T\+R\+A\+M\+E\+\_\+\+A\+C\+Q\+U\+I\+T\+T\+E\+M\+E\+NT}{TRAME\_ACQUITTEMENT}}
+{\footnotesize\ttfamily \#define T\+R\+A\+M\+E\+\_\+\+A\+C\+Q\+U\+I\+T\+T\+E\+M\+E\+NT~\char`\"{}AK\char`\"{}}
+
+
+
+Référencé par \hyperlink{class_chrono_a9a66b4e81385e2c354805548b94cdfb6}{Chrono\+::decoder\+Trame()}.
+
+\mbox{\Hypertarget{chrono_8h_a24bef153968288b19cfda35989658fe1}\label{chrono_8h_a24bef153968288b19cfda35989658fe1}} 
+\index{chrono.\+h@{chrono.\+h}!T\+R\+A\+M\+E\+\_\+\+C\+O\+U\+R\+S\+E\+\_\+\+T\+E\+R\+M\+I\+N\+EE@{T\+R\+A\+M\+E\+\_\+\+C\+O\+U\+R\+S\+E\+\_\+\+T\+E\+R\+M\+I\+N\+EE}}
+\index{T\+R\+A\+M\+E\+\_\+\+C\+O\+U\+R\+S\+E\+\_\+\+T\+E\+R\+M\+I\+N\+EE@{T\+R\+A\+M\+E\+\_\+\+C\+O\+U\+R\+S\+E\+\_\+\+T\+E\+R\+M\+I\+N\+EE}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{T\+R\+A\+M\+E\+\_\+\+C\+O\+U\+R\+S\+E\+\_\+\+T\+E\+R\+M\+I\+N\+EE}{TRAME\_COURSE\_TERMINEE}}
+{\footnotesize\ttfamily \#define T\+R\+A\+M\+E\+\_\+\+C\+O\+U\+R\+S\+E\+\_\+\+T\+E\+R\+M\+I\+N\+EE~\char`\"{}CL\char`\"{}}
+
+
+
+Référencé par \hyperlink{class_chrono_a9a66b4e81385e2c354805548b94cdfb6}{Chrono\+::decoder\+Trame()}.
+
+\mbox{\Hypertarget{chrono_8h_a58fe71fea35f1664c80e9a7b8f3a2b56}\label{chrono_8h_a58fe71fea35f1664c80e9a7b8f3a2b56}} 
+\index{chrono.\+h@{chrono.\+h}!T\+R\+A\+M\+E\+\_\+\+P\+A\+R\+A\+M\+E\+T\+R\+ES@{T\+R\+A\+M\+E\+\_\+\+P\+A\+R\+A\+M\+E\+T\+R\+ES}}
+\index{T\+R\+A\+M\+E\+\_\+\+P\+A\+R\+A\+M\+E\+T\+R\+ES@{T\+R\+A\+M\+E\+\_\+\+P\+A\+R\+A\+M\+E\+T\+R\+ES}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{T\+R\+A\+M\+E\+\_\+\+P\+A\+R\+A\+M\+E\+T\+R\+ES}{TRAME\_PARAMETRES}}
+{\footnotesize\ttfamily \#define T\+R\+A\+M\+E\+\_\+\+P\+A\+R\+A\+M\+E\+T\+R\+ES~\char`\"{}\&P\char`\"{}}
+
+\mbox{\Hypertarget{chrono_8h_a1683bd797329c6abe147d1f3d5f2e67b}\label{chrono_8h_a1683bd797329c6abe147d1f3d5f2e67b}} 
+\index{chrono.\+h@{chrono.\+h}!T\+R\+A\+M\+E\+\_\+\+S\+Y\+N\+C\+H\+RO@{T\+R\+A\+M\+E\+\_\+\+S\+Y\+N\+C\+H\+RO}}
+\index{T\+R\+A\+M\+E\+\_\+\+S\+Y\+N\+C\+H\+RO@{T\+R\+A\+M\+E\+\_\+\+S\+Y\+N\+C\+H\+RO}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{T\+R\+A\+M\+E\+\_\+\+S\+Y\+N\+C\+H\+RO}{TRAME\_SYNCHRO}}
+{\footnotesize\ttfamily \#define T\+R\+A\+M\+E\+\_\+\+S\+Y\+N\+C\+H\+RO~\char`\"{}TS\char`\"{}}
+
+\mbox{\Hypertarget{chrono_8h_af6d8d017aa1c07e0c9900e13a60959ba}\label{chrono_8h_af6d8d017aa1c07e0c9900e13a60959ba}} 
+\index{chrono.\+h@{chrono.\+h}!T\+R\+A\+M\+E\+\_\+\+T\+E\+M\+PS@{T\+R\+A\+M\+E\+\_\+\+T\+E\+M\+PS}}
+\index{T\+R\+A\+M\+E\+\_\+\+T\+E\+M\+PS@{T\+R\+A\+M\+E\+\_\+\+T\+E\+M\+PS}!chrono.\+h@{chrono.\+h}}
+\paragraph{\texorpdfstring{T\+R\+A\+M\+E\+\_\+\+T\+E\+M\+PS}{TRAME\_TEMPS}}
+{\footnotesize\ttfamily \#define T\+R\+A\+M\+E\+\_\+\+T\+E\+M\+PS~\char`\"{}TN\char`\"{}}
+
+
+
+Référencé par \hyperlink{class_chrono_a9a66b4e81385e2c354805548b94cdfb6}{Chrono\+::decoder\+Trame()}.
+

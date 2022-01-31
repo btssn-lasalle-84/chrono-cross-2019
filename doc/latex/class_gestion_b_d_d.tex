@@ -1,0 +1,782 @@
+\hypertarget{class_gestion_b_d_d}{}\subsection{Référence de la classe Gestion\+B\+DD}
+\label{class_gestion_b_d_d}\index{Gestion\+B\+DD@{Gestion\+B\+DD}}
+
+
+Déclaration de la classe \hyperlink{class_gestion_b_d_d}{Gestion\+B\+DD}.  
+
+
+
+
+{\ttfamily \#include $<$gestionbdd.\+h$>$}
+
+
+
+Graphe de collaboration de Gestion\+B\+DD\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_gestion_b_d_d__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_gestion_b_d_d_a61bc349c8942a196e2edd3083465286f}{nouvel\+Inscrit} (Q\+String\+List inscription)
+\item 
+void \hyperlink{class_gestion_b_d_d_acf915265e83f03b500f10ffbde2680bb}{nouveau\+Coureur} (Q\+String\+List informations\+Coureur\+Classement)
+\item 
+void \hyperlink{class_gestion_b_d_d_aabb5dfcdcec4ef37477fff65f6624784}{coureur\+Supprime} ()
+\item 
+void \hyperlink{class_gestion_b_d_d_a911c1e7a4d8bc38566512db37b13c9f0}{coureur\+Modifie} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_gestion_b_d_d_a406bdb9b1714b204fa6fab015baffc27}{Gestion\+B\+DD} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur \hyperlink{class_gestion_b_d_d_a406bdb9b1714b204fa6fab015baffc27}{Gestion\+B\+D\+D()} de la classe \hyperlink{class_gestion_b_d_d}{Gestion\+B\+DD}. \end{DoxyCompactList}\item 
+\hyperlink{class_gestion_b_d_d_a4d98c4008182a5749c57c97772b3c303}{$\sim$\+Gestion\+B\+DD} ()
+\begin{DoxyCompactList}\small\item\em Destructeur \hyperlink{class_gestion_b_d_d_a4d98c4008182a5749c57c97772b3c303}{$\sim$\+Gestion\+B\+D\+D()} de la classe \hyperlink{class_gestion_b_d_d_a406bdb9b1714b204fa6fab015baffc27}{Gestion\+B\+D\+D()} \end{DoxyCompactList}\item 
+Q\+Vector$<$ Q\+String $>$ \hyperlink{class_gestion_b_d_d_a6c1ab5e51fbd6c92bb096badbeac0df5}{recuperer\+Liste\+Manifestations\+Inscription} (Q\+String I\+NE)
+\item 
+Q\+Vector$<$ Q\+String $>$ \hyperlink{class_gestion_b_d_d_a59ef29e28993c64aa4d5a8c42a8fb08d}{recuperer\+Liste\+Courses\+Inscription} (Q\+String nom, Q\+String sexe)
+\item 
+Q\+String\+List \hyperlink{class_gestion_b_d_d_ac35de40fd5860b3130f71788ecaa5ef3}{recuperer\+Liste\+Courses\+Gestion} (Q\+String I\+NE)
+\item 
+Q\+Vector$<$ Q\+String\+List $>$ \hyperlink{class_gestion_b_d_d_a09b547cb065256acd269c64e273c93fd}{recuperer\+Liste\+Coureurs\+Inscrit} (Q\+String nom\+Course)
+\item 
+Q\+Vector$<$ Q\+String\+List $>$ \hyperlink{class_gestion_b_d_d_a2b44ebc5bf5b1a7babde6512817a85b4}{recuperer\+Table\+B\+DD} (Q\+String \hyperlink{class_gestion_b_d_d_afa3e974fb5afa7f25f275a662e182960}{table})
+\item 
+Q\+String \hyperlink{class_gestion_b_d_d_ad7b0117ad5d55f21e6f00858038f4a85}{recuperer\+Catergorie\+Coureur} (Q\+String id\+Categorie)
+\item 
+Q\+String \hyperlink{class_gestion_b_d_d_a0e90b16b2e330de9cc80f72f0d648e5d}{recuperer\+Classe\+Coureur} (Q\+String id\+Classe)
+\item 
+Q\+String \hyperlink{class_gestion_b_d_d_a0a2fa02b90974684658937fbfb55bf0a}{recuperer\+Information} (Q\+String info, Q\+String nom\+Table, Q\+String nom\+Enregistrement)
+\item 
+Q\+Vector$<$ Q\+String $>$ \hyperlink{class_gestion_b_d_d_a76ab3e307ad9005dcdb2781fc77fc5c8}{recuperer\+Categories\+Creation} ()
+\item 
+Q\+Vector$<$ Q\+String $>$ \hyperlink{class_gestion_b_d_d_a38d728d644f23048f1a6d3e6d4656764}{recuperer\+Classes\+Creation} ()
+\item 
+bool \hyperlink{class_gestion_b_d_d_af6a83eb058d71d9c583c403bf5a8ce3b}{verifier\+Creation} (Q\+String\+List enregistrement)
+\item 
+bool \hyperlink{class_gestion_b_d_d_abfd3cfb9553a83aafd86c3149869d6c0}{verifier\+Information} (Q\+String information, Q\+String \hyperlink{class_gestion_b_d_d_afa3e974fb5afa7f25f275a662e182960}{table})
+\item 
+void \hyperlink{class_gestion_b_d_d_ae71561eea6d1163ff067f079ccc6d169}{ajouter\+Nouveau\+Coureur} (Q\+String\+List enregistrement)
+\item 
+bool \hyperlink{class_gestion_b_d_d_a5ea332563e5be2116084ed2886c355c8}{verifier\+Modification} (Q\+String\+List enregistrement)
+\item 
+void \hyperlink{class_gestion_b_d_d_af64457de89c484bf854db0910bef790e}{modifier\+Enregistrement} (Q\+String\+List enregistrement)
+\item 
+bool \hyperlink{class_gestion_b_d_d_a1a39bbc7bfcb60d286363b9d2dd7f88b}{verifier\+Dossard} (Q\+String dossard)
+\item 
+void \hyperlink{class_gestion_b_d_d_a71391d5419969b52cd999463b5326599}{ajouter\+Nouvel\+Inscrit} (Q\+String\+List inscription)
+\item 
+void \hyperlink{class_gestion_b_d_d_afe47ec92274b7998131c5d4e6551d177}{supprimer\+Coureur} (Q\+String I\+NE)
+\item 
+void \hyperlink{class_gestion_b_d_d_afad096d7e405d35a818d4858ee34df61}{modifier\+Coureur} (Q\+String\+List enregistrement)
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}
+\item 
+Q\+Vector$<$ Q\+String\+List $>$ \hyperlink{class_gestion_b_d_d_afa3e974fb5afa7f25f275a662e182960}{table}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Déclaration de la classe \hyperlink{class_gestion_b_d_d}{Gestion\+B\+DD}. 
+
+\begin{DoxyAuthor}{Auteur}
+A\+N\+D\+R\+Eo Michaël 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_gestion_b_d_d_a406bdb9b1714b204fa6fab015baffc27}\label{class_gestion_b_d_d_a406bdb9b1714b204fa6fab015baffc27}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{Gestion\+B\+D\+D()}{GestionBDD()}}
+{\footnotesize\ttfamily Gestion\+B\+D\+D\+::\+Gestion\+B\+DD (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_object}{Q\+Object} $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructeur \hyperlink{class_gestion_b_d_d_a406bdb9b1714b204fa6fab015baffc27}{Gestion\+B\+D\+D()} de la classe \hyperlink{class_gestion_b_d_d}{Gestion\+B\+DD}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}, \hyperlink{class_base_de_donnees_ab2e092285ccc0ee1cce61a1774218561}{Base\+De\+Donnees\+::connecter()}, \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{Base\+De\+Donnees\+::est\+Connecte()}, et \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}.
+
+
+\begin{DoxyCode}
+00015                                       : \hyperlink{class_q_object}{QObject}(parent)
+00016 \{
+00017     \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}();
+00018     \textcolor{keywordflow}{if}(!\hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}())
+00019         \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_ab2e092285ccc0ee1cce61a1774218561}{connecter}(\textcolor{stringliteral}{"Chrono-Cross"});
+00020 
+00021     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Etat connexion BDD : "} << \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}();
+00022 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_b_d_d_a4d98c4008182a5749c57c97772b3c303}\label{class_gestion_b_d_d_a4d98c4008182a5749c57c97772b3c303}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!````~Gestion\+B\+DD@{$\sim$\+Gestion\+B\+DD}}
+\index{````~Gestion\+B\+DD@{$\sim$\+Gestion\+B\+DD}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{$\sim$\+Gestion\+B\+D\+D()}{~GestionBDD()}}
+{\footnotesize\ttfamily Gestion\+B\+D\+D\+::$\sim$\+Gestion\+B\+DD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur \hyperlink{class_gestion_b_d_d_a4d98c4008182a5749c57c97772b3c303}{$\sim$\+Gestion\+B\+D\+D()} de la classe \hyperlink{class_gestion_b_d_d_a406bdb9b1714b204fa6fab015baffc27}{Gestion\+B\+D\+D()} 
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+
+\begin{DoxyCode}
+00029 \{
+00030     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}();
+00031     qDebug() << Q\_FUNC\_INFO;
+00032 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_gestion_b_d_d_ae71561eea6d1163ff067f079ccc6d169}\label{class_gestion_b_d_d_ae71561eea6d1163ff067f079ccc6d169}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!ajouter\+Nouveau\+Coureur@{ajouter\+Nouveau\+Coureur}}
+\index{ajouter\+Nouveau\+Coureur@{ajouter\+Nouveau\+Coureur}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{ajouter\+Nouveau\+Coureur()}{ajouterNouveauCoureur()}}
+{\footnotesize\ttfamily void Gestion\+B\+D\+D\+::ajouter\+Nouveau\+Coureur (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{enregistrement }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, \hyperlink{class_gestion_b_d_d_acf915265e83f03b500f10ffbde2680bb}{nouveau\+Coureur()}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_a6000b152ba3febb45d6c409519168ba2}{I\+H\+M\+Gestion\+Cross\+::creer\+Coureur()}.
+
+
+\begin{DoxyCode}
+00219 \{
+00220     qDebug() << informationsCoureur;
+00221     QStringList informationsCoureurClassement = informationsCoureur;
+00222     \textcolor{comment}{// informationsCoureur [ 0 Categorie , 1 classe , 2 INE , 3 nom ,  4 prenom , 5 dateNaissance , 6 sexe
+       ]}
+00223     qDebug() << Q\_FUNC\_INFO << QString(\textcolor{stringliteral}{"SELECT idCategorie FROM Categorie WHERE Nom = '%1' AND Sexe = '%2';
+      "}).arg(informationsCoureur[0]).arg(informationsCoureur[6]);
+00224 
+00225     \textcolor{keywordtype}{bool} etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT idCategorie FROM Categorie WHERE Nom = '%1' AND
+       Sexe = '%2';"}).arg(informationsCoureur[0]).arg(informationsCoureur[6]), informationsCoureur[0]);
+00226 
+00227     \textcolor{keywordflow}{if}(etat)
+00228     \{
+00229         qDebug() << Q\_FUNC\_INFO << QString(\textcolor{stringliteral}{"SELECT idCLasse FROM Classe WHERE Nom = '%1';"}).arg(
+      informationsCoureur[1]);
+00230 
+00231         etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT idCLasse FROM Classe WHERE Nom = '%1';"}).arg(
+      informationsCoureur[1]),informationsCoureur[1]);
+00232         \textcolor{keywordflow}{if}(etat)
+00233         \{
+00234             qDebug() << Q\_FUNC\_INFO << QString(\textcolor{stringliteral}{"INSERT INTO `Coureur`(`idCoureur`, `idCategorie`,
+       `idClasse`, `INE`, `Nom`, `Prenom`, `DateNaissance`, `Sexe`) VALUES (`idCoureur`,%0,%1,'%2','%3','%4','%5','%6')"}).
+      arg(informationsCoureur[0]).arg(informationsCoureur[1]).arg(informationsCoureur[2]).arg(informationsCoureur[3]
+      ).arg(informationsCoureur[4]).arg(informationsCoureur[5]).arg(informationsCoureur[6]);
+00235 
+00236             etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(QString(\textcolor{stringliteral}{"INSERT INTO `Coureur`(`idCoureur`, `idCategorie`,
+       `idClasse`, `INE`, `Nom`, `Prenom`, `DateNaissance`, `Sexe`) VALUES (`idCoureur`,%0,%1,'%2','%3','%4','%5','%6')
+      "}).arg(informationsCoureur[0]).arg(informationsCoureur[1]).arg(informationsCoureur[2]).arg(
+      informationsCoureur[3]).arg(informationsCoureur[4]).arg(informationsCoureur[5]).arg(informationsCoureur[6]));
+00237             \textcolor{keywordflow}{if}(etat)
+00238             \{
+00239                 qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Enregistré(e) avec Succées !"};
+00240                 emit \hyperlink{class_gestion_b_d_d_acf915265e83f03b500f10ffbde2680bb}{nouveauCoureur}(informationsCoureurClassement);
+00241             \}
+00242         \}
+00243         \textcolor{keywordflow}{else}
+00244         \{
+00245             qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ERREUR"};
+00246             informationsCoureurClassement.clear();
+00247         \}
+00248     \}
+00249     \textcolor{keywordflow}{else}
+00250     \{
+00251         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ERREUR"};
+00252         informationsCoureurClassement.clear();
+00253     \}
+00254 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_b_d_d_a71391d5419969b52cd999463b5326599}\label{class_gestion_b_d_d_a71391d5419969b52cd999463b5326599}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!ajouter\+Nouvel\+Inscrit@{ajouter\+Nouvel\+Inscrit}}
+\index{ajouter\+Nouvel\+Inscrit@{ajouter\+Nouvel\+Inscrit}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{ajouter\+Nouvel\+Inscrit()}{ajouterNouvelInscrit()}}
+{\footnotesize\ttfamily void Gestion\+B\+D\+D\+::ajouter\+Nouvel\+Inscrit (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{inscription }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, \hyperlink{class_gestion_b_d_d_a61bc349c8942a196e2edd3083465286f}{nouvel\+Inscrit()}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_af0165d32344af78b4edce59f88c90ff6}{I\+H\+M\+Gestion\+Cross\+::ajouter\+Nouvelle\+Inscription()}.
+
+
+\begin{DoxyCode}
+00257 \{
+00258     \textcolor{comment}{// inscription [ idCoureur , idCourse , numeroDossard ]}
+00259     qDebug() << Q\_FUNC\_INFO << inscription;
+00260     \textcolor{keywordtype}{bool} etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(QString(\textcolor{stringliteral}{"INSERT INTO `Inscrit`(`idInscrit`, `idCoureur`,
+       `idCourse`, `NumeroDossard`) VALUES (`idInscrit`,'%1','%2','%3')"}).arg(inscription[0]).arg(inscription[1]).arg(
+      inscription[2]));
+00261     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Ajout : "} << etat;
+00262     \textcolor{keywordflow}{if}(etat)
+00263     \{
+00264         QString idCoureur = inscription[0];
+00265         QString dossard = inscription[2];
+00266         inscription.clear();
+00267         etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT Nom, Prenom FROM Coureur WHERE idCoureur = '%1';"}
+      ).arg(idCoureur), inscription);
+00268         inscription << dossard;
+00269         qDebug() << Q\_FUNC\_INFO << inscription;
+00270         emit \hyperlink{class_gestion_b_d_d_a61bc349c8942a196e2edd3083465286f}{nouvelInscrit}(inscription);
+00271     \}
+00272 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_b_d_d_a911c1e7a4d8bc38566512db37b13c9f0}\label{class_gestion_b_d_d_a911c1e7a4d8bc38566512db37b13c9f0}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!coureur\+Modifie@{coureur\+Modifie}}
+\index{coureur\+Modifie@{coureur\+Modifie}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{coureur\+Modifie}{coureurModifie}}
+{\footnotesize\ttfamily void Gestion\+B\+D\+D\+::coureur\+Modifie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_gestion_b_d_d_afad096d7e405d35a818d4858ee34df61}{modifier\+Coureur()}.
+
+\mbox{\Hypertarget{class_gestion_b_d_d_aabb5dfcdcec4ef37477fff65f6624784}\label{class_gestion_b_d_d_aabb5dfcdcec4ef37477fff65f6624784}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!coureur\+Supprime@{coureur\+Supprime}}
+\index{coureur\+Supprime@{coureur\+Supprime}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{coureur\+Supprime}{coureurSupprime}}
+{\footnotesize\ttfamily void Gestion\+B\+D\+D\+::coureur\+Supprime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_gestion_b_d_d_afe47ec92274b7998131c5d4e6551d177}{supprimer\+Coureur()}.
+
+\mbox{\Hypertarget{class_gestion_b_d_d_afad096d7e405d35a818d4858ee34df61}\label{class_gestion_b_d_d_afad096d7e405d35a818d4858ee34df61}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!modifier\+Coureur@{modifier\+Coureur}}
+\index{modifier\+Coureur@{modifier\+Coureur}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{modifier\+Coureur()}{modifierCoureur()}}
+{\footnotesize\ttfamily void Gestion\+B\+D\+D\+::modifier\+Coureur (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{enregistrement }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}, \hyperlink{class_gestion_b_d_d_a911c1e7a4d8bc38566512db37b13c9f0}{coureur\+Modifie()}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_a144933ab31ae263be7267b93bfd53a82}{I\+H\+M\+Gestion\+Cross\+::confirmer\+Dialog()}.
+
+
+\begin{DoxyCode}
+00293 \{
+00294     \textcolor{comment}{// enregistrement [ 0 Categorie , 1 classe , 2 INE , 3 nom , 4 prenom , 5 dateNaissance , 6 sexe  , 7
+       idCoureur]}
+00295 
+00296     qDebug() << Q\_FUNC\_INFO << enregistrement;
+00297     \textcolor{keywordtype}{bool} etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT idCategorie FROM Categorie WHERE Nom = '%1';"}).
+      arg(enregistrement[0]), enregistrement[0]);
+00298     etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT idClasse FROM Classe WHERE Nom = '%1';"}).arg(
+      enregistrement[1]), enregistrement[1]);
+00299 
+00300     etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(QString(\textcolor{stringliteral}{"UPDATE `Coureur` SET
+       `idCategorie`='%1',`idClasse`='%2',`INE`='%3',`Nom`='%4',`Prenom`='%5',`DateNaissance`='%6',`Sexe`='%7' WHERE idCoureur = '%8';"}).arg(enregistrement[
+      0]).arg(enregistrement[1]).arg(enregistrement[2]).arg(enregistrement[3]).arg(enregistrement[4]).arg(
+      enregistrement[5]).arg(enregistrement[6]).arg(enregistrement[7]));
+00301     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Modification : "} << etat;
+00302     \textcolor{keywordflow}{if}(etat)
+00303         emit \hyperlink{class_gestion_b_d_d_a911c1e7a4d8bc38566512db37b13c9f0}{coureurModifie}();
+00304 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_b_d_d_af64457de89c484bf854db0910bef790e}\label{class_gestion_b_d_d_af64457de89c484bf854db0910bef790e}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!modifier\+Enregistrement@{modifier\+Enregistrement}}
+\index{modifier\+Enregistrement@{modifier\+Enregistrement}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{modifier\+Enregistrement()}{modifierEnregistrement()}}
+{\footnotesize\ttfamily void Gestion\+B\+D\+D\+::modifier\+Enregistrement (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{enregistrement }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_gestion_b_d_d_acf915265e83f03b500f10ffbde2680bb}\label{class_gestion_b_d_d_acf915265e83f03b500f10ffbde2680bb}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!nouveau\+Coureur@{nouveau\+Coureur}}
+\index{nouveau\+Coureur@{nouveau\+Coureur}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{nouveau\+Coureur}{nouveauCoureur}}
+{\footnotesize\ttfamily void Gestion\+B\+D\+D\+::nouveau\+Coureur (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{informations\+Coureur\+Classement }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_gestion_b_d_d_ae71561eea6d1163ff067f079ccc6d169}{ajouter\+Nouveau\+Coureur()}.
+
+\mbox{\Hypertarget{class_gestion_b_d_d_a61bc349c8942a196e2edd3083465286f}\label{class_gestion_b_d_d_a61bc349c8942a196e2edd3083465286f}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!nouvel\+Inscrit@{nouvel\+Inscrit}}
+\index{nouvel\+Inscrit@{nouvel\+Inscrit}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{nouvel\+Inscrit}{nouvelInscrit}}
+{\footnotesize\ttfamily void Gestion\+B\+D\+D\+::nouvel\+Inscrit (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{inscription }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_gestion_b_d_d_a71391d5419969b52cd999463b5326599}{ajouter\+Nouvel\+Inscrit()}.
+
+\mbox{\Hypertarget{class_gestion_b_d_d_a76ab3e307ad9005dcdb2781fc77fc5c8}\label{class_gestion_b_d_d_a76ab3e307ad9005dcdb2781fc77fc5c8}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!recuperer\+Categories\+Creation@{recuperer\+Categories\+Creation}}
+\index{recuperer\+Categories\+Creation@{recuperer\+Categories\+Creation}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{recuperer\+Categories\+Creation()}{recupererCategoriesCreation()}}
+{\footnotesize\ttfamily Q\+Vector$<$ Q\+String $>$ Gestion\+B\+D\+D\+::recuperer\+Categories\+Creation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_ac8f336c95a5f0c9eb8a4bc1c4bb83445}{I\+H\+M\+Gestion\+Cross\+::passer\+Mode\+Nouveau\+Coureur()}.
+
+
+\begin{DoxyCode}
+00171 \{
+00172     QVector<QString> categories;
+00173     \textcolor{keywordtype}{bool} etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(\textcolor{stringliteral}{"SELECT DISTINCT Nom FROM Categorie WHERE 1;"}, categories);
+00174     \textcolor{keywordflow}{if}(etat)
+00175     \{
+00176         \textcolor{keywordflow}{return} categories;
+00177     \}
+00178     \textcolor{keywordflow}{else}
+00179     \{
+00180         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ERREUR"};
+00181         \textcolor{keywordflow}{return} categories;
+00182     \}
+00183 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_b_d_d_ad7b0117ad5d55f21e6f00858038f4a85}\label{class_gestion_b_d_d_ad7b0117ad5d55f21e6f00858038f4a85}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!recuperer\+Catergorie\+Coureur@{recuperer\+Catergorie\+Coureur}}
+\index{recuperer\+Catergorie\+Coureur@{recuperer\+Catergorie\+Coureur}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{recuperer\+Catergorie\+Coureur()}{recupererCatergorieCoureur()}}
+{\footnotesize\ttfamily Q\+String Gestion\+B\+D\+D\+::recuperer\+Catergorie\+Coureur (\begin{DoxyParamCaption}\item[{Q\+String}]{id\+Categorie }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+\begin{DoxyCode}
+00133 \{
+00134     QString id;
+00135     \textcolor{keywordtype}{bool} etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT Nom FROM Categorie WHERE idCategorie = %1;"}).arg
+      (idCategorie), \textcolor{keywordtype}{id});
+00136     \textcolor{keywordflow}{if}(etat)
+00137         \textcolor{keywordflow}{return} id;
+00138     \textcolor{keywordflow}{else}
+00139     \{
+00140         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ERREUR"};
+00141         \textcolor{keywordflow}{return} id;
+00142     \}
+00143 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_b_d_d_a0e90b16b2e330de9cc80f72f0d648e5d}\label{class_gestion_b_d_d_a0e90b16b2e330de9cc80f72f0d648e5d}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!recuperer\+Classe\+Coureur@{recuperer\+Classe\+Coureur}}
+\index{recuperer\+Classe\+Coureur@{recuperer\+Classe\+Coureur}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{recuperer\+Classe\+Coureur()}{recupererClasseCoureur()}}
+{\footnotesize\ttfamily Q\+String Gestion\+B\+D\+D\+::recuperer\+Classe\+Coureur (\begin{DoxyParamCaption}\item[{Q\+String}]{id\+Classe }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+\begin{DoxyCode}
+00146 \{
+00147     QString id;
+00148     \textcolor{keywordtype}{bool} etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT Nom FROM Classe WHERE idClasse = %1;"}).arg(
+      idClasse), \textcolor{keywordtype}{id});
+00149     \textcolor{keywordflow}{if}(etat)
+00150         \textcolor{keywordflow}{return} id;
+00151     \textcolor{keywordflow}{else}
+00152     \{
+00153         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ERREUR"};
+00154         \textcolor{keywordflow}{return} id;
+00155     \}
+00156 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_b_d_d_a38d728d644f23048f1a6d3e6d4656764}\label{class_gestion_b_d_d_a38d728d644f23048f1a6d3e6d4656764}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!recuperer\+Classes\+Creation@{recuperer\+Classes\+Creation}}
+\index{recuperer\+Classes\+Creation@{recuperer\+Classes\+Creation}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{recuperer\+Classes\+Creation()}{recupererClassesCreation()}}
+{\footnotesize\ttfamily Q\+Vector$<$ Q\+String $>$ Gestion\+B\+D\+D\+::recuperer\+Classes\+Creation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_ac8f336c95a5f0c9eb8a4bc1c4bb83445}{I\+H\+M\+Gestion\+Cross\+::passer\+Mode\+Nouveau\+Coureur()}.
+
+
+\begin{DoxyCode}
+00186 \{
+00187     QVector<QString> classes;
+00188     \textcolor{keywordtype}{bool} etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(\textcolor{stringliteral}{"SELECT DISTINCT Nom FROM Classe;"}, classes);
+00189     \textcolor{keywordflow}{if}(etat)
+00190     \{
+00191         \textcolor{keywordflow}{return} classes;
+00192     \}
+00193     \textcolor{keywordflow}{else}
+00194     \{
+00195         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ERREUR"};
+00196         \textcolor{keywordflow}{return} classes;
+00197     \}
+00198 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_b_d_d_a0a2fa02b90974684658937fbfb55bf0a}\label{class_gestion_b_d_d_a0a2fa02b90974684658937fbfb55bf0a}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!recuperer\+Information@{recuperer\+Information}}
+\index{recuperer\+Information@{recuperer\+Information}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{recuperer\+Information()}{recupererInformation()}}
+{\footnotesize\ttfamily Q\+String Gestion\+B\+D\+D\+::recuperer\+Information (\begin{DoxyParamCaption}\item[{Q\+String}]{info,  }\item[{Q\+String}]{nom\+Table,  }\item[{Q\+String}]{nom\+Enregistrement }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_ae1510779a1efa3defecb517467e84f91}{I\+H\+M\+Gestion\+Cross\+::afficher\+Table()}, \hyperlink{class_i_h_m_gestion_cross_af0165d32344af78b4edce59f88c90ff6}{I\+H\+M\+Gestion\+Cross\+::ajouter\+Nouvelle\+Inscription()}, \hyperlink{class_i_h_m_gestion_cross_ad71963d500fd61995fdae94e833db163}{I\+H\+M\+Gestion\+Cross\+::selectionner\+Coureur()}, \hyperlink{class_i_h_m_gestion_cross_ae555b32462455a2cdaf0f8dc2e016d14}{I\+H\+M\+Gestion\+Cross\+::selectionner\+Course()}, et \hyperlink{class_i_h_m_gestion_cross_a164be2d046cf18ee03e3939d03a5580d}{I\+H\+M\+Gestion\+Cross\+::verifier\+Numero\+Dossard\+Inscription()}.
+
+
+\begin{DoxyCode}
+00159 \{
+00160     \textcolor{keywordtype}{bool} etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT %1 FROM %2 WHERE %3;"}).arg(information).arg(
+      nomTable).arg(nomEnregistrement), information);
+00161     \textcolor{keywordflow}{if}(etat)
+00162         \textcolor{keywordflow}{return} information;
+00163     \textcolor{keywordflow}{else}
+00164     \{
+00165         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ERREUR"};
+00166         \textcolor{keywordflow}{return} information;
+00167     \}
+00168 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_b_d_d_a09b547cb065256acd269c64e273c93fd}\label{class_gestion_b_d_d_a09b547cb065256acd269c64e273c93fd}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!recuperer\+Liste\+Coureurs\+Inscrit@{recuperer\+Liste\+Coureurs\+Inscrit}}
+\index{recuperer\+Liste\+Coureurs\+Inscrit@{recuperer\+Liste\+Coureurs\+Inscrit}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{recuperer\+Liste\+Coureurs\+Inscrit()}{recupererListeCoureursInscrit()}}
+{\footnotesize\ttfamily Q\+Vector$<$ Q\+String\+List $>$ Gestion\+B\+D\+D\+::recuperer\+Liste\+Coureurs\+Inscrit (\begin{DoxyParamCaption}\item[{Q\+String}]{nom\+Course }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_ae555b32462455a2cdaf0f8dc2e016d14}{I\+H\+M\+Gestion\+Cross\+::selectionner\+Course()}.
+
+
+\begin{DoxyCode}
+00043 \{
+00044     QString idCourse;
+00045     \textcolor{keywordtype}{bool} etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT idCourse FROM Course WHERE Nom = '%1'"}).arg(
+      nomCourse), idCourse);
+00046 
+00047     QVector<QStringList> liste;
+00048     etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT Nom, Prenom, NumeroDossard FROM `Inscrit` JOIN
+       Coureur ON Inscrit.idCoureur=Coureur.idCoureur WHERE Inscrit.idCourse=%1;"}).arg(idCourse), liste);
+00049     qDebug() << Q\_FUNC\_INFO << etat;
+00050     \textcolor{keywordflow}{return} liste;
+00051 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_b_d_d_ac35de40fd5860b3130f71788ecaa5ef3}\label{class_gestion_b_d_d_ac35de40fd5860b3130f71788ecaa5ef3}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!recuperer\+Liste\+Courses\+Gestion@{recuperer\+Liste\+Courses\+Gestion}}
+\index{recuperer\+Liste\+Courses\+Gestion@{recuperer\+Liste\+Courses\+Gestion}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{recuperer\+Liste\+Courses\+Gestion()}{recupererListeCoursesGestion()}}
+{\footnotesize\ttfamily Q\+String\+List Gestion\+B\+D\+D\+::recuperer\+Liste\+Courses\+Gestion (\begin{DoxyParamCaption}\item[{Q\+String}]{I\+NE }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_ad71963d500fd61995fdae94e833db163}{I\+H\+M\+Gestion\+Cross\+::selectionner\+Coureur()}.
+
+
+\begin{DoxyCode}
+00116 \{
+00117     QVector<QString> idCourses;
+00118     QStringList nomCourses;
+00119     \textcolor{keywordtype}{bool} etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT `Course`.idCourse FROM `Course` JOIN `Inscrit`
+       ON `Course`.idCourse=`Inscrit`.idCourse JOIN `Coureur` ON `Inscrit`.idCoureur=`Coureur`.idCoureur WHERE
+       INE='%1';"}).arg(INE), idCourses);
+00120     \textcolor{keywordtype}{int} nbId = idCourses.size();
+00121     qDebug() << Q\_FUNC\_INFO << etat << \textcolor{stringliteral}{"nbID : "} << nbId << \textcolor{stringliteral}{"IDs : "} << idCourses;
+00122 
+00123     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < nbId; i += 1)
+00124     \{
+00125         qDebug() << idCourses[i];
+00126         etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT Nom FROM Course WHERE idCourse = '%1';"}).arg(
+      idCourses[i]), nomCourses);
+00127     \}
+00128     qDebug() << Q\_FUNC\_INFO << nomCourses;
+00129     \textcolor{keywordflow}{return} nomCourses;
+00130 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_b_d_d_a59ef29e28993c64aa4d5a8c42a8fb08d}\label{class_gestion_b_d_d_a59ef29e28993c64aa4d5a8c42a8fb08d}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!recuperer\+Liste\+Courses\+Inscription@{recuperer\+Liste\+Courses\+Inscription}}
+\index{recuperer\+Liste\+Courses\+Inscription@{recuperer\+Liste\+Courses\+Inscription}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{recuperer\+Liste\+Courses\+Inscription()}{recupererListeCoursesInscription()}}
+{\footnotesize\ttfamily Q\+Vector$<$ Q\+String $>$ Gestion\+B\+D\+D\+::recuperer\+Liste\+Courses\+Inscription (\begin{DoxyParamCaption}\item[{Q\+String}]{nom,  }\item[{Q\+String}]{sexe }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_a34567afe3e94862ebd9af51528dedb65}{I\+H\+M\+Gestion\+Cross\+::lister\+Courses()}.
+
+
+\begin{DoxyCode}
+00103 \{
+00104     QVector<QString> listeCourses;
+00105     \textcolor{keywordtype}{bool} etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT Course.Nom FROM `Course` JOIN Manifestation ON
+       Manifestation.idManifestation=Course.idManifestation WHERE Manifestation.Nom = '%1' AND Course.Nom LIKE '%%2'
+       ORDER BY HeureDepart ASC;"}).arg(nom).arg(sexe), listeCourses);
+00106     \textcolor{keywordflow}{if}(etat)
+00107         \textcolor{keywordflow}{return} listeCourses;
+00108     \textcolor{keywordflow}{else}
+00109     \{
+00110         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ERREUR"};
+00111         \textcolor{keywordflow}{return} listeCourses;
+00112     \}
+00113 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_b_d_d_a6c1ab5e51fbd6c92bb096badbeac0df5}\label{class_gestion_b_d_d_a6c1ab5e51fbd6c92bb096badbeac0df5}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!recuperer\+Liste\+Manifestations\+Inscription@{recuperer\+Liste\+Manifestations\+Inscription}}
+\index{recuperer\+Liste\+Manifestations\+Inscription@{recuperer\+Liste\+Manifestations\+Inscription}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{recuperer\+Liste\+Manifestations\+Inscription()}{recupererListeManifestationsInscription()}}
+{\footnotesize\ttfamily Q\+Vector$<$ Q\+String $>$ Gestion\+B\+D\+D\+::recuperer\+Liste\+Manifestations\+Inscription (\begin{DoxyParamCaption}\item[{Q\+String}]{I\+NE }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_a0eadd8592c966c89bf7b5a25a0ae7589}{I\+H\+M\+Gestion\+Cross\+::lister\+Manifestations()}.
+
+
+\begin{DoxyCode}
+00054 \{
+00055     QVector<QString> manifestationInscrit;
+00056     QVector<QString> manifestationNonInscrit;
+00057     \textcolor{keywordtype}{bool} etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT Manifestation.Nom FROM `Manifestation` JOIN
+       Course ON Manifestation.idManifestation=Course.idManifestation JOIN Inscrit ON Course.idCourse=Inscrit.idCourse
+       JOIN Coureur ON Inscrit.idCoureur=Coureur.idCoureur WHERE INE = '%1';"}).arg(INE), manifestationInscrit);
+00058 
+00059     \textcolor{keywordtype}{int} nbManifestations = manifestationInscrit.size();
+00060     qDebug() << Q\_FUNC\_INFO << etat << manifestationInscrit;
+00061 
+00062     \textcolor{keywordflow}{if}(etat)
+00063     \{
+00064         QString nbManifestationsTotales;
+00065         etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(\textcolor{stringliteral}{"SELECT COUNT(*) FROM Manifestation;"}, nbManifestationsTotales);
+00066         \textcolor{keywordflow}{if}(etat)
+00067         \{
+00068             \textcolor{keywordflow}{if}(QString::number(nbManifestations) == nbManifestationsTotales)
+00069             \{ \textcolor{comment}{// le coureur est inscrit à toutes les courses}
+00070                 manifestationNonInscrit << \textcolor{stringliteral}{"Inscrit(e) à toute les courses disponibles"};
+00071                 \textcolor{keywordflow}{return} manifestationNonInscrit;
+00072             \}
+00073             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(nbManifestations == 0)
+00074             \{ \textcolor{comment}{// le coureur n'est inscrit à aucune course}
+00075                 etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(\textcolor{stringliteral}{"SELECT Nom FROM Manifestation;"},manifestationNonInscrit)
+      ;
+00076                 qDebug()<< Q\_FUNC\_INFO << manifestationNonInscrit;
+00077                 \textcolor{keywordflow}{return} manifestationNonInscrit;
+00078             \}
+00079             \textcolor{keywordflow}{else}
+00080             \{ \textcolor{comment}{// le coureur est inscrit à au moins une course mais pas toute}
+00081                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < nbManifestations; i += 1)
+00082                 \{
+00083                 etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT Nom FROM Manifestation WHERE Nom!='%1'
+       ORDER BY Date ASC"}).arg(manifestationInscrit[i]), manifestationNonInscrit);
+00084                 qDebug()<< Q\_FUNC\_INFO << manifestationNonInscrit;
+00085                 \}
+00086                 \textcolor{keywordflow}{return} manifestationNonInscrit;
+00087             \}
+00088         \}
+00089         \textcolor{keywordflow}{else}
+00090         \{
+00091             qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ERREUR"};
+00092             \textcolor{keywordflow}{return} manifestationNonInscrit;
+00093         \}
+00094     \}
+00095     \textcolor{keywordflow}{else}
+00096     \{
+00097         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ERREUR"};
+00098         \textcolor{keywordflow}{return} manifestationNonInscrit;
+00099     \}
+00100 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_b_d_d_a2b44ebc5bf5b1a7babde6512817a85b4}\label{class_gestion_b_d_d_a2b44ebc5bf5b1a7babde6512817a85b4}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!recuperer\+Table\+B\+DD@{recuperer\+Table\+B\+DD}}
+\index{recuperer\+Table\+B\+DD@{recuperer\+Table\+B\+DD}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{recuperer\+Table\+B\+D\+D()}{recupererTableBDD()}}
+{\footnotesize\ttfamily Q\+Vector$<$ Q\+String\+List $>$ Gestion\+B\+D\+D\+::recuperer\+Table\+B\+DD (\begin{DoxyParamCaption}\item[{Q\+String}]{table }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, et \hyperlink{class_gestion_b_d_d_afa3e974fb5afa7f25f275a662e182960}{table}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_ae1510779a1efa3defecb517467e84f91}{I\+H\+M\+Gestion\+Cross\+::afficher\+Table()}, et \hyperlink{class_i_h_m_gestion_cross_a53c84315d723d75ad7b4a7d4c317efc5}{I\+H\+M\+Gestion\+Cross\+::mettre\+A\+Jour\+Table\+Coureur()}.
+
+
+\begin{DoxyCode}
+00035 \{
+00036     \hyperlink{class_gestion_b_d_d_afa3e974fb5afa7f25f275a662e182960}{table}.clear();
+00037     \textcolor{keywordtype}{bool} etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT * FROM %1 WHERE 1 ORDER BY INE ASC;"}).arg(
+      nomTable), \hyperlink{class_gestion_b_d_d_afa3e974fb5afa7f25f275a662e182960}{table});
+00038     qDebug() << Q\_FUNC\_INFO << etat;
+00039     \textcolor{keywordflow}{return} \hyperlink{class_gestion_b_d_d_afa3e974fb5afa7f25f275a662e182960}{table};
+00040 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_b_d_d_afe47ec92274b7998131c5d4e6551d177}\label{class_gestion_b_d_d_afe47ec92274b7998131c5d4e6551d177}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!supprimer\+Coureur@{supprimer\+Coureur}}
+\index{supprimer\+Coureur@{supprimer\+Coureur}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{supprimer\+Coureur()}{supprimerCoureur()}}
+{\footnotesize\ttfamily void Gestion\+B\+D\+D\+::supprimer\+Coureur (\begin{DoxyParamCaption}\item[{Q\+String}]{I\+NE }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}, \hyperlink{class_gestion_b_d_d_aabb5dfcdcec4ef37477fff65f6624784}{coureur\+Supprime()}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_a144933ab31ae263be7267b93bfd53a82}{I\+H\+M\+Gestion\+Cross\+::confirmer\+Dialog()}.
+
+
+\begin{DoxyCode}
+00275 \{
+00276     qDebug() << Q\_FUNC\_INFO << INE;
+00277     QStringList enregistrement;
+00278     QString idCoureur;
+00279     \textcolor{keywordtype}{bool} etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT idCoureur FROM Coureur WHERE INE = '%1';"}).arg(
+      INE), idCoureur);
+00280     qDebug() << Q\_FUNC\_INFO << idCoureur;
+00281     etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(QString(\textcolor{stringliteral}{"DELETE FROM `Coureur` WHERE `Coureur`.`idCoureur` = '%1';"}).
+      arg(idCoureur));
+00282     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Suppression : "} << etat;
+00283     \textcolor{keywordflow}{if}(etat)
+00284         emit \hyperlink{class_gestion_b_d_d_aabb5dfcdcec4ef37477fff65f6624784}{coureurSupprime}();
+00285 
+00286     etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT * FROM `Coureur` WHERE idCoureur = '%1';"}).arg(
+      idCoureur), enregistrement);
+00287     qDebug() << Q\_FUNC\_INFO << enregistrement;
+00288     \textcolor{keywordflow}{if}(etat)
+00289         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ERREUR"};
+00290 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_b_d_d_af6a83eb058d71d9c583c403bf5a8ce3b}\label{class_gestion_b_d_d_af6a83eb058d71d9c583c403bf5a8ce3b}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!verifier\+Creation@{verifier\+Creation}}
+\index{verifier\+Creation@{verifier\+Creation}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{verifier\+Creation()}{verifierCreation()}}
+{\footnotesize\ttfamily bool Gestion\+B\+D\+D\+::verifier\+Creation (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{enregistrement }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_gestion_b_d_d_a1a39bbc7bfcb60d286363b9d2dd7f88b}\label{class_gestion_b_d_d_a1a39bbc7bfcb60d286363b9d2dd7f88b}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!verifier\+Dossard@{verifier\+Dossard}}
+\index{verifier\+Dossard@{verifier\+Dossard}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{verifier\+Dossard()}{verifierDossard()}}
+{\footnotesize\ttfamily bool Gestion\+B\+D\+D\+::verifier\+Dossard (\begin{DoxyParamCaption}\item[{Q\+String}]{dossard }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_a164be2d046cf18ee03e3939d03a5580d}{I\+H\+M\+Gestion\+Cross\+::verifier\+Numero\+Dossard\+Inscription()}.
+
+
+\begin{DoxyCode}
+00208 \{
+00209     QStringList coureurs;
+00210     \textcolor{keywordtype}{bool} etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT * FROM Inscrit WHERE NumeroDossard = %1;"}).arg(
+      dossard), coureurs);
+00211     qDebug() << Q\_FUNC\_INFO << dossard[0];
+00212     \textcolor{keywordflow}{if}(etat)
+00213         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00214     \textcolor{keywordflow}{else}
+00215         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00216 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_b_d_d_abfd3cfb9553a83aafd86c3149869d6c0}\label{class_gestion_b_d_d_abfd3cfb9553a83aafd86c3149869d6c0}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!verifier\+Information@{verifier\+Information}}
+\index{verifier\+Information@{verifier\+Information}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{verifier\+Information()}{verifierInformation()}}
+{\footnotesize\ttfamily bool Gestion\+B\+D\+D\+::verifier\+Information (\begin{DoxyParamCaption}\item[{Q\+String}]{information,  }\item[{Q\+String}]{table }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{B\+DD}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_ae08eec25f5a6d33bf133b0cee78c7c5c}{I\+H\+M\+Gestion\+Cross\+::verifier\+Informations\+Creer\+Coureur()}, et \hyperlink{class_i_h_m_gestion_cross_a0e088653019d8adefb371348f272d2e2}{I\+H\+M\+Gestion\+Cross\+::verifier\+Informations\+Modifier\+Coureur()}.
+
+
+\begin{DoxyCode}
+00201 \{ \textcolor{comment}{//information [ 0 info ; 1 table ]}
+00202     QStringList info;
+00203     \textcolor{keywordtype}{bool} etat = \hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT * FROM %1 WHERE %2;"}).arg(
+      \hyperlink{class_gestion_b_d_d_afa3e974fb5afa7f25f275a662e182960}{table}).arg(information), info);
+00204     \textcolor{keywordflow}{return} etat;
+00205 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_gestion_b_d_d_a5ea332563e5be2116084ed2886c355c8}\label{class_gestion_b_d_d_a5ea332563e5be2116084ed2886c355c8}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!verifier\+Modification@{verifier\+Modification}}
+\index{verifier\+Modification@{verifier\+Modification}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{verifier\+Modification()}{verifierModification()}}
+{\footnotesize\ttfamily bool Gestion\+B\+D\+D\+::verifier\+Modification (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{enregistrement }\end{DoxyParamCaption})}
+
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}\label{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!B\+DD@{B\+DD}}
+\index{B\+DD@{B\+DD}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{B\+DD}{BDD}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Gestion\+B\+D\+D\+::\+B\+DD\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_gestion_b_d_d_ae71561eea6d1163ff067f079ccc6d169}{ajouter\+Nouveau\+Coureur()}, \hyperlink{class_gestion_b_d_d_a71391d5419969b52cd999463b5326599}{ajouter\+Nouvel\+Inscrit()}, \hyperlink{class_gestion_b_d_d_a406bdb9b1714b204fa6fab015baffc27}{Gestion\+B\+D\+D()}, \hyperlink{class_gestion_b_d_d_afad096d7e405d35a818d4858ee34df61}{modifier\+Coureur()}, \hyperlink{class_gestion_b_d_d_a76ab3e307ad9005dcdb2781fc77fc5c8}{recuperer\+Categories\+Creation()}, \hyperlink{class_gestion_b_d_d_ad7b0117ad5d55f21e6f00858038f4a85}{recuperer\+Catergorie\+Coureur()}, \hyperlink{class_gestion_b_d_d_a0e90b16b2e330de9cc80f72f0d648e5d}{recuperer\+Classe\+Coureur()}, \hyperlink{class_gestion_b_d_d_a38d728d644f23048f1a6d3e6d4656764}{recuperer\+Classes\+Creation()}, \hyperlink{class_gestion_b_d_d_a0a2fa02b90974684658937fbfb55bf0a}{recuperer\+Information()}, \hyperlink{class_gestion_b_d_d_a09b547cb065256acd269c64e273c93fd}{recuperer\+Liste\+Coureurs\+Inscrit()}, \hyperlink{class_gestion_b_d_d_ac35de40fd5860b3130f71788ecaa5ef3}{recuperer\+Liste\+Courses\+Gestion()}, \hyperlink{class_gestion_b_d_d_a59ef29e28993c64aa4d5a8c42a8fb08d}{recuperer\+Liste\+Courses\+Inscription()}, \hyperlink{class_gestion_b_d_d_a6c1ab5e51fbd6c92bb096badbeac0df5}{recuperer\+Liste\+Manifestations\+Inscription()}, \hyperlink{class_gestion_b_d_d_a2b44ebc5bf5b1a7babde6512817a85b4}{recuperer\+Table\+B\+D\+D()}, \hyperlink{class_gestion_b_d_d_afe47ec92274b7998131c5d4e6551d177}{supprimer\+Coureur()}, \hyperlink{class_gestion_b_d_d_a1a39bbc7bfcb60d286363b9d2dd7f88b}{verifier\+Dossard()}, et \hyperlink{class_gestion_b_d_d_abfd3cfb9553a83aafd86c3149869d6c0}{verifier\+Information()}.
+
+\mbox{\Hypertarget{class_gestion_b_d_d_afa3e974fb5afa7f25f275a662e182960}\label{class_gestion_b_d_d_afa3e974fb5afa7f25f275a662e182960}} 
+\index{Gestion\+B\+DD@{Gestion\+B\+DD}!table@{table}}
+\index{table@{table}!Gestion\+B\+DD@{Gestion\+B\+DD}}
+\paragraph{\texorpdfstring{table}{table}}
+{\footnotesize\ttfamily Q\+Vector$<$Q\+String\+List$>$ Gestion\+B\+D\+D\+::table\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_gestion_b_d_d_a2b44ebc5bf5b1a7babde6512817a85b4}{recuperer\+Table\+B\+D\+D()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{gestionbdd_8h}{gestionbdd.\+h}\item 
+\hyperlink{gestionbdd_8cpp}{gestionbdd.\+cpp}\end{DoxyCompactItemize}

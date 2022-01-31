@@ -1,0 +1,6 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_q_widget.html" title="QWidget" alt="" coords="5,56,79,83"/>
+<area shape="rect" id="node2" href="$class_i_h_m_chrono_cross.html" title="La fenêtre principale de l&#39;application Chrono&#45;Cross. " alt="" coords="134,5,258,32"/>
+<area shape="rect" id="node3" href="$class_i_h_m_gestion_cross.html" title="La fenêtre principale de l&#39;application Gestion&#45;Cross. " alt="" coords="133,56,259,83"/>
+<area shape="rect" id="node4" href="$class_i_h_m_resultats_cross.html" title="La fenêtre principale de l&#39;application Resultats&#45;Cross. " alt="" coords="127,107,265,133"/>
+</map>

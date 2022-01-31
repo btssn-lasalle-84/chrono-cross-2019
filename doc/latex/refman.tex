@@ -1,0 +1,216 @@
+\documentclass[twoside]{article}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage[export]{adjustbox} % also loads graphicx
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage[french]{babel}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Page & text layout
+\usepackage[a4paper]{geometry}
+\geometry{vmargin=2cm,hmargin=2cm,lmargin=1.2cm,rmargin=1.2cm}
+% \usepackage{geometry}
+% \geometry{%
+%   a4paper,%
+%   top=2.5cm,%
+%   bottom=2.5cm,%
+%   left=2.5cm,%
+%   right=2.5cm%
+% }
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{3ex plus 2ex minus 2ex}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{\bfseries\scriptsize Chrono-Cross}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize BTS SN-IR LaSalle Avigon 2019 }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize BTS SN-IR LaSalle Avigon 2019 }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{\bfseries\scriptsize Chrono-Cross}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{alph}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\LARGE Projet Chrono-\/\+Cross \\[1ex]\large 1.\+1 }\\
+\vspace*{1cm}
+{\large BTS SN-IR LaSalle Avignon 2019}\\
+\vspace*{1cm}
+{\large ANDREO Michael}\\
+{\large TURLIN Suzie}\\
+\end{center}
+\end{titlepage}
+\pagenumbering{roman}
+\tableofcontents
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\section{Le projet Chrono-\/\+Cross}
+\label{index}\hypertarget{index}{}\input{index}
+\section{Changelog}
+\label{page_changelog}
+\Hypertarget{page_changelog}
+\input{page_changelog}
+\section{Installation}
+\label{page_install}
+\Hypertarget{page_install}
+\input{page_install}
+\section{R\+E\+A\+D\+ME}
+\label{page__r_e_a_d_m_e}
+\Hypertarget{page__r_e_a_d_m_e}
+\input{page__r_e_a_d_m_e}
+\section{A propos}
+\label{page_about}
+\Hypertarget{page_about}
+\input{page_about}
+\section{Licence G\+PL}
+\label{page_licence}
+\Hypertarget{page_licence}
+\input{page_licence}
+\section{Liste des choses à faire}
+\label{todo}
+\Hypertarget{todo}
+\input{todo}
+\section{Documentation des classes}
+\input{class_base_de_donnees}
+\input{class_chrono}
+\input{class_coureur}
+\input{class_course}
+\input{class_gestion_b_d_d}
+\input{class_i_h_m_chrono_cross}
+\input{class_i_h_m_gestion_cross}
+\input{class_i_h_m_resultats_cross}
+\input{class_q_object}
+\input{class_q_widget}
+\input{class_resultat}
+\section{Documentation des fichiers}
+\input{basededonnees_8cpp}
+\input{basededonnees_8h}
+\input{_changelog_8md}
+\input{chrono_8cpp}
+\input{chrono_8h}
+\input{coureur_8cpp}
+\input{coureur_8h}
+\input{course_8cpp}
+\input{course_8h}
+\input{gestionbdd_8cpp}
+\input{gestionbdd_8h}
+\input{ihmchronocross_8cpp}
+\input{ihmchronocross_8h}
+\input{ihmgestioncross_8cpp}
+\input{ihmgestioncross_8h}
+\input{ihmresultatscross_8cpp}
+\input{ihmresultatscross_8h}
+\input{_i_n_s_t_a_l_l_8md}
+\input{_chrono-_cross_2main_8cpp}
+\input{_gestion-_cross_2main_8cpp}
+\input{_resultats-_cross_2main_8cpp}
+\input{_r_e_a_d_m_e_8md}
+\input{resultat_8cpp}
+\input{resultat_8h}
+%--- End generated contents ---
+
+% Index
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{section}{Index}
+\printindex
+
+\end{document}

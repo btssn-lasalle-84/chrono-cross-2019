@@ -1,0 +1,47 @@
+\hypertarget{_resultats-_cross_2main_8cpp}{}\subsection{Référence du fichier main.\+cpp}
+\label{_resultats-_cross_2main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+Programme principal Resultats-\/\+Cross (Raspberry Pi + Écran)  
+
+
+{\ttfamily \#include $<$Q\+Application$>$}\newline
+{\ttfamily \#include \char`\"{}ihmresultatscross.\+h\char`\"{}}\newline
+\subsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_resultats-_cross_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Programme principal Resultats-\/\+Cross (Raspberry Pi + Écran) 
+
+Affiche en temps-\/réel le classement à l\textquotesingle{}arrivée d\textquotesingle{}une course
+
+\begin{DoxyAuthor}{Auteur}
+T\+U\+R\+L\+IN Suzie \href{mailto:suzie.turlin@gmail.com}{\tt suzie.\+turlin@gmail.\+com}
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des fonctions}
+\mbox{\Hypertarget{_resultats-_cross_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{_resultats-_cross_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{Resultats-\/\+Cross/main.\+cpp@{Resultats-\/\+Cross/main.\+cpp}!main@{main}}
+\index{main@{main}!Resultats-\/\+Cross/main.\+cpp@{Resultats-\/\+Cross/main.\+cpp}}
+\paragraph{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00023 \{
+00024     QApplication a(argc, argv);
+00025 
+00026     \hyperlink{class_i_h_m_resultats_cross}{IHMResultatsCross} w; \textcolor{comment}{// instancie la fenêtre principale de l'application}
+00027     w.show(); \textcolor{comment}{// affiche la fenêtre principale de l'application}
+00028 
+00029     \textcolor{keywordflow}{return} a.exec(); \textcolor{comment}{// exécute l'application}
+00030 \}
+\end{DoxyCode}

@@ -1,0 +1,63 @@
+\subsection*{Fabrication}
+
+
+\begin{DoxyCode}
+$ qmake
+$ make
+$ sudo make install
+\end{DoxyCode}
+
+
+\subsection*{Base de données}
+
+\subsubsection*{Serveur My\+S\+QL}
+
+
+\begin{DoxyCode}
+$ sudo apt install mysql-server
+\end{DoxyCode}
+
+
+\subsubsection*{Chrono-\/\+Cross}
+
+
+\begin{DoxyCode}
+$ mysql -uroot -ppassword -hlocalhost < Chrono-Cross-v0.1.sql
+\end{DoxyCode}
+
+
+\subsubsection*{Compte organisateur}
+
+
+\begin{DoxyCode}
+$ mysql -uroot -ppassword -hlocalhost
+mysql> CREATE USER 'organisateur'@'%' IDENTIFIED BY 'password';
+mysql> GRANT ALL PRIVILEGES ON `Chrono-Cross`.* TO 'organisateur'@'%';
+mysql> FLUSH PRIVILEGES;
+\end{DoxyCode}
+
+
+\subsubsection*{Accès distant}
+
+
+\begin{DoxyCode}
+$ sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
+bind-address 0.0.0.0
+\end{DoxyCode}
+
+
+\subsubsection*{Redémarrage}
+
+
+\begin{DoxyCode}
+$ sudo systemctl restart mysql.service
+\end{DoxyCode}
+
+
+\subsubsection*{Vérification}
+
+
+\begin{DoxyCode}
+$ sudo systemctl status mysql.service
+\end{DoxyCode}
+ 

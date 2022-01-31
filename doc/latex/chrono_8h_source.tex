@@ -1,0 +1,90 @@
+\hypertarget{chrono_8h_source}{}\subsection{chrono.\+h}
+\label{chrono_8h_source}\index{chrono.\+h@{chrono.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef CHRONO\_H}
+00002 \textcolor{preprocessor}{#define CHRONO\_H}
+00003 
+00016 \textcolor{preprocessor}{#include <QObject>}
+00017 \textcolor{preprocessor}{#include <QDebug>}
+00018 \textcolor{preprocessor}{#include <QtSerialPort/QSerialPort>}
+00019 
+00020 \textcolor{comment}{// Port dédié au TAG HEUER}
+00021 \textcolor{preprocessor}{#ifdef Q\_OS\_WIN}
+00022 \textcolor{preprocessor}{#define PORT                    "COM10"}
+00023 \textcolor{preprocessor}{#else}
+\Hypertarget{chrono_8h_source_l00024}\hyperlink{chrono_8h_a614217d263be1fb1a5f76e2ff7be19a2}{00024} \textcolor{preprocessor}{#define PORT                    "/dev/hl975"}
+00025 \textcolor{preprocessor}{#endif}
+00026 
+00027 \textcolor{comment}{// Procotole THCOM08}
+00028 \textcolor{comment}{// PC -> TAG HEUER}
+\Hypertarget{chrono_8h_source_l00029}\hyperlink{chrono_8h_a51714542fe5fc5c442f126a96c568050}{00029} \textcolor{preprocessor}{#define MODECLOCK               "#WP 120 5\(\backslash\)t01AF\(\backslash\)r\(\backslash\)n"}
+\Hypertarget{chrono_8h_source_l00030}\hyperlink{chrono_8h_a6fd2c46c463ee5bf46edf6f117c277ec}{00030} \textcolor{preprocessor}{#define NEWSYNCHRO              "#WC 007 02 00:00 01/01/01\(\backslash\)t048E\(\backslash\)r\(\backslash\)n"}
+\Hypertarget{chrono_8h_source_l00031}\hyperlink{chrono_8h_a4dcfb7100df159ff3082add0247cd3ee}{00031} \textcolor{preprocessor}{#define NEWRUN                  "#WC 002\(\backslash\)t014C\(\backslash\)r\(\backslash\)n"}
+\Hypertarget{chrono_8h_source_l00032}\hyperlink{chrono_8h_a0130f9324a15a83d5609c874891d9d1f}{00032} \textcolor{preprocessor}{#define STARTMANUALSYNCHRO      "#WC 008 01\(\backslash\)t01D3\(\backslash\)r\(\backslash\)n"}
+\Hypertarget{chrono_8h_source_l00033}\hyperlink{chrono_8h_aadc6271993e3725db8c6640289f8d2bb}{00033} \textcolor{preprocessor}{#define CLOSERUN                "#WC 001\(\backslash\)t014B\(\backslash\)r\(\backslash\)n"}
+\Hypertarget{chrono_8h_source_l00034}\hyperlink{chrono_8h_a95708e00882b95a7b2d68b2f75c3913c}{00034} \textcolor{preprocessor}{#define MODEND                  "#WP 120 3\(\backslash\)t01AD\(\backslash\)r\(\backslash\)n"}
+00035 
+00036 \textcolor{comment}{// PC <- TAG HEUER}
+\Hypertarget{chrono_8h_source_l00037}\hyperlink{chrono_8h_a2c9f7b58ba826bd8365c9a611389fe42}{00037} \textcolor{preprocessor}{#define TRAME\_ACQUITTEMENT      "AK"}
+\Hypertarget{chrono_8h_source_l00038}\hyperlink{chrono_8h_a1683bd797329c6abe147d1f3d5f2e67b}{00038} \textcolor{preprocessor}{#define TRAME\_SYNCHRO           "TS"}
+\Hypertarget{chrono_8h_source_l00039}\hyperlink{chrono_8h_a58fe71fea35f1664c80e9a7b8f3a2b56}{00039} \textcolor{preprocessor}{#define TRAME\_PARAMETRES        "&P"}
+\Hypertarget{chrono_8h_source_l00040}\hyperlink{chrono_8h_af6d8d017aa1c07e0c9900e13a60959ba}{00040} \textcolor{preprocessor}{#define TRAME\_TEMPS             "TN"}
+\Hypertarget{chrono_8h_source_l00041}\hyperlink{chrono_8h_a24bef153968288b19cfda35989658fe1}{00041} \textcolor{preprocessor}{#define TRAME\_COURSE\_TERMINEE   "CL"}
+00042 
+00043 \textcolor{comment}{// etat chrono}
+\Hypertarget{chrono_8h_source_l00044}\hyperlink{chrono_8h_af1a61de8ee28781dbc28e0d7d43c158e}{00044} \textcolor{preprocessor}{#define ETAT\_NONSYNCHRO         0}
+\Hypertarget{chrono_8h_source_l00045}\hyperlink{chrono_8h_ac7f40e9c99ad9f32b52bbe642c29fa35}{00045} \textcolor{preprocessor}{#define ETAT\_MODECLOCK          1}
+\Hypertarget{chrono_8h_source_l00046}\hyperlink{chrono_8h_ab4e7883be172f7dac0123a67e9c6c655}{00046} \textcolor{preprocessor}{#define ETAT\_NEWSYNCHRO         2}
+\Hypertarget{chrono_8h_source_l00047}\hyperlink{chrono_8h_a3870f0e4dd2af74ba5c110e419d65d99}{00047} \textcolor{preprocessor}{#define ETAT\_NEWRUN             3}
+\Hypertarget{chrono_8h_source_l00048}\hyperlink{chrono_8h_ab6827e7b3f5ba7079e57df316b490544}{00048} \textcolor{preprocessor}{#define ETAT\_STARTMANUALSYNCHRO 4}
+\Hypertarget{chrono_8h_source_l00049}\hyperlink{chrono_8h_aedfd738fe89f9d5e1a9d2c8a08786815}{00049} \textcolor{preprocessor}{#define ETAT\_CLOSERUN           5}
+\Hypertarget{chrono_8h_source_l00050}\hyperlink{chrono_8h_a8d3c4247ab94fd8e6757811fb4001f1e}{00050} \textcolor{preprocessor}{#define ETAT\_MODEND             6}
+00051 
+\Hypertarget{chrono_8h_source_l00052}\hyperlink{chrono_8h_ad727a8a4b248052dfc12e6b4320d5f29}{00052} \textcolor{preprocessor}{#define CHAMPS\_TRAME\_TEMPS      3}
+00053 
+\Hypertarget{chrono_8h_source_l00054}\hyperlink{chrono_8h_a45ba202b05caf39795aeca91b0ae547e}{00054} \textcolor{preprocessor}{#define TIMEOUT                 100000 // en ms}
+00055 
+\Hypertarget{chrono_8h_source_l00066}\hyperlink{class_chrono}{00066} \textcolor{keyword}{class }\hyperlink{class_chrono}{Chrono} : \textcolor{keyword}{public} \hyperlink{class_q_object}{QObject}
+00067 \{
+00068     Q\_OBJECT
+00069 
+00070 \textcolor{keyword}{private}:
+00071 
+\Hypertarget{chrono_8h_source_l00072}\hyperlink{class_chrono_aca5fbe0eebd7f876f954d4a99c564167}{00072}     QSerialPort *\hyperlink{class_chrono_aca5fbe0eebd7f876f954d4a99c564167}{port}; 
+\Hypertarget{chrono_8h_source_l00073}\hyperlink{class_chrono_a7771ee85460ad5f61f96cea2267ae23f}{00073}     QByteArray \hyperlink{class_chrono_a7771ee85460ad5f61f96cea2267ae23f}{donnees}; 
+\Hypertarget{chrono_8h_source_l00074}\hyperlink{class_chrono_a26f2155aa6e5ef4296e5456b64a713b5}{00074}     QString \hyperlink{class_chrono_a26f2155aa6e5ef4296e5456b64a713b5}{trame}; 
+\Hypertarget{chrono_8h_source_l00075}\hyperlink{class_chrono_ad82d4f2a230290aa9695f12bf5ac02e8}{00075}     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{class_chrono_ad82d4f2a230290aa9695f12bf5ac02e8}{etat}; 
+00076 
+00077     \textcolor{keywordtype}{bool} \hyperlink{class_chrono_a80305a5dae33e8cd99604e809589564b}{reconnecter}();
+00078     \textcolor{keywordtype}{void} \hyperlink{class_chrono_a9a66b4e81385e2c354805548b94cdfb6}{decoderTrame}();
+00079 
+00080 \textcolor{keyword}{public}:
+00081     \hyperlink{class_chrono_a01eb40847915c49c48c7dc9ca63cbd99}{Chrono}(\hyperlink{class_q_object}{QObject} *parent = \textcolor{keyword}{nullptr});
+00082     \hyperlink{class_chrono_aaba59dd29fe5d3469c147cd2b014adc1}{~Chrono}();
+00083 
+00084     \textcolor{keywordtype}{void} \hyperlink{class_chrono_a74d85a4e856e2e59afacaa061feb7b75}{creer}();
+00085     \textcolor{keywordtype}{bool} \hyperlink{class_chrono_a858a209a6d366b3adb95bcf593645d6a}{synchroniser}();
+00086     \textcolor{keywordtype}{bool} \hyperlink{class_chrono_a0d7e3e50fcef0f2b0b7bfadc3d4f737d}{creerClassement}();
+00087     \textcolor{keywordtype}{bool} \hyperlink{class_chrono_a2ee875c24eb14f09011a40dfb3f1921f}{demarrer}();
+00088     \textcolor{keywordtype}{bool} \hyperlink{class_chrono_a2a0d899b09eb044caa83b41574ac5edf}{arreterCourse}();
+00089     \textcolor{keywordtype}{bool} \hyperlink{class_chrono_a5e2781ab78dcaa0ecb37e301399d819b}{arreterChrono}();
+00090     \textcolor{keywordtype}{bool} \hyperlink{class_chrono_aaad6d9079f2de1c09092f97614009f62}{estConnecte}();
+00091 
+00092 \textcolor{keyword}{public} slots:
+00093     \textcolor{keywordtype}{void} \hyperlink{class_chrono_ae7c3c8494ace02f4c9dd714f6f0e574a}{lireTrame}();
+00094 
+00095 signals:
+00096     \textcolor{keywordtype}{void} \hyperlink{class_chrono_a60ef5586dd429ab616c2b02c143daedf}{chronoCreer}();
+00097     \textcolor{keywordtype}{void} \hyperlink{class_chrono_a4ae8a6eb8da3f43eb15392b08f391237}{chronoSynchroniser}();
+00098     \textcolor{keywordtype}{void} \hyperlink{class_chrono_aea06e35eac092428e821a07a5e2df64c}{classementCree}();
+00099     \textcolor{keywordtype}{void} \hyperlink{class_chrono_a590290b81a290717bfe1b87f1c605181}{chronoLance}();
+00100     \textcolor{keywordtype}{void} \hyperlink{class_chrono_a054799dc10e42daff8545689a61aea35}{courseArretee}();
+00101     \textcolor{keywordtype}{void} \hyperlink{class_chrono_a5e28dfd0010e34a19ccb03b9dcbe4dcd}{chronoArrete}();
+00102     \textcolor{keywordtype}{void} \hyperlink{class_chrono_ab697687f26503bee2b9c9e6f2a073f14}{chronoRecommence}();
+00103 
+00104     \textcolor{keywordtype}{void} \hyperlink{class_chrono_a38cf60f7ab1969d7fd1e672868156135}{nouvelleArrivee}(QString tempsArrivee);
+00105 \};
+00106 
+00107 \textcolor{preprocessor}{#endif // CHRONO\_H}
+\end{DoxyCode}

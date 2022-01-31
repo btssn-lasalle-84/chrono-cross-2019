@@ -1,0 +1,91 @@
+\hypertarget{course_8h_source}{}\subsection{course.\+h}
+\label{course_8h_source}\index{course.\+h@{course.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef COURSE\_H}
+00002 \textcolor{preprocessor}{#define COURSE\_H}
+00003 
+00011 \textcolor{preprocessor}{#include <QObject>}
+00012 \textcolor{preprocessor}{#include <QDebug>}
+00013 \textcolor{preprocessor}{#include <QDate>}
+00014 \textcolor{preprocessor}{#include "\hyperlink{chrono_8h}{chrono.h}"}
+00015 \textcolor{preprocessor}{#include "../BaseDeDonnees/basededonnees.h"}
+00016 
+\Hypertarget{course_8h_source_l00017}\hyperlink{course_8h_a2d7a26b028c89e758ebca4fe8455b861}{00017} \textcolor{preprocessor}{#define INFORMATION\_COUREUR\_ARRIVEE\_CLASSE 4}
+00018 
+00026 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00027 \textcolor{keyword}{class }\hyperlink{class_chrono}{Chrono};
+00028 
+\Hypertarget{course_8h_source_l00029}\hyperlink{class_course}{00029} \textcolor{keyword}{class }\hyperlink{class_course}{Course} : \textcolor{keyword}{public} \hyperlink{class_q_object}{QObject}
+00030 \{
+00031     Q\_OBJECT
+00032 
+00033 \textcolor{keyword}{private}:
+\Hypertarget{course_8h_source_l00034}\hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{00034}     \hyperlink{class_base_de_donnees}{BaseDeDonnees} *\hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}; 
+\Hypertarget{course_8h_source_l00035}\hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{00035}     \hyperlink{class_chrono}{Chrono} *\hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono}; 
+00036 
+\Hypertarget{course_8h_source_l00037}\hyperlink{class_course_a1f80798e50be6db9911a882a2491c698}{00037}     QString \hyperlink{class_course_a1f80798e50be6db9911a882a2491c698}{idCourse}; 
+\Hypertarget{course_8h_source_l00038}\hyperlink{class_course_af2f7b814a0ec0d76291a2743c61615a8}{00038}     QString \hyperlink{class_course_af2f7b814a0ec0d76291a2743c61615a8}{distance}; 
+\Hypertarget{course_8h_source_l00039}\hyperlink{class_course_aa2da10dd2fc8c1ca1d5831249181e61f}{00039}     QString \hyperlink{class_course_aa2da10dd2fc8c1ca1d5831249181e61f}{heureDepart}; 
+\Hypertarget{course_8h_source_l00040}\hyperlink{class_course_a14838cc0c491a76baf7e5f12d8d08ab4}{00040}     QStringList \hyperlink{class_course_a14838cc0c491a76baf7e5f12d8d08ab4}{informationCoureurArrive}; 
+00041 
+00042     QString \hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formulerRequeteSelect}(QString renseignements, QString sources, QString 
+      conditions);
+00043 
+00044 
+00045 \textcolor{keyword}{public}:
+00046     \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course}(\hyperlink{class_q_object}{QObject} *parent = \textcolor{keyword}{nullptr});
+00047     \hyperlink{class_course_aa9038f2e129526920037dda9e76d69d0}{~Course}();
+00048 
+00049     \textcolor{keywordtype}{void} \hyperlink{class_course_a6eb96222d8dc1f352e28f36e9b414448}{creerChrono}();
+00050     \textcolor{keywordtype}{void} \hyperlink{class_course_a50596f54553b48fa29170a6b42b6e9d4}{preparerChrono}();
+00051     \textcolor{keywordtype}{bool} \hyperlink{class_course_a44a14d431bd64a507f2c2aa5f465b1b0}{estChronometragePret}();
+00052     \textcolor{keywordtype}{void} \hyperlink{class_course_a589447dd63dca89395119ffd4e4a8c8c}{chronometrer}();
+00053     \textcolor{keywordtype}{void} \hyperlink{class_course_a4426310a411d8ecf7f4a2dc64c24a42d}{arreterClassement}();
+00054     \textcolor{keywordtype}{void} \hyperlink{class_course_a939635ac8301a7018475cc2ce347375f}{arreterChrono}();
+00055 
+00056     \textcolor{keywordtype}{int}  \hyperlink{class_course_a6cb3ede6a11e4813f95be92f4459a3c2}{verifierDossard}(QString dossard);
+00057     QString \hyperlink{class_course_ab98bbd1a92e468df7b8b45bb7877afef}{convertirTemps}(QString tempsMS);
+00058 
+00059     \textcolor{keywordtype}{int} \hyperlink{class_course_ad0ff4153f1e02826d551f478f95ad260}{getNbInscrit}(QString course);
+00060     \textcolor{keywordtype}{int} \hyperlink{class_course_af20fcd6d6eb2dfbd3b0f12e273f12b27}{getDistance}(QString course);
+00061     QString \hyperlink{class_course_afc21f8195edd50c9fd266cff0c401b7c}{getHeure}(QString course);
+00062     \textcolor{keywordtype}{int} \hyperlink{class_course_ad8dd87e7f299bc938f40423f28c837e8}{getNbArrivee}();
+00063     QString \hyperlink{class_course_a7b4485a0b38bc3b908131962b705d880}{getNomCourse}(QString dossard);
+00064     \textcolor{keywordtype}{void} \hyperlink{class_course_a36cf16c971841431947b6fbe2b3f3d27}{setIdCourse}(QString nomCourse);
+00065 
+00066     \textcolor{keywordtype}{void} \hyperlink{class_course_ac99042bf8b20e8d3a54e72c8a80f7ee7}{ajouteArriveeBDD}(QString dossard, QString tempsArrivee);
+00067 
+00068     QStringList \hyperlink{class_course_a0d995ef72152208e02eb3b10315dfabb}{getListeManifestations}();
+00069     QVector<QString> \hyperlink{class_course_ae5e74946d973166ad3000e38600acf20}{getListeCourses}(QString manifestation);
+00070 
+00071 \textcolor{keyword}{public} slots:
+00072     \textcolor{keywordtype}{void} \hyperlink{class_course_ada484058a0180a31a98ee77c4fad93f8}{aChronoCree}();
+00073     \textcolor{keywordtype}{void} \hyperlink{class_course_a90c66d620f0726d92c40069f052e0cd0}{aChronoSynchronise}();
+00074     \textcolor{keywordtype}{void} \hyperlink{class_course_a4a4f788b4ff5ca687c67f29753d26928}{aClassementCree}();
+00075     \textcolor{keywordtype}{void} \hyperlink{class_course_a8df970d7150703c3279903b09aa38855}{aCommencee}();
+00076     \textcolor{keywordtype}{void} \hyperlink{class_course_a43696137587262b721767f6113621772}{aClassementArrete}();
+00077     \textcolor{keywordtype}{void} \hyperlink{class_course_abbcfaecd40b5ec5e47419068423e767f}{estFinie}();
+00078     \textcolor{keywordtype}{void} \hyperlink{class_course_addeae907c4bc0a268f51479041de389c}{recommencerChrono}();
+00079 
+00080     \textcolor{keywordtype}{void} \hyperlink{class_course_a60073d16efd4ccefa81bddb4aaa88fab}{traiterArriveeCoureur}(QString tempsArrivee);
+00081     \textcolor{keywordtype}{void} \hyperlink{class_course_a7ba5d2c9865065e95f49a24fbeec7857}{getInformationCoureur}(QString dossard, QString tempsARrivee);
+00082 
+00083     \textcolor{keywordtype}{bool} \hyperlink{class_course_a3ebcde1fa443cb20d71fb98af4d0c418}{setEtat}(QString etat);
+00084 
+00085 signals:
+00086     \textcolor{keywordtype}{void} \hyperlink{class_course_a1c7830a51af59f70998ff0576f0aa7cd}{chronoCreer}();
+00087     \textcolor{keywordtype}{void} \hyperlink{class_course_ab3f2a2c1bb8ed8a2550dc8fabc59e54e}{chronoCoursePret}();
+00088     \textcolor{keywordtype}{void} \hyperlink{class_course_a2056f5c20f56e2c7eeea8195a55857bc}{courseCommence}();
+00089     \textcolor{keywordtype}{void} \hyperlink{class_course_a630aea833dccd20e52ada1548c334c78}{classementArrete}();
+00090     \textcolor{keywordtype}{void} \hyperlink{class_course_aa66c89bb34e692f17caabb21b11feeb2}{courseFinie}();
+00091     \textcolor{keywordtype}{void} \hyperlink{class_course_a178f2015d20ef5d838564671567f6831}{chronoRecommence}();
+00092 
+00093     \textcolor{keywordtype}{void} \hyperlink{class_course_abea30de9b6cec333bf19134608e5bccf}{nouveauTempsArrivee}(QString tempsArrivee);
+00094 
+00095     \textcolor{keywordtype}{void} \hyperlink{class_course_aa2f0312e68f57e1437c3257d13af8186}{arriveeAjouteeBDD}(QString dossard, QString tempsArrivee);
+00096     \textcolor{keywordtype}{void} \hyperlink{class_course_a9073b7cb57b9b8a2aee33582bb61eb20}{informationCoureurRecuperees}(QStringList informationCoureur);
+00097 \};
+00098 
+00099 \textcolor{preprocessor}{#endif // COURSE\_H}
+\end{DoxyCode}

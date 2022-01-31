@@ -1,0 +1,6 @@
+<map id="IHMGestionCross" name="IHMGestionCross">
+<area shape="rect" id="node2" href="$class_q_widget.html" title="{QWidget\n||}" alt="" coords="63,573,137,650"/>
+<area shape="rect" id="node3" href="$class_gestion_b_d_d.html" title="Déclaration de la classe GestionBDD. " alt="" coords="161,492,394,731"/>
+<area shape="rect" id="node4" href="$class_q_object.html" title="{QObject\n||}" alt="" coords="219,5,290,83"/>
+<area shape="rect" id="node5" href="$class_base_de_donnees.html" title="{BaseDeDonnees\n|&#45; db\l&#45; mutex\l&#45; typeBase\l&#45; nbAcces\l|+ estConnecte()\l+ connecter()\l+ estOuvert()\l+ ouvrir()\l+ executer()\l+ recuperer()\l+ recuperer()\l+ recuperer()\l+ recuperer()\l+ getInstance()\l+ detruireInstance()\l&#45; BaseDeDonnees()\l&#45; ~BaseDeDonnees()\l}" alt="" coords="277,132,422,429"/>
+</map>

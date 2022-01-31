@@ -1,0 +1,176 @@
+\hypertarget{ihmchronocross_8h_source}{}\subsection{ihmchronocross.\+h}
+\label{ihmchronocross_8h_source}\index{ihmchronocross.\+h@{ihmchronocross.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef IHMCHRONOCROSS\_H}
+00002 \textcolor{preprocessor}{#define IHMCHRONOCROSS\_H}
+00003 
+00011 \textcolor{preprocessor}{#include <QtWidgets>} \textcolor{comment}{/* tous les widgets de Qt5 */}
+00012 \textcolor{preprocessor}{#include <QMainWindow>}
+00013 \textcolor{preprocessor}{#include <QDebug>}
+00014 \textcolor{preprocessor}{#include <QTimer>}
+00015 \textcolor{preprocessor}{#include <QDialog>}
+00016 
+\Hypertarget{ihmchronocross_8h_source_l00017}\hyperlink{ihmchronocross_8h_a407f067284fd7ac16426ac29cbfcd356}{00017} \textcolor{preprocessor}{#define TAILLETEXTELABEL        20}
+\Hypertarget{ihmchronocross_8h_source_l00018}\hyperlink{ihmchronocross_8h_a93c1a7628e080979c2ae8f83b6c69606}{00018} \textcolor{preprocessor}{#define TAILLETEXTEBUTON        20}
+\Hypertarget{ihmchronocross_8h_source_l00019}\hyperlink{ihmchronocross_8h_a4169235bca6fe9370d9b368912e62af0}{00019} \textcolor{preprocessor}{#define TAILLETEXTELISTE        16}
+\Hypertarget{ihmchronocross_8h_source_l00020}\hyperlink{ihmchronocross_8h_a93033547a126f30c05119d40b51384da}{00020} \textcolor{preprocessor}{#define TAILLETEXTEINFO         18}
+\Hypertarget{ihmchronocross_8h_source_l00021}\hyperlink{ihmchronocross_8h_a79ebe381f5864a987975ff0072b37ae7}{00021} \textcolor{preprocessor}{#define TAILLETEXTESUPPRIMER    15}
+\Hypertarget{ihmchronocross_8h_source_l00022}\hyperlink{ihmchronocross_8h_ad9c2b9995bc14e73ab20cdd74252126d}{00022} \textcolor{preprocessor}{#define TAILLETEXTECLASSEMENT   12}
+00023 
+\Hypertarget{ihmchronocross_8h_source_l00024}\hyperlink{ihmchronocross_8h_aa8bee638aa78f9b332485225ecc8e75e}{00024} \textcolor{preprocessor}{#define IMAGECHRONOCROSS "../image/icone-chrono-cross.png"}
+\Hypertarget{ihmchronocross_8h_source_l00025}\hyperlink{ihmchronocross_8h_a042b3fb5b102c16d90d2d9ad6d76b8de}{00025} \textcolor{preprocessor}{#define CLASSEMENT       0}
+\Hypertarget{ihmchronocross_8h_source_l00026}\hyperlink{ihmchronocross_8h_ad67b7981a5b5c479cd25328af2db4a3a}{00026} \textcolor{preprocessor}{#define TEMPS            1}
+\Hypertarget{ihmchronocross_8h_source_l00027}\hyperlink{ihmchronocross_8h_a4d7a994c9b4a9bbef72bf043736e9481}{00027} \textcolor{preprocessor}{#define DOSSARD          2}
+00028 
+\Hypertarget{ihmchronocross_8h_source_l00029}\hyperlink{ihmchronocross_8h_add3424f8ad3c4224de29631acdf57899}{00029} \textcolor{preprocessor}{#define COLONNE\_TEMPS       0}
+\Hypertarget{ihmchronocross_8h_source_l00030}\hyperlink{ihmchronocross_8h_a9b0cee5420830f3ca3f8561b4c1e64db}{00030} \textcolor{preprocessor}{#define COLONNE\_DOSSARD     1}
+\Hypertarget{ihmchronocross_8h_source_l00031}\hyperlink{ihmchronocross_8h_aeee76385895c145ef5a633e6c6812603}{00031} \textcolor{preprocessor}{#define COLONNE\_NOM         2}
+\Hypertarget{ihmchronocross_8h_source_l00032}\hyperlink{ihmchronocross_8h_a5d6f240d26209cd66db8aa5e1aac62f9}{00032} \textcolor{preprocessor}{#define COLONNE\_PRENOM      3}
+\Hypertarget{ihmchronocross_8h_source_l00033}\hyperlink{ihmchronocross_8h_a114680edc01528f77bb689b0a2ca18a2}{00033} \textcolor{preprocessor}{#define COLONNE\_CLASSE      4}
+00034 
+\Hypertarget{ihmchronocross_8h_source_l00035}\hyperlink{ihmchronocross_8h_a156e68578bd6e6dfe628622b22b256af}{00035} \textcolor{preprocessor}{#define INFO\_COUREUR\_TEMPS      0}
+\Hypertarget{ihmchronocross_8h_source_l00036}\hyperlink{ihmchronocross_8h_a11e2b6314d0646876d7a9ef2b583a521}{00036} \textcolor{preprocessor}{#define INFO\_COUREUR\_DOSSARD    1}
+\Hypertarget{ihmchronocross_8h_source_l00037}\hyperlink{ihmchronocross_8h_a71b99ea06ae916bcd158edbd441c8c24}{00037} \textcolor{preprocessor}{#define INFO\_COUREUR\_NOM        2}
+\Hypertarget{ihmchronocross_8h_source_l00038}\hyperlink{ihmchronocross_8h_a68fd2611ad0ef66da1a71726675067e7}{00038} \textcolor{preprocessor}{#define INFO\_COUREUR\_PRENOM     3}
+\Hypertarget{ihmchronocross_8h_source_l00039}\hyperlink{ihmchronocross_8h_a104dfa4cfc656a690caaec36fd4d3e2d}{00039} \textcolor{preprocessor}{#define INFO\_COUREUR\_CLASSE     4}
+00040 
+\Hypertarget{ihmchronocross_8h_source_l00041}\hyperlink{ihmchronocross_8h_a87a6eb8b1f31f4dda05bfb0016494b7f}{00041} \textcolor{preprocessor}{#define NUMERO\_DOSSARD\_INVALIDE         0}
+\Hypertarget{ihmchronocross_8h_source_l00042}\hyperlink{ihmchronocross_8h_a999a34fef9415ff9b78e8dbc638a6059}{00042} \textcolor{preprocessor}{#define DOSSARD\_VALIDE\_COURSE\_INVALIDE  1}
+\Hypertarget{ihmchronocross_8h_source_l00043}\hyperlink{ihmchronocross_8h_aa425ec476e56ed545a81aa56a00c421f}{00043} \textcolor{preprocessor}{#define DOSSARD\_DEJA\_ARRIVE             2}
+\Hypertarget{ihmchronocross_8h_source_l00044}\hyperlink{ihmchronocross_8h_ac8b24d7d16d36259c7903acfe1ad363b}{00044} \textcolor{preprocessor}{#define DOSSARD\_VALIDE                  3}
+00045 
+00046 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00047 \textcolor{keyword}{class }\hyperlink{class_course}{Course};
+00048 
+\Hypertarget{ihmchronocross_8h_source_l00055}\hyperlink{class_i_h_m_chrono_cross}{00055} \textcolor{keyword}{class }\hyperlink{class_i_h_m_chrono_cross}{IHMChronoCross} : \textcolor{keyword}{public} \hyperlink{class_q_widget}{QWidget}
+00056 \{
+00057     Q\_OBJECT
+00058 
+00059 \textcolor{keyword}{private}:
+00060 
+\Hypertarget{ihmchronocross_8h_source_l00061}\hyperlink{class_i_h_m_chrono_cross_a03a8226c0e7f423d29302d9a06284ab4}{00061}     \hyperlink{class_course}{Course} *\hyperlink{class_i_h_m_chrono_cross_a03a8226c0e7f423d29302d9a06284ab4}{course}; 
+\Hypertarget{ihmchronocross_8h_source_l00062}\hyperlink{class_i_h_m_chrono_cross_a646f70038327c068a2f7c7be6e07d2ee}{00062}     QVector<QStringList> \hyperlink{class_i_h_m_chrono_cross_a646f70038327c068a2f7c7be6e07d2ee}{courses}; 
+\Hypertarget{ihmchronocross_8h_source_l00063}\hyperlink{class_i_h_m_chrono_cross_a49236628e14e516e1ab7a181eac8fea8}{00063}     QStringList \hyperlink{class_i_h_m_chrono_cross_a49236628e14e516e1ab7a181eac8fea8}{classement}; 
+\Hypertarget{ihmchronocross_8h_source_l00064}\hyperlink{class_i_h_m_chrono_cross_a21f1b0ba82ff1b4a7b842b5f3c411e60}{00064}     QStringList \hyperlink{class_i_h_m_chrono_cross_a21f1b0ba82ff1b4a7b842b5f3c411e60}{nomColonnes}; 
+\Hypertarget{ihmchronocross_8h_source_l00065}\hyperlink{class_i_h_m_chrono_cross_a9d0542a5334cd284d1ea9cf732cb013e}{00065}     QStringList \hyperlink{class_i_h_m_chrono_cross_a9d0542a5334cd284d1ea9cf732cb013e}{tempsArriveesNonClassees}; 
+\Hypertarget{ihmchronocross_8h_source_l00066}\hyperlink{class_i_h_m_chrono_cross_aa3198d36b0574b477a328621c8e1e0f0}{00066}     \textcolor{keywordtype}{int} \hyperlink{class_i_h_m_chrono_cross_aa3198d36b0574b477a328621c8e1e0f0}{nbArriveesNonClassees};
+\Hypertarget{ihmchronocross_8h_source_l00067}\hyperlink{class_i_h_m_chrono_cross_a9bdcd0e57b79f64957eefea0f9d2b097}{00067}     \textcolor{keywordtype}{int} \hyperlink{class_i_h_m_chrono_cross_a9bdcd0e57b79f64957eefea0f9d2b097}{nbArriveesClassees};
+\Hypertarget{ihmchronocross_8h_source_l00068}\hyperlink{class_i_h_m_chrono_cross_aba349505e99e6e320b218ba2b7fb485e}{00068}     \textcolor{keywordtype}{int} \hyperlink{class_i_h_m_chrono_cross_aba349505e99e6e320b218ba2b7fb485e}{nbCoureurArrive}; 
+\Hypertarget{ihmchronocross_8h_source_l00069}\hyperlink{class_i_h_m_chrono_cross_a86ed3469ca99988211bcf0970527c119}{00069}     \textcolor{keywordtype}{int} \hyperlink{class_i_h_m_chrono_cross_a86ed3469ca99988211bcf0970527c119}{nbLignesClassement}; 
+00070 
+\Hypertarget{ihmchronocross_8h_source_l00071}\hyperlink{class_i_h_m_chrono_cross_a3ad2d6f9520ae7ed917fba070ed55d4c}{00071}     \textcolor{keywordtype}{bool} \hyperlink{class_i_h_m_chrono_cross_a3ad2d6f9520ae7ed917fba070ed55d4c}{acquitement};
+00072 
+\Hypertarget{ihmchronocross_8h_source_l00073}\hyperlink{class_i_h_m_chrono_cross_a4bb2449f0b2cc9891c09fa3e32f56229}{00073}     \textcolor{keywordtype}{long} \hyperlink{class_i_h_m_chrono_cross_a4bb2449f0b2cc9891c09fa3e32f56229}{m\_valeur}; 
+00074     
+00075     \textcolor{comment}{// les widgets}
+\Hypertarget{ihmchronocross_8h_source_l00076}\hyperlink{class_i_h_m_chrono_cross_a4b7a6af527d8d2d28d8ea6ea7cbfac75}{00076}     QComboBox *\hyperlink{class_i_h_m_chrono_cross_a4b7a6af527d8d2d28d8ea6ea7cbfac75}{cbListeManifestations}; 
+\Hypertarget{ihmchronocross_8h_source_l00077}\hyperlink{class_i_h_m_chrono_cross_af47891e3e9f2bb2c955be8c128e830b5}{00077}     QComboBox *\hyperlink{class_i_h_m_chrono_cross_af47891e3e9f2bb2c955be8c128e830b5}{cbListeCourses}; 
+00078 
+\Hypertarget{ihmchronocross_8h_source_l00079}\hyperlink{class_i_h_m_chrono_cross_a7430cf36cc48d17297ddc03fe69e9b72}{00079}     QLabel *\hyperlink{class_i_h_m_chrono_cross_a7430cf36cc48d17297ddc03fe69e9b72}{labelManifestations}; 
+\Hypertarget{ihmchronocross_8h_source_l00080}\hyperlink{class_i_h_m_chrono_cross_a2b563f2574ad86acaecc01f0357f85be}{00080}     QLabel *\hyperlink{class_i_h_m_chrono_cross_a2b563f2574ad86acaecc01f0357f85be}{labelListeCourses}; 
+\Hypertarget{ihmchronocross_8h_source_l00081}\hyperlink{class_i_h_m_chrono_cross_a73afea901ae4b6eb4c0d136818ed1fa6}{00081}     QLabel *\hyperlink{class_i_h_m_chrono_cross_a73afea901ae4b6eb4c0d136818ed1fa6}{labelNumeroDossard}; 
+\Hypertarget{ihmchronocross_8h_source_l00082}\hyperlink{class_i_h_m_chrono_cross_a7684bc78d49abe63f021ee623bea575e}{00082}     QLabel *\hyperlink{class_i_h_m_chrono_cross_a7684bc78d49abe63f021ee623bea575e}{labelZoneCourse}; 
+\Hypertarget{ihmchronocross_8h_source_l00083}\hyperlink{class_i_h_m_chrono_cross_ac07ff8651a5a929f8847fa85eef9fe89}{00083}     QLabel *\hyperlink{class_i_h_m_chrono_cross_ac07ff8651a5a929f8847fa85eef9fe89}{labelZoneClassement}; 
+\Hypertarget{ihmchronocross_8h_source_l00084}\hyperlink{class_i_h_m_chrono_cross_ad28922f5316673a1e181747879ef6855}{00084}     QLabel *\hyperlink{class_i_h_m_chrono_cross_ad28922f5316673a1e181747879ef6855}{labelZoneChrono}; 
+\Hypertarget{ihmchronocross_8h_source_l00085}\hyperlink{class_i_h_m_chrono_cross_a76f2f83c624da73e3d3de6a8b4ff43a1}{00085}     QLabel *\hyperlink{class_i_h_m_chrono_cross_a76f2f83c624da73e3d3de6a8b4ff43a1}{logoChronoCross}; 
+\Hypertarget{ihmchronocross_8h_source_l00086}\hyperlink{class_i_h_m_chrono_cross_ad247dfd005cb835c90aca67b1384578b}{00086}     QLabel *\hyperlink{class_i_h_m_chrono_cross_ad247dfd005cb835c90aca67b1384578b}{labelEtatChrono}; 
+\Hypertarget{ihmchronocross_8h_source_l00087}\hyperlink{class_i_h_m_chrono_cross_ad43bab2d9a06fe2fb198c56d8b9faab2}{00087}     QLabel *\hyperlink{class_i_h_m_chrono_cross_ad43bab2d9a06fe2fb198c56d8b9faab2}{labelLedChrono}; 
+00088 
+\Hypertarget{ihmchronocross_8h_source_l00089}\hyperlink{class_i_h_m_chrono_cross_a8568c80f2e2ffe96c81d2a94a2146159}{00089}     QLabel *\hyperlink{class_i_h_m_chrono_cross_a8568c80f2e2ffe96c81d2a94a2146159}{labelLedCourse}; 
+\Hypertarget{ihmchronocross_8h_source_l00090}\hyperlink{class_i_h_m_chrono_cross_a433796aedfcc26313f639bd5157b1135}{00090}     QLabel *\hyperlink{class_i_h_m_chrono_cross_a433796aedfcc26313f639bd5157b1135}{labelEtatCourse}; 
+\Hypertarget{ihmchronocross_8h_source_l00091}\hyperlink{class_i_h_m_chrono_cross_a56f6c02a8d3274c4359f12709cefa5d2}{00091}     QLabel *\hyperlink{class_i_h_m_chrono_cross_a56f6c02a8d3274c4359f12709cefa5d2}{labelZoneArrivees}; 
+\Hypertarget{ihmchronocross_8h_source_l00092}\hyperlink{class_i_h_m_chrono_cross_abd23647486d38e6f57aef1faf50757af}{00092}     QLabel *\hyperlink{class_i_h_m_chrono_cross_abd23647486d38e6f57aef1faf50757af}{labelMessageDossard}; 
+\Hypertarget{ihmchronocross_8h_source_l00093}\hyperlink{class_i_h_m_chrono_cross_a6d818ff507406ebf299c571e0e5c1e49}{00093}     QLabel *\hyperlink{class_i_h_m_chrono_cross_a6d818ff507406ebf299c571e0e5c1e49}{labelMessageSupprimer}; 
+00094 
+00095     \textcolor{comment}{//zone information sur les coureurs d'une course}
+\Hypertarget{ihmchronocross_8h_source_l00096}\hyperlink{class_i_h_m_chrono_cross_a9d410e8bc161481a83298176b2702519}{00096}     QLabel *\hyperlink{class_i_h_m_chrono_cross_a9d410e8bc161481a83298176b2702519}{labelNbInscrit}; 
+\Hypertarget{ihmchronocross_8h_source_l00097}\hyperlink{class_i_h_m_chrono_cross_a3249b3528e5b75353bb8fb80d27eefe3}{00097}     QLabel *\hyperlink{class_i_h_m_chrono_cross_a3249b3528e5b75353bb8fb80d27eefe3}{labelNbArriveesNonClassees} ; 
+\Hypertarget{ihmchronocross_8h_source_l00098}\hyperlink{class_i_h_m_chrono_cross_a08fd415de59fe6f42663f3f36f074e61}{00098}     QLabel *\hyperlink{class_i_h_m_chrono_cross_a08fd415de59fe6f42663f3f36f074e61}{labelNbArriveesClassees}; 
+\Hypertarget{ihmchronocross_8h_source_l00099}\hyperlink{class_i_h_m_chrono_cross_a9cf1b999b13e69fdd0fb11ddb9011ed5}{00099}     QLCDNumber *\hyperlink{class_i_h_m_chrono_cross_a9cf1b999b13e69fdd0fb11ddb9011ed5}{QLCDNbArriveesNonClassees}; 
+\Hypertarget{ihmchronocross_8h_source_l00100}\hyperlink{class_i_h_m_chrono_cross_aeba189eacad7e19e009ae4764f98b9be}{00100}     QLCDNumber *\hyperlink{class_i_h_m_chrono_cross_aeba189eacad7e19e009ae4764f98b9be}{QLCDNbArriveesClassees}; 
+00101 
+00102     \textcolor{comment}{//zone information sur la course}
+\Hypertarget{ihmchronocross_8h_source_l00103}\hyperlink{class_i_h_m_chrono_cross_aebe86f4e614f568db5558bf99f1b44e6}{00103}     QLabel *\hyperlink{class_i_h_m_chrono_cross_aebe86f4e614f568db5558bf99f1b44e6}{labelNomCourse};
+\Hypertarget{ihmchronocross_8h_source_l00104}\hyperlink{class_i_h_m_chrono_cross_a4748740a4973bf62c408be380ac0ae77}{00104}     QLabel *\hyperlink{class_i_h_m_chrono_cross_a4748740a4973bf62c408be380ac0ae77}{labelDistanceCourse};
+\Hypertarget{ihmchronocross_8h_source_l00105}\hyperlink{class_i_h_m_chrono_cross_ad071b8c6ecc126fca3e17e58e83942d9}{00105}     QLabel *\hyperlink{class_i_h_m_chrono_cross_ad071b8c6ecc126fca3e17e58e83942d9}{labelHeureCourse};
+00106 
+\Hypertarget{ihmchronocross_8h_source_l00107}\hyperlink{class_i_h_m_chrono_cross_a6169c1483faab14d1f619d1d838c198e}{00107}     QLCDNumber *\hyperlink{class_i_h_m_chrono_cross_a6169c1483faab14d1f619d1d838c198e}{QLCDChrono}; 
+00108 
+\Hypertarget{ihmchronocross_8h_source_l00109}\hyperlink{class_i_h_m_chrono_cross_ad2e156ff9412644debf8da7a3ec1566d}{00109}     QLineEdit *\hyperlink{class_i_h_m_chrono_cross_ad2e156ff9412644debf8da7a3ec1566d}{lineEditNumeroDossard}; 
+00110 
+\Hypertarget{ihmchronocross_8h_source_l00111}\hyperlink{class_i_h_m_chrono_cross_aaef501bd1190a5ec06a214d3265b8c0b}{00111}     QPushButton *\hyperlink{class_i_h_m_chrono_cross_aaef501bd1190a5ec06a214d3265b8c0b}{bSynchroniser}; 
+\Hypertarget{ihmchronocross_8h_source_l00112}\hyperlink{class_i_h_m_chrono_cross_a1b0a7c5e58d6a9f873cdc912d67b8de9}{00112}     QPushButton *\hyperlink{class_i_h_m_chrono_cross_a1b0a7c5e58d6a9f873cdc912d67b8de9}{bLancer}; 
+\Hypertarget{ihmchronocross_8h_source_l00113}\hyperlink{class_i_h_m_chrono_cross_a75ce4fcdab11095834fe3f9e931f8964}{00113}     QPushButton *\hyperlink{class_i_h_m_chrono_cross_a75ce4fcdab11095834fe3f9e931f8964}{bArreter}; 
+\Hypertarget{ihmchronocross_8h_source_l00114}\hyperlink{class_i_h_m_chrono_cross_a63721ec2d7d51b11b164b4502ace8262}{00114}     QPushButton *\hyperlink{class_i_h_m_chrono_cross_a63721ec2d7d51b11b164b4502ace8262}{bTerminer}; 
+\Hypertarget{ihmchronocross_8h_source_l00115}\hyperlink{class_i_h_m_chrono_cross_aec2458a0c2ff0d2c37fa409fb8e99ce7}{00115}     QPushButton *\hyperlink{class_i_h_m_chrono_cross_aec2458a0c2ff0d2c37fa409fb8e99ce7}{bAssocier}; 
+00116 
+\Hypertarget{ihmchronocross_8h_source_l00117}\hyperlink{class_i_h_m_chrono_cross_a199204276756844adbd6ca3c9030ad2f}{00117}     QTableView *\hyperlink{class_i_h_m_chrono_cross_a199204276756844adbd6ca3c9030ad2f}{vueTableauClassement}; 
+\Hypertarget{ihmchronocross_8h_source_l00118}\hyperlink{class_i_h_m_chrono_cross_ac25c95280801f36c43a1c41cf2fa253e}{00118}     QStandardItemModel *\hyperlink{class_i_h_m_chrono_cross_ac25c95280801f36c43a1c41cf2fa253e}{modeleClassement}; 
+00119 
+\Hypertarget{ihmchronocross_8h_source_l00120}\hyperlink{class_i_h_m_chrono_cross_aaf04338d882f708e57d9872b1c82b7a0}{00120}     QListView *\hyperlink{class_i_h_m_chrono_cross_aaf04338d882f708e57d9872b1c82b7a0}{vueListeTempsArriveesNonClassees}; 
+\Hypertarget{ihmchronocross_8h_source_l00121}\hyperlink{class_i_h_m_chrono_cross_a12a210c6a93f70df764841b7d322b05c}{00121}     QStringListModel *\hyperlink{class_i_h_m_chrono_cross_a12a210c6a93f70df764841b7d322b05c}{modeleArriveesNonClassees}; 
+00122 
+\Hypertarget{ihmchronocross_8h_source_l00123}\hyperlink{class_i_h_m_chrono_cross_ad29ebde513a6e722cf87aa06e767416a}{00123}     QTimer *\hyperlink{class_i_h_m_chrono_cross_ad29ebde513a6e722cf87aa06e767416a}{m\_timer}; 
+00124 
+\Hypertarget{ihmchronocross_8h_source_l00125}\hyperlink{class_i_h_m_chrono_cross_ad7fc4afa5689501063cc207a8daf5752}{00125}     QDialog *\hyperlink{class_i_h_m_chrono_cross_ad7fc4afa5689501063cc207a8daf5752}{confirmationDialog};
+00126 
+\Hypertarget{ihmchronocross_8h_source_l00127}\hyperlink{class_i_h_m_chrono_cross_a20522f998469b4b34b8939dce6b239b3}{00127}     QLabel *\hyperlink{class_i_h_m_chrono_cross_a20522f998469b4b34b8939dce6b239b3}{labelConfirmationDialog};
+\Hypertarget{ihmchronocross_8h_source_l00128}\hyperlink{class_i_h_m_chrono_cross_a57bb61d8175dc09f0497ee3834cb6ad5}{00128}     QPushButton *\hyperlink{class_i_h_m_chrono_cross_a57bb61d8175dc09f0497ee3834cb6ad5}{bConfirmationDialog};
+\Hypertarget{ihmchronocross_8h_source_l00129}\hyperlink{class_i_h_m_chrono_cross_a7d2639da4d7d7afae5d2a66e83695a4e}{00129}     QPushButton *\hyperlink{class_i_h_m_chrono_cross_a7d2639da4d7d7afae5d2a66e83695a4e}{bAnnulerDialog};
+00130 
+00131     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_adb47e6ee9c2a917a6df77b64930c3c48}{listerManifestations}();
+00132     \textcolor{keywordtype}{bool} \hyperlink{class_i_h_m_chrono_cross_afa7d1fb0245bb3e8bbffdf2687b02248}{verifierCourseSelectionnee}(QString courseSelectionnee);
+00133     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a3b46a31326bdde2b5ad67a9f0a6de76b}{setRouge}(QLabel *label);
+00134     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_aba2b1a136332baa7bd4905f9af15705b}{setVert}(QLabel *label);
+00135     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a7e2424925f588d7a1914befc3c6c832e}{setOrange}(QLabel *label);
+00136     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a1149f4f57c8cf34048f93fba6b4176b3}{reinitialiserInfoCourse}();
+00137     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_aaf8fa3bf16956fd0e0ceeab6e65f6741}{reinitialiserClassement}();
+00138     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a866a247fad23eca2af31ed985afe7cd3}{initialiserConfirmationDialog}();
+00139     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a41c2ff49d25069f8dfa2a7b3d0606d38}{personnaliserAffichageArrivee}(\textcolor{keywordtype}{int} nbLignesClassement);
+00140     \textcolor{keywordtype}{long} \hyperlink{class_i_h_m_chrono_cross_a0dfb2dc2b85937b1f218584ce84e9d98}{getSeconde}();
+00141     \textcolor{keywordtype}{long} \hyperlink{class_i_h_m_chrono_cross_a0cee9742e561398390bedb29ef7d6258}{getMinute}();
+00142     \textcolor{keywordtype}{long} \hyperlink{class_i_h_m_chrono_cross_a42054b4d5246c939bf0f621edb0e1aae}{getHeure}();
+00143     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a2cc8b686168528ab0d642a0cba6e1c5a}{update}();
+00144 
+00145 
+00146 \textcolor{keyword}{public}:
+00147     \hyperlink{class_i_h_m_chrono_cross_a479fc90733fba3e65fb06aa4a3adc02e}{IHMChronoCross}(\hyperlink{class_q_widget}{QWidget} *parent = \textcolor{keyword}{nullptr});
+00148     \hyperlink{class_i_h_m_chrono_cross_a312f21e1d150096b3f36ba36476907eb}{~IHMChronoCross}();
+00149 
+00150 \textcolor{keyword}{private} slots:
+00151     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a1b9f117d7097b63ddabe168a5349a7e8}{listerCourses}(QString manifestation);
+00152     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a3fc01e539c59645e0655e56e440f4b83}{creerCourse}(QString nomCourse);
+00153     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_adde019cc3799befac3fd9555e392eab9}{initialiserCourse}();
+00154     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a4926e7524f4fd76ccceb0aef5ebcb203}{preparerCourse}();
+00155     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_aa272ffa273fc8c487ea64ef6a43b4439}{parer}();
+00156     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_ace90922ce4c4ffeed6f1e8eb84c8c7a5}{lancerCourse}();
+00157     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a0e78f2d4d5e46c4551fc4517614a56d8}{lancerChronoIHM}();
+00158     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_ad3d8f287d08dd9aa0c6b10c9973672a4}{arreterCourse}();
+00159     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a8d5c89a4d2ca34252acd8737e29d37fe}{arreterChrono}();
+00160     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a32ee157ca6bd8c3e94b57f3cecdeee4e}{terminerChrono}();
+00161     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_ac89c6ec3040e8b787f1fbdb670405023}{terminerCourse}();
+00162     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_ab899a1d60c1f853b199abb937ae08e74}{commencerNouvelleCourse}();
+00163 
+00164     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a2ce63851d1f2723057ac649b7e320cfe}{ajouterArriveeCoureur}(QString tempsArrivee);
+00165     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a9f7f1ad130b60300a879694b6234f161}{associerArriveeDossard}();
+00166     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a5e9b561659ba63d2739335b8ab432cbf}{classerArrivee}(QStringList informationCoureur);
+00167 
+00168     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a283c721d31f90031d9a189eafb303b84}{quitter}();
+00169 
+00170     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a9706094a679e33f3595e28776596a91b}{tic}();
+00171 
+00172     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_afe18e84e4df15c15921f2bdcfc6f4396}{afficherInformationsCourse}(QString nomCourse);
+00173     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a1b23fda62742f2dd17652d3abcb33dd6}{mettreAJourNbArriveesNonClassees}(\textcolor{keywordtype}{int} nbArrivee);
+00174     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a3d786cb4b5c5e3a4bd566f19409601d5}{mettreAJourNbArriveesClassees}(\textcolor{keywordtype}{int} nbArrivee);
+00175 
+00176     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_a1e8e6d42ec7397a619940bc7bec4a6ca}{quitterDialog}();
+00177     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_chrono_cross_aca8b5d6683a3ab0018066ec16968f3f3}{supprimerPremierTemps}();
+00178 
+00179 signals:
+00180 
+00181 
+00182 \};
+00183 
+00184 \textcolor{preprocessor}{#endif // IHMCHRONOCROSS\_H}
+\end{DoxyCode}

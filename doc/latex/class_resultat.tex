@@ -1,0 +1,111 @@
+\hypertarget{class_resultat}{}\subsection{Référence de la classe Resultat}
+\label{class_resultat}\index{Resultat@{Resultat}}
+
+
+{\ttfamily \#include $<$resultat.\+h$>$}
+
+
+
+Graphe de collaboration de Resultat\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_resultat__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_resultat_a57e458f7abfc7463786ae9212bf55cd5}{Resultat} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_resultat}{Resultat}. \end{DoxyCompactList}\item 
+\hyperlink{class_resultat_ae159333a3c5b89b8f307086bac618d7c}{$\sim$\+Resultat} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_resultat_a25f2253e282cbedcd012c8496e219d86}{B\+DD}
+\begin{DoxyCompactList}\small\item\em agrégation \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} \end{DoxyCompactList}\item 
+\hyperlink{class_coureur}{Coureur} $\ast$ \hyperlink{class_resultat_a89183a87b7855a9b7e3b628e2f689982}{coureur}
+\begin{DoxyCompactList}\small\item\em association \hyperlink{class_coureur}{Coureur} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_resultat_a57e458f7abfc7463786ae9212bf55cd5}\label{class_resultat_a57e458f7abfc7463786ae9212bf55cd5}} 
+\index{Resultat@{Resultat}!Resultat@{Resultat}}
+\index{Resultat@{Resultat}!Resultat@{Resultat}}
+\paragraph{\texorpdfstring{Resultat()}{Resultat()}}
+{\footnotesize\ttfamily Resultat\+::\+Resultat (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_object}{Q\+Object} $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\hyperlink{class_resultat}{Resultat}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \hyperlink{class_q_object}{Q\+Object} Adresse de l\textquotesingle{}objet Qt parent \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_resultat_a25f2253e282cbedcd012c8496e219d86}{B\+DD}, \hyperlink{class_base_de_donnees_ab2e092285ccc0ee1cce61a1774218561}{Base\+De\+Donnees\+::connecter()}, \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{Base\+De\+Donnees\+::est\+Connecte()}, et \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}.
+
+
+\begin{DoxyCode}
+00022                                   : \hyperlink{class_q_object}{QObject}(parent)
+00023 \{
+00024     \hyperlink{class_resultat_a25f2253e282cbedcd012c8496e219d86}{BDD} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}();
+00025     \textcolor{keywordflow}{if}(!\hyperlink{class_resultat_a25f2253e282cbedcd012c8496e219d86}{BDD}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}())
+00026         \hyperlink{class_resultat_a25f2253e282cbedcd012c8496e219d86}{BDD}->\hyperlink{class_base_de_donnees_ab2e092285ccc0ee1cce61a1774218561}{connecter}(\textcolor{stringliteral}{"Resultats-Cross"});
+00027     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Etat connection BDD : "} << \hyperlink{class_resultat_a25f2253e282cbedcd012c8496e219d86}{BDD}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}();
+00028 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_resultat_ae159333a3c5b89b8f307086bac618d7c}\label{class_resultat_ae159333a3c5b89b8f307086bac618d7c}} 
+\index{Resultat@{Resultat}!````~Resultat@{$\sim$\+Resultat}}
+\index{````~Resultat@{$\sim$\+Resultat}!Resultat@{Resultat}}
+\paragraph{\texorpdfstring{$\sim$\+Resultat()}{~Resultat()}}
+{\footnotesize\ttfamily Resultat\+::$\sim$\+Resultat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+
+\begin{DoxyCode}
+00031 \{
+00032     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}();
+00033     qDebug() << Q\_FUNC\_INFO;
+00034 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_resultat_a25f2253e282cbedcd012c8496e219d86}\label{class_resultat_a25f2253e282cbedcd012c8496e219d86}} 
+\index{Resultat@{Resultat}!B\+DD@{B\+DD}}
+\index{B\+DD@{B\+DD}!Resultat@{Resultat}}
+\paragraph{\texorpdfstring{B\+DD}{BDD}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Resultat\+::\+B\+DD\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+agrégation \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} 
+
+
+
+Référencé par \hyperlink{class_resultat_a57e458f7abfc7463786ae9212bf55cd5}{Resultat()}.
+
+\mbox{\Hypertarget{class_resultat_a89183a87b7855a9b7e3b628e2f689982}\label{class_resultat_a89183a87b7855a9b7e3b628e2f689982}} 
+\index{Resultat@{Resultat}!coureur@{coureur}}
+\index{coureur@{coureur}!Resultat@{Resultat}}
+\paragraph{\texorpdfstring{coureur}{coureur}}
+{\footnotesize\ttfamily \hyperlink{class_coureur}{Coureur}$\ast$ Resultat\+::coureur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+association \hyperlink{class_coureur}{Coureur} 
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{resultat_8h}{resultat.\+h}\item 
+\hyperlink{resultat_8cpp}{resultat.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,310 @@
+\hypertarget{ihmchronocross_8h}{}\subsection{Référence du fichier ihmchronocross.\+h}
+\label{ihmchronocross_8h}\index{ihmchronocross.\+h@{ihmchronocross.\+h}}
+
+
+Déclaration de la classe \hyperlink{class_i_h_m_chrono_cross}{I\+H\+M\+Chrono\+Cross}.  
+
+
+{\ttfamily \#include $<$Qt\+Widgets$>$}\newline
+{\ttfamily \#include $<$Q\+Main\+Window$>$}\newline
+{\ttfamily \#include $<$Q\+Debug$>$}\newline
+{\ttfamily \#include $<$Q\+Timer$>$}\newline
+{\ttfamily \#include $<$Q\+Dialog$>$}\newline
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_i_h_m_chrono_cross}{I\+H\+M\+Chrono\+Cross}
+\begin{DoxyCompactList}\small\item\em La fenêtre principale de l\textquotesingle{}application Chrono-\/\+Cross. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ihmchronocross_8h_a407f067284fd7ac16426ac29cbfcd356}{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+L\+A\+B\+EL}~20
+\item 
+\#define \hyperlink{ihmchronocross_8h_a93c1a7628e080979c2ae8f83b6c69606}{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+B\+U\+T\+ON}~20
+\item 
+\#define \hyperlink{ihmchronocross_8h_a4169235bca6fe9370d9b368912e62af0}{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+L\+I\+S\+TE}~16
+\item 
+\#define \hyperlink{ihmchronocross_8h_a93033547a126f30c05119d40b51384da}{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+I\+N\+FO}~18
+\item 
+\#define \hyperlink{ihmchronocross_8h_a79ebe381f5864a987975ff0072b37ae7}{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+S\+U\+P\+P\+R\+I\+M\+ER}~15
+\item 
+\#define \hyperlink{ihmchronocross_8h_ad9c2b9995bc14e73ab20cdd74252126d}{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+C\+L\+A\+S\+S\+E\+M\+E\+NT}~12
+\item 
+\#define \hyperlink{ihmchronocross_8h_aa8bee638aa78f9b332485225ecc8e75e}{I\+M\+A\+G\+E\+C\+H\+R\+O\+N\+O\+C\+R\+O\+SS}~\char`\"{}../image/icone-\/chrono-\/cross.\+png\char`\"{}
+\item 
+\#define \hyperlink{ihmchronocross_8h_a042b3fb5b102c16d90d2d9ad6d76b8de}{C\+L\+A\+S\+S\+E\+M\+E\+NT}~0
+\item 
+\#define \hyperlink{ihmchronocross_8h_ad67b7981a5b5c479cd25328af2db4a3a}{T\+E\+M\+PS}~1
+\item 
+\#define \hyperlink{ihmchronocross_8h_a4d7a994c9b4a9bbef72bf043736e9481}{D\+O\+S\+S\+A\+RD}~2
+\item 
+\#define \hyperlink{ihmchronocross_8h_add3424f8ad3c4224de29631acdf57899}{C\+O\+L\+O\+N\+N\+E\+\_\+\+T\+E\+M\+PS}~0
+\item 
+\#define \hyperlink{ihmchronocross_8h_a9b0cee5420830f3ca3f8561b4c1e64db}{C\+O\+L\+O\+N\+N\+E\+\_\+\+D\+O\+S\+S\+A\+RD}~1
+\item 
+\#define \hyperlink{ihmchronocross_8h_aeee76385895c145ef5a633e6c6812603}{C\+O\+L\+O\+N\+N\+E\+\_\+\+N\+OM}~2
+\item 
+\#define \hyperlink{ihmchronocross_8h_a5d6f240d26209cd66db8aa5e1aac62f9}{C\+O\+L\+O\+N\+N\+E\+\_\+\+P\+R\+E\+N\+OM}~3
+\item 
+\#define \hyperlink{ihmchronocross_8h_a114680edc01528f77bb689b0a2ca18a2}{C\+O\+L\+O\+N\+N\+E\+\_\+\+C\+L\+A\+S\+SE}~4
+\item 
+\#define \hyperlink{ihmchronocross_8h_a156e68578bd6e6dfe628622b22b256af}{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+T\+E\+M\+PS}~0
+\item 
+\#define \hyperlink{ihmchronocross_8h_a11e2b6314d0646876d7a9ef2b583a521}{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+D\+O\+S\+S\+A\+RD}~1
+\item 
+\#define \hyperlink{ihmchronocross_8h_a71b99ea06ae916bcd158edbd441c8c24}{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+N\+OM}~2
+\item 
+\#define \hyperlink{ihmchronocross_8h_a68fd2611ad0ef66da1a71726675067e7}{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+P\+R\+E\+N\+OM}~3
+\item 
+\#define \hyperlink{ihmchronocross_8h_a104dfa4cfc656a690caaec36fd4d3e2d}{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+C\+L\+A\+S\+SE}~4
+\item 
+\#define \hyperlink{ihmchronocross_8h_a87a6eb8b1f31f4dda05bfb0016494b7f}{N\+U\+M\+E\+R\+O\+\_\+\+D\+O\+S\+S\+A\+R\+D\+\_\+\+I\+N\+V\+A\+L\+I\+DE}~0
+\item 
+\#define \hyperlink{ihmchronocross_8h_a999a34fef9415ff9b78e8dbc638a6059}{D\+O\+S\+S\+A\+R\+D\+\_\+\+V\+A\+L\+I\+D\+E\+\_\+\+C\+O\+U\+R\+S\+E\+\_\+\+I\+N\+V\+A\+L\+I\+DE}~1
+\item 
+\#define \hyperlink{ihmchronocross_8h_aa425ec476e56ed545a81aa56a00c421f}{D\+O\+S\+S\+A\+R\+D\+\_\+\+D\+E\+J\+A\+\_\+\+A\+R\+R\+I\+VE}~2
+\item 
+\#define \hyperlink{ihmchronocross_8h_ac8b24d7d16d36259c7903acfe1ad363b}{D\+O\+S\+S\+A\+R\+D\+\_\+\+V\+A\+L\+I\+DE}~3
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Déclaration de la classe \hyperlink{class_i_h_m_chrono_cross}{I\+H\+M\+Chrono\+Cross}. 
+
+\begin{DoxyAuthor}{Auteur}
+Michael Andréo 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des macros}
+\mbox{\Hypertarget{ihmchronocross_8h_a042b3fb5b102c16d90d2d9ad6d76b8de}\label{ihmchronocross_8h_a042b3fb5b102c16d90d2d9ad6d76b8de}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!C\+L\+A\+S\+S\+E\+M\+E\+NT@{C\+L\+A\+S\+S\+E\+M\+E\+NT}}
+\index{C\+L\+A\+S\+S\+E\+M\+E\+NT@{C\+L\+A\+S\+S\+E\+M\+E\+NT}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{C\+L\+A\+S\+S\+E\+M\+E\+NT}{CLASSEMENT}}
+{\footnotesize\ttfamily \#define C\+L\+A\+S\+S\+E\+M\+E\+NT~0}
+
+\mbox{\Hypertarget{ihmchronocross_8h_a114680edc01528f77bb689b0a2ca18a2}\label{ihmchronocross_8h_a114680edc01528f77bb689b0a2ca18a2}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!C\+O\+L\+O\+N\+N\+E\+\_\+\+C\+L\+A\+S\+SE@{C\+O\+L\+O\+N\+N\+E\+\_\+\+C\+L\+A\+S\+SE}}
+\index{C\+O\+L\+O\+N\+N\+E\+\_\+\+C\+L\+A\+S\+SE@{C\+O\+L\+O\+N\+N\+E\+\_\+\+C\+L\+A\+S\+SE}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{C\+O\+L\+O\+N\+N\+E\+\_\+\+C\+L\+A\+S\+SE}{COLONNE\_CLASSE}}
+{\footnotesize\ttfamily \#define C\+O\+L\+O\+N\+N\+E\+\_\+\+C\+L\+A\+S\+SE~4}
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_ae1510779a1efa3defecb517467e84f91}{I\+H\+M\+Gestion\+Cross\+::afficher\+Table()}, \hyperlink{class_i_h_m_gestion_cross_aa3e6f06ff2f4e724e2f0688528bcf386}{I\+H\+M\+Gestion\+Cross\+::ajouter\+Nouveau\+Coureur\+Table()}, \hyperlink{class_i_h_m_resultats_cross_a5f4a74c4c024aaa9d39050ac176c9e37}{I\+H\+M\+Resultats\+Cross\+::classer\+Arrivee()}, et \hyperlink{class_i_h_m_chrono_cross_a5e9b561659ba63d2739335b8ab432cbf}{I\+H\+M\+Chrono\+Cross\+::classer\+Arrivee()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_a9b0cee5420830f3ca3f8561b4c1e64db}\label{ihmchronocross_8h_a9b0cee5420830f3ca3f8561b4c1e64db}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!C\+O\+L\+O\+N\+N\+E\+\_\+\+D\+O\+S\+S\+A\+RD@{C\+O\+L\+O\+N\+N\+E\+\_\+\+D\+O\+S\+S\+A\+RD}}
+\index{C\+O\+L\+O\+N\+N\+E\+\_\+\+D\+O\+S\+S\+A\+RD@{C\+O\+L\+O\+N\+N\+E\+\_\+\+D\+O\+S\+S\+A\+RD}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{C\+O\+L\+O\+N\+N\+E\+\_\+\+D\+O\+S\+S\+A\+RD}{COLONNE\_DOSSARD}}
+{\footnotesize\ttfamily \#define C\+O\+L\+O\+N\+N\+E\+\_\+\+D\+O\+S\+S\+A\+RD~1}
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a5e9b561659ba63d2739335b8ab432cbf}{I\+H\+M\+Chrono\+Cross\+::classer\+Arrivee()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_aeee76385895c145ef5a633e6c6812603}\label{ihmchronocross_8h_aeee76385895c145ef5a633e6c6812603}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!C\+O\+L\+O\+N\+N\+E\+\_\+\+N\+OM@{C\+O\+L\+O\+N\+N\+E\+\_\+\+N\+OM}}
+\index{C\+O\+L\+O\+N\+N\+E\+\_\+\+N\+OM@{C\+O\+L\+O\+N\+N\+E\+\_\+\+N\+OM}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{C\+O\+L\+O\+N\+N\+E\+\_\+\+N\+OM}{COLONNE\_NOM}}
+{\footnotesize\ttfamily \#define C\+O\+L\+O\+N\+N\+E\+\_\+\+N\+OM~2}
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_ae1510779a1efa3defecb517467e84f91}{I\+H\+M\+Gestion\+Cross\+::afficher\+Table()}, \hyperlink{class_i_h_m_gestion_cross_aa3e6f06ff2f4e724e2f0688528bcf386}{I\+H\+M\+Gestion\+Cross\+::ajouter\+Nouveau\+Coureur\+Table()}, \hyperlink{class_i_h_m_resultats_cross_a5f4a74c4c024aaa9d39050ac176c9e37}{I\+H\+M\+Resultats\+Cross\+::classer\+Arrivee()}, \hyperlink{class_i_h_m_chrono_cross_a5e9b561659ba63d2739335b8ab432cbf}{I\+H\+M\+Chrono\+Cross\+::classer\+Arrivee()}, \hyperlink{class_i_h_m_gestion_cross_a3c96fb9d92e9392ea83b380c3648bf55}{I\+H\+M\+Gestion\+Cross\+::mettre\+A\+Jour\+Table\+Inscrit()}, et \hyperlink{class_i_h_m_gestion_cross_ae555b32462455a2cdaf0f8dc2e016d14}{I\+H\+M\+Gestion\+Cross\+::selectionner\+Course()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_a5d6f240d26209cd66db8aa5e1aac62f9}\label{ihmchronocross_8h_a5d6f240d26209cd66db8aa5e1aac62f9}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!C\+O\+L\+O\+N\+N\+E\+\_\+\+P\+R\+E\+N\+OM@{C\+O\+L\+O\+N\+N\+E\+\_\+\+P\+R\+E\+N\+OM}}
+\index{C\+O\+L\+O\+N\+N\+E\+\_\+\+P\+R\+E\+N\+OM@{C\+O\+L\+O\+N\+N\+E\+\_\+\+P\+R\+E\+N\+OM}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{C\+O\+L\+O\+N\+N\+E\+\_\+\+P\+R\+E\+N\+OM}{COLONNE\_PRENOM}}
+{\footnotesize\ttfamily \#define C\+O\+L\+O\+N\+N\+E\+\_\+\+P\+R\+E\+N\+OM~3}
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_ae1510779a1efa3defecb517467e84f91}{I\+H\+M\+Gestion\+Cross\+::afficher\+Table()}, \hyperlink{class_i_h_m_gestion_cross_aa3e6f06ff2f4e724e2f0688528bcf386}{I\+H\+M\+Gestion\+Cross\+::ajouter\+Nouveau\+Coureur\+Table()}, \hyperlink{class_i_h_m_resultats_cross_a5f4a74c4c024aaa9d39050ac176c9e37}{I\+H\+M\+Resultats\+Cross\+::classer\+Arrivee()}, \hyperlink{class_i_h_m_chrono_cross_a5e9b561659ba63d2739335b8ab432cbf}{I\+H\+M\+Chrono\+Cross\+::classer\+Arrivee()}, \hyperlink{class_i_h_m_gestion_cross_a3c96fb9d92e9392ea83b380c3648bf55}{I\+H\+M\+Gestion\+Cross\+::mettre\+A\+Jour\+Table\+Inscrit()}, et \hyperlink{class_i_h_m_gestion_cross_ae555b32462455a2cdaf0f8dc2e016d14}{I\+H\+M\+Gestion\+Cross\+::selectionner\+Course()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_add3424f8ad3c4224de29631acdf57899}\label{ihmchronocross_8h_add3424f8ad3c4224de29631acdf57899}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!C\+O\+L\+O\+N\+N\+E\+\_\+\+T\+E\+M\+PS@{C\+O\+L\+O\+N\+N\+E\+\_\+\+T\+E\+M\+PS}}
+\index{C\+O\+L\+O\+N\+N\+E\+\_\+\+T\+E\+M\+PS@{C\+O\+L\+O\+N\+N\+E\+\_\+\+T\+E\+M\+PS}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{C\+O\+L\+O\+N\+N\+E\+\_\+\+T\+E\+M\+PS}{COLONNE\_TEMPS}}
+{\footnotesize\ttfamily \#define C\+O\+L\+O\+N\+N\+E\+\_\+\+T\+E\+M\+PS~0}
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a5e9b561659ba63d2739335b8ab432cbf}{I\+H\+M\+Chrono\+Cross\+::classer\+Arrivee()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_a4d7a994c9b4a9bbef72bf043736e9481}\label{ihmchronocross_8h_a4d7a994c9b4a9bbef72bf043736e9481}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!D\+O\+S\+S\+A\+RD@{D\+O\+S\+S\+A\+RD}}
+\index{D\+O\+S\+S\+A\+RD@{D\+O\+S\+S\+A\+RD}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{D\+O\+S\+S\+A\+RD}{DOSSARD}}
+{\footnotesize\ttfamily \#define D\+O\+S\+S\+A\+RD~2}
+
+\mbox{\Hypertarget{ihmchronocross_8h_aa425ec476e56ed545a81aa56a00c421f}\label{ihmchronocross_8h_aa425ec476e56ed545a81aa56a00c421f}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!D\+O\+S\+S\+A\+R\+D\+\_\+\+D\+E\+J\+A\+\_\+\+A\+R\+R\+I\+VE@{D\+O\+S\+S\+A\+R\+D\+\_\+\+D\+E\+J\+A\+\_\+\+A\+R\+R\+I\+VE}}
+\index{D\+O\+S\+S\+A\+R\+D\+\_\+\+D\+E\+J\+A\+\_\+\+A\+R\+R\+I\+VE@{D\+O\+S\+S\+A\+R\+D\+\_\+\+D\+E\+J\+A\+\_\+\+A\+R\+R\+I\+VE}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{D\+O\+S\+S\+A\+R\+D\+\_\+\+D\+E\+J\+A\+\_\+\+A\+R\+R\+I\+VE}{DOSSARD\_DEJA\_ARRIVE}}
+{\footnotesize\ttfamily \#define D\+O\+S\+S\+A\+R\+D\+\_\+\+D\+E\+J\+A\+\_\+\+A\+R\+R\+I\+VE~2}
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a9f7f1ad130b60300a879694b6234f161}{I\+H\+M\+Chrono\+Cross\+::associer\+Arrivee\+Dossard()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_ac8b24d7d16d36259c7903acfe1ad363b}\label{ihmchronocross_8h_ac8b24d7d16d36259c7903acfe1ad363b}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!D\+O\+S\+S\+A\+R\+D\+\_\+\+V\+A\+L\+I\+DE@{D\+O\+S\+S\+A\+R\+D\+\_\+\+V\+A\+L\+I\+DE}}
+\index{D\+O\+S\+S\+A\+R\+D\+\_\+\+V\+A\+L\+I\+DE@{D\+O\+S\+S\+A\+R\+D\+\_\+\+V\+A\+L\+I\+DE}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{D\+O\+S\+S\+A\+R\+D\+\_\+\+V\+A\+L\+I\+DE}{DOSSARD\_VALIDE}}
+{\footnotesize\ttfamily \#define D\+O\+S\+S\+A\+R\+D\+\_\+\+V\+A\+L\+I\+DE~3}
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a9f7f1ad130b60300a879694b6234f161}{I\+H\+M\+Chrono\+Cross\+::associer\+Arrivee\+Dossard()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_a999a34fef9415ff9b78e8dbc638a6059}\label{ihmchronocross_8h_a999a34fef9415ff9b78e8dbc638a6059}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!D\+O\+S\+S\+A\+R\+D\+\_\+\+V\+A\+L\+I\+D\+E\+\_\+\+C\+O\+U\+R\+S\+E\+\_\+\+I\+N\+V\+A\+L\+I\+DE@{D\+O\+S\+S\+A\+R\+D\+\_\+\+V\+A\+L\+I\+D\+E\+\_\+\+C\+O\+U\+R\+S\+E\+\_\+\+I\+N\+V\+A\+L\+I\+DE}}
+\index{D\+O\+S\+S\+A\+R\+D\+\_\+\+V\+A\+L\+I\+D\+E\+\_\+\+C\+O\+U\+R\+S\+E\+\_\+\+I\+N\+V\+A\+L\+I\+DE@{D\+O\+S\+S\+A\+R\+D\+\_\+\+V\+A\+L\+I\+D\+E\+\_\+\+C\+O\+U\+R\+S\+E\+\_\+\+I\+N\+V\+A\+L\+I\+DE}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{D\+O\+S\+S\+A\+R\+D\+\_\+\+V\+A\+L\+I\+D\+E\+\_\+\+C\+O\+U\+R\+S\+E\+\_\+\+I\+N\+V\+A\+L\+I\+DE}{DOSSARD\_VALIDE\_COURSE\_INVALIDE}}
+{\footnotesize\ttfamily \#define D\+O\+S\+S\+A\+R\+D\+\_\+\+V\+A\+L\+I\+D\+E\+\_\+\+C\+O\+U\+R\+S\+E\+\_\+\+I\+N\+V\+A\+L\+I\+DE~1}
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a9f7f1ad130b60300a879694b6234f161}{I\+H\+M\+Chrono\+Cross\+::associer\+Arrivee\+Dossard()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_aa8bee638aa78f9b332485225ecc8e75e}\label{ihmchronocross_8h_aa8bee638aa78f9b332485225ecc8e75e}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!I\+M\+A\+G\+E\+C\+H\+R\+O\+N\+O\+C\+R\+O\+SS@{I\+M\+A\+G\+E\+C\+H\+R\+O\+N\+O\+C\+R\+O\+SS}}
+\index{I\+M\+A\+G\+E\+C\+H\+R\+O\+N\+O\+C\+R\+O\+SS@{I\+M\+A\+G\+E\+C\+H\+R\+O\+N\+O\+C\+R\+O\+SS}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{I\+M\+A\+G\+E\+C\+H\+R\+O\+N\+O\+C\+R\+O\+SS}{IMAGECHRONOCROSS}}
+{\footnotesize\ttfamily \#define I\+M\+A\+G\+E\+C\+H\+R\+O\+N\+O\+C\+R\+O\+SS~\char`\"{}../image/icone-\/chrono-\/cross.\+png\char`\"{}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a479fc90733fba3e65fb06aa4a3adc02e}{I\+H\+M\+Chrono\+Cross\+::\+I\+H\+M\+Chrono\+Cross()}, et \hyperlink{class_i_h_m_gestion_cross_a2c62fd83326a87456a403f46acc408c8}{I\+H\+M\+Gestion\+Cross\+::\+I\+H\+M\+Gestion\+Cross()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_a104dfa4cfc656a690caaec36fd4d3e2d}\label{ihmchronocross_8h_a104dfa4cfc656a690caaec36fd4d3e2d}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+C\+L\+A\+S\+SE@{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+C\+L\+A\+S\+SE}}
+\index{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+C\+L\+A\+S\+SE@{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+C\+L\+A\+S\+SE}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+C\+L\+A\+S\+SE}{INFO\_COUREUR\_CLASSE}}
+{\footnotesize\ttfamily \#define I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+C\+L\+A\+S\+SE~4}
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_ae1510779a1efa3defecb517467e84f91}{I\+H\+M\+Gestion\+Cross\+::afficher\+Table()}, \hyperlink{class_i_h_m_resultats_cross_a5f4a74c4c024aaa9d39050ac176c9e37}{I\+H\+M\+Resultats\+Cross\+::classer\+Arrivee()}, \hyperlink{class_i_h_m_chrono_cross_a5e9b561659ba63d2739335b8ab432cbf}{I\+H\+M\+Chrono\+Cross\+::classer\+Arrivee()}, et \hyperlink{class_i_h_m_gestion_cross_ad71963d500fd61995fdae94e833db163}{I\+H\+M\+Gestion\+Cross\+::selectionner\+Coureur()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_a11e2b6314d0646876d7a9ef2b583a521}\label{ihmchronocross_8h_a11e2b6314d0646876d7a9ef2b583a521}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+D\+O\+S\+S\+A\+RD@{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+D\+O\+S\+S\+A\+RD}}
+\index{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+D\+O\+S\+S\+A\+RD@{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+D\+O\+S\+S\+A\+RD}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+D\+O\+S\+S\+A\+RD}{INFO\_COUREUR\_DOSSARD}}
+{\footnotesize\ttfamily \#define I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+D\+O\+S\+S\+A\+RD~1}
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a5e9b561659ba63d2739335b8ab432cbf}{I\+H\+M\+Chrono\+Cross\+::classer\+Arrivee()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_a71b99ea06ae916bcd158edbd441c8c24}\label{ihmchronocross_8h_a71b99ea06ae916bcd158edbd441c8c24}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+N\+OM@{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+N\+OM}}
+\index{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+N\+OM@{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+N\+OM}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+N\+OM}{INFO\_COUREUR\_NOM}}
+{\footnotesize\ttfamily \#define I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+N\+OM~2}
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_ae1510779a1efa3defecb517467e84f91}{I\+H\+M\+Gestion\+Cross\+::afficher\+Table()}, \hyperlink{class_i_h_m_resultats_cross_a5f4a74c4c024aaa9d39050ac176c9e37}{I\+H\+M\+Resultats\+Cross\+::classer\+Arrivee()}, \hyperlink{class_i_h_m_chrono_cross_a5e9b561659ba63d2739335b8ab432cbf}{I\+H\+M\+Chrono\+Cross\+::classer\+Arrivee()}, et \hyperlink{class_i_h_m_gestion_cross_ad71963d500fd61995fdae94e833db163}{I\+H\+M\+Gestion\+Cross\+::selectionner\+Coureur()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_a68fd2611ad0ef66da1a71726675067e7}\label{ihmchronocross_8h_a68fd2611ad0ef66da1a71726675067e7}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+P\+R\+E\+N\+OM@{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+P\+R\+E\+N\+OM}}
+\index{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+P\+R\+E\+N\+OM@{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+P\+R\+E\+N\+OM}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+P\+R\+E\+N\+OM}{INFO\_COUREUR\_PRENOM}}
+{\footnotesize\ttfamily \#define I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+P\+R\+E\+N\+OM~3}
+
+
+
+Référencé par \hyperlink{class_i_h_m_gestion_cross_ae1510779a1efa3defecb517467e84f91}{I\+H\+M\+Gestion\+Cross\+::afficher\+Table()}, \hyperlink{class_i_h_m_resultats_cross_a5f4a74c4c024aaa9d39050ac176c9e37}{I\+H\+M\+Resultats\+Cross\+::classer\+Arrivee()}, \hyperlink{class_i_h_m_chrono_cross_a5e9b561659ba63d2739335b8ab432cbf}{I\+H\+M\+Chrono\+Cross\+::classer\+Arrivee()}, et \hyperlink{class_i_h_m_gestion_cross_ad71963d500fd61995fdae94e833db163}{I\+H\+M\+Gestion\+Cross\+::selectionner\+Coureur()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_a156e68578bd6e6dfe628622b22b256af}\label{ihmchronocross_8h_a156e68578bd6e6dfe628622b22b256af}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+T\+E\+M\+PS@{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+T\+E\+M\+PS}}
+\index{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+T\+E\+M\+PS@{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+T\+E\+M\+PS}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+T\+E\+M\+PS}{INFO\_COUREUR\_TEMPS}}
+{\footnotesize\ttfamily \#define I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+T\+E\+M\+PS~0}
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a5e9b561659ba63d2739335b8ab432cbf}{I\+H\+M\+Chrono\+Cross\+::classer\+Arrivee()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_a87a6eb8b1f31f4dda05bfb0016494b7f}\label{ihmchronocross_8h_a87a6eb8b1f31f4dda05bfb0016494b7f}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!N\+U\+M\+E\+R\+O\+\_\+\+D\+O\+S\+S\+A\+R\+D\+\_\+\+I\+N\+V\+A\+L\+I\+DE@{N\+U\+M\+E\+R\+O\+\_\+\+D\+O\+S\+S\+A\+R\+D\+\_\+\+I\+N\+V\+A\+L\+I\+DE}}
+\index{N\+U\+M\+E\+R\+O\+\_\+\+D\+O\+S\+S\+A\+R\+D\+\_\+\+I\+N\+V\+A\+L\+I\+DE@{N\+U\+M\+E\+R\+O\+\_\+\+D\+O\+S\+S\+A\+R\+D\+\_\+\+I\+N\+V\+A\+L\+I\+DE}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{N\+U\+M\+E\+R\+O\+\_\+\+D\+O\+S\+S\+A\+R\+D\+\_\+\+I\+N\+V\+A\+L\+I\+DE}{NUMERO\_DOSSARD\_INVALIDE}}
+{\footnotesize\ttfamily \#define N\+U\+M\+E\+R\+O\+\_\+\+D\+O\+S\+S\+A\+R\+D\+\_\+\+I\+N\+V\+A\+L\+I\+DE~0}
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a9f7f1ad130b60300a879694b6234f161}{I\+H\+M\+Chrono\+Cross\+::associer\+Arrivee\+Dossard()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_a93c1a7628e080979c2ae8f83b6c69606}\label{ihmchronocross_8h_a93c1a7628e080979c2ae8f83b6c69606}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+B\+U\+T\+ON@{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+B\+U\+T\+ON}}
+\index{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+B\+U\+T\+ON@{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+B\+U\+T\+ON}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+B\+U\+T\+ON}{TAILLETEXTEBUTON}}
+{\footnotesize\ttfamily \#define T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+B\+U\+T\+ON~20}
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a479fc90733fba3e65fb06aa4a3adc02e}{I\+H\+M\+Chrono\+Cross\+::\+I\+H\+M\+Chrono\+Cross()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_ad9c2b9995bc14e73ab20cdd74252126d}\label{ihmchronocross_8h_ad9c2b9995bc14e73ab20cdd74252126d}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+C\+L\+A\+S\+S\+E\+M\+E\+NT@{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+C\+L\+A\+S\+S\+E\+M\+E\+NT}}
+\index{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+C\+L\+A\+S\+S\+E\+M\+E\+NT@{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+C\+L\+A\+S\+S\+E\+M\+E\+NT}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+C\+L\+A\+S\+S\+E\+M\+E\+NT}{TAILLETEXTECLASSEMENT}}
+{\footnotesize\ttfamily \#define T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+C\+L\+A\+S\+S\+E\+M\+E\+NT~12}
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a41c2ff49d25069f8dfa2a7b3d0606d38}{I\+H\+M\+Chrono\+Cross\+::personnaliser\+Affichage\+Arrivee()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_a93033547a126f30c05119d40b51384da}\label{ihmchronocross_8h_a93033547a126f30c05119d40b51384da}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+I\+N\+FO@{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+I\+N\+FO}}
+\index{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+I\+N\+FO@{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+I\+N\+FO}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+I\+N\+FO}{TAILLETEXTEINFO}}
+{\footnotesize\ttfamily \#define T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+I\+N\+FO~18}
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a479fc90733fba3e65fb06aa4a3adc02e}{I\+H\+M\+Chrono\+Cross\+::\+I\+H\+M\+Chrono\+Cross()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_a407f067284fd7ac16426ac29cbfcd356}\label{ihmchronocross_8h_a407f067284fd7ac16426ac29cbfcd356}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+L\+A\+B\+EL@{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+L\+A\+B\+EL}}
+\index{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+L\+A\+B\+EL@{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+L\+A\+B\+EL}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+L\+A\+B\+EL}{TAILLETEXTELABEL}}
+{\footnotesize\ttfamily \#define T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+L\+A\+B\+EL~20}
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a479fc90733fba3e65fb06aa4a3adc02e}{I\+H\+M\+Chrono\+Cross\+::\+I\+H\+M\+Chrono\+Cross()}, et \hyperlink{class_i_h_m_resultats_cross_a94afa0356ebc98e497dfecca3e1bb00b}{I\+H\+M\+Resultats\+Cross\+::\+I\+H\+M\+Resultats\+Cross()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_a4169235bca6fe9370d9b368912e62af0}\label{ihmchronocross_8h_a4169235bca6fe9370d9b368912e62af0}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+L\+I\+S\+TE@{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+L\+I\+S\+TE}}
+\index{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+L\+I\+S\+TE@{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+L\+I\+S\+TE}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+L\+I\+S\+TE}{TAILLETEXTELISTE}}
+{\footnotesize\ttfamily \#define T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+L\+I\+S\+TE~16}
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a479fc90733fba3e65fb06aa4a3adc02e}{I\+H\+M\+Chrono\+Cross\+::\+I\+H\+M\+Chrono\+Cross()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_a79ebe381f5864a987975ff0072b37ae7}\label{ihmchronocross_8h_a79ebe381f5864a987975ff0072b37ae7}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+S\+U\+P\+P\+R\+I\+M\+ER@{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+S\+U\+P\+P\+R\+I\+M\+ER}}
+\index{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+S\+U\+P\+P\+R\+I\+M\+ER@{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+S\+U\+P\+P\+R\+I\+M\+ER}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+S\+U\+P\+P\+R\+I\+M\+ER}{TAILLETEXTESUPPRIMER}}
+{\footnotesize\ttfamily \#define T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+S\+U\+P\+P\+R\+I\+M\+ER~15}
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a479fc90733fba3e65fb06aa4a3adc02e}{I\+H\+M\+Chrono\+Cross\+::\+I\+H\+M\+Chrono\+Cross()}.
+
+\mbox{\Hypertarget{ihmchronocross_8h_ad67b7981a5b5c479cd25328af2db4a3a}\label{ihmchronocross_8h_ad67b7981a5b5c479cd25328af2db4a3a}} 
+\index{ihmchronocross.\+h@{ihmchronocross.\+h}!T\+E\+M\+PS@{T\+E\+M\+PS}}
+\index{T\+E\+M\+PS@{T\+E\+M\+PS}!ihmchronocross.\+h@{ihmchronocross.\+h}}
+\paragraph{\texorpdfstring{T\+E\+M\+PS}{TEMPS}}
+{\footnotesize\ttfamily \#define T\+E\+M\+PS~1}
+

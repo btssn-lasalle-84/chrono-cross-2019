@@ -1,0 +1,6 @@
+<map id="IHMResultatsCross" name="IHMResultatsCross">
+<area shape="rect" id="node2" href="$class_q_widget.html" title="{QWidget\n||}" alt="" coords="5,573,79,650"/>
+<area shape="rect" id="node3" href="$class_base_de_donnees.html" title="{BaseDeDonnees\n|&#45; db\l&#45; mutex\l&#45; typeBase\l&#45; nbAcces\l|+ estConnecte()\l+ connecter()\l+ estOuvert()\l+ ouvrir()\l+ executer()\l+ recuperer()\l+ recuperer()\l+ recuperer()\l+ recuperer()\l+ getInstance()\l+ detruireInstance()\l&#45; BaseDeDonnees()\l&#45; ~BaseDeDonnees()\l}" alt="" coords="55,132,200,429"/>
+<area shape="rect" id="node5" href="$class_coureur.html" title="Gérer les coureurs. " alt="" coords="189,492,359,731"/>
+<area shape="rect" id="node4" href="$class_q_object.html" title="{QObject\n||}" alt="" coords="212,5,283,83"/>
+</map>

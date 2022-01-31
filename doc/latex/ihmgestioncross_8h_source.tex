@@ -1,0 +1,173 @@
+\hypertarget{ihmgestioncross_8h_source}{}\subsection{ihmgestioncross.\+h}
+\label{ihmgestioncross_8h_source}\index{ihmgestioncross.\+h@{ihmgestioncross.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef IHMGESTIONCROSS\_H}
+00002 \textcolor{preprocessor}{#define IHMGESTIONCROSS\_H}
+00003 
+00011 \textcolor{preprocessor}{#include <QtWidgets>}
+00012 \textcolor{preprocessor}{#include <QMainWindow>}
+00013 \textcolor{preprocessor}{#include <QDebug>}
+00014 \textcolor{preprocessor}{#include <QDialog>}
+00015 \textcolor{preprocessor}{#include <QLayout>}
+00016 \textcolor{preprocessor}{#include "\hyperlink{gestionbdd_8h}{gestionbdd.h}"}
+00017 
+\Hypertarget{ihmgestioncross_8h_source_l00018}\hyperlink{ihmgestioncross_8h_a7e5d9be785cb8f39015a5b28018e27ae}{00018} \textcolor{preprocessor}{#define FENETRE\_MANIFESTATION   0}
+\Hypertarget{ihmgestioncross_8h_source_l00019}\hyperlink{ihmgestioncross_8h_a33016bbf4e13bffdd4306616fe9d6a0f}{00019} \textcolor{preprocessor}{#define FENETRE\_COURSE          1}
+\Hypertarget{ihmgestioncross_8h_source_l00020}\hyperlink{ihmgestioncross_8h_ac2f4c2b58b7adbfe81ec7b9ee1293213}{00020} \textcolor{preprocessor}{#define FENETRE\_COUREUR         2}
+00021 
+\Hypertarget{ihmgestioncross_8h_source_l00022}\hyperlink{ihmgestioncross_8h_aa8bee638aa78f9b332485225ecc8e75e}{00022} \textcolor{preprocessor}{#define IMAGECHRONOCROSS "../image/icone-chrono-cross.png"}
+00023 
+\Hypertarget{ihmgestioncross_8h_source_l00024}\hyperlink{ihmgestioncross_8h_a36f0e5f0d9b4cfd8ae93abb3c8664bb8}{00024} \textcolor{preprocessor}{#define TAILLETEXTETITRE            20}
+\Hypertarget{ihmgestioncross_8h_source_l00025}\hyperlink{ihmgestioncross_8h_a68398a635337dcf6f32e509fde02ae2e}{00025} \textcolor{preprocessor}{#define TAILLETEXTEGESTION          15}
+\Hypertarget{ihmgestioncross_8h_source_l00026}\hyperlink{ihmgestioncross_8h_a03bd28b9d1b545df618f0ffa2bf27f03}{00026} \textcolor{preprocessor}{#define TAILLETEXTEINSCRIPTION      15}
+\Hypertarget{ihmgestioncross_8h_source_l00027}\hyperlink{ihmgestioncross_8h_a562719681712f3dd8e5b5a158597e78b}{00027} \textcolor{preprocessor}{#define TAILLETEXTEBOUTONTITRE      17}
+\Hypertarget{ihmgestioncross_8h_source_l00028}\hyperlink{ihmgestioncross_8h_a098c492b1e1752f08ae7fc2dcd763840}{00028} \textcolor{preprocessor}{#define TAILLETEXTEBOUTONGESTION    13}
+00029 
+\Hypertarget{ihmgestioncross_8h_source_l00030}\hyperlink{ihmgestioncross_8h_aac159105607582f38d1149244a24f017}{00030} \textcolor{preprocessor}{#define INFO\_COUREUR\_ID             0}
+\Hypertarget{ihmgestioncross_8h_source_l00031}\hyperlink{ihmgestioncross_8h_aadb5aa9454077354c643312a81834cf6}{00031} \textcolor{preprocessor}{#define INFO\_COUREUR\_CATEGORIE      1}
+\Hypertarget{ihmgestioncross_8h_source_l00032}\hyperlink{ihmgestioncross_8h_a104dfa4cfc656a690caaec36fd4d3e2d}{00032} \textcolor{preprocessor}{#define INFO\_COUREUR\_CLASSE         2}
+\Hypertarget{ihmgestioncross_8h_source_l00033}\hyperlink{ihmgestioncross_8h_a2e5435ad2b0c61674b2dad6c0ea46301}{00033} \textcolor{preprocessor}{#define INFO\_COUREUR\_INE            3}
+\Hypertarget{ihmgestioncross_8h_source_l00034}\hyperlink{ihmgestioncross_8h_a71b99ea06ae916bcd158edbd441c8c24}{00034} \textcolor{preprocessor}{#define INFO\_COUREUR\_NOM            4}
+\Hypertarget{ihmgestioncross_8h_source_l00035}\hyperlink{ihmgestioncross_8h_a68fd2611ad0ef66da1a71726675067e7}{00035} \textcolor{preprocessor}{#define INFO\_COUREUR\_PRENOM         5}
+\Hypertarget{ihmgestioncross_8h_source_l00036}\hyperlink{ihmgestioncross_8h_a887f2ea4595905eedb8c2580dad1c276}{00036} \textcolor{preprocessor}{#define INFO\_COUREUR\_DATENAISSANCE  6}
+\Hypertarget{ihmgestioncross_8h_source_l00037}\hyperlink{ihmgestioncross_8h_a3f85ead669b0bcc0b9bf09a92a8dd933}{00037} \textcolor{preprocessor}{#define INFO\_COUREUR\_SEXE           7}
+00038 
+\Hypertarget{ihmgestioncross_8h_source_l00039}\hyperlink{ihmgestioncross_8h_aa5b4e42123269ad7f574258d5bbb9cda}{00039} \textcolor{preprocessor}{#define INFO\_COUREURINSCRIT\_NOM             0}
+\Hypertarget{ihmgestioncross_8h_source_l00040}\hyperlink{ihmgestioncross_8h_a73a7d4efe208177f86cc761b0d5fd089}{00040} \textcolor{preprocessor}{#define INFO\_COUREURINSCRIT\_PRENOM          1}
+\Hypertarget{ihmgestioncross_8h_source_l00041}\hyperlink{ihmgestioncross_8h_a460662db33a6d68eead7d488ee61a76c}{00041} \textcolor{preprocessor}{#define INFO\_COUREURINSCRIT\_NUMERODOSSAD    2}
+00042 
+\Hypertarget{ihmgestioncross_8h_source_l00043}\hyperlink{ihmgestioncross_8h_aeee76385895c145ef5a633e6c6812603}{00043} \textcolor{preprocessor}{#define COLONNE\_NOM             0}
+\Hypertarget{ihmgestioncross_8h_source_l00044}\hyperlink{ihmgestioncross_8h_a5d6f240d26209cd66db8aa5e1aac62f9}{00044} \textcolor{preprocessor}{#define COLONNE\_PRENOM          1}
+\Hypertarget{ihmgestioncross_8h_source_l00045}\hyperlink{ihmgestioncross_8h_a20d627e7b24ae715fda576e69408ae3f}{00045} \textcolor{preprocessor}{#define COLONNE\_NUMERODOSSARD   2 // pour le tableau d'inscrit}
+\Hypertarget{ihmgestioncross_8h_source_l00046}\hyperlink{ihmgestioncross_8h_a114680edc01528f77bb689b0a2ca18a2}{00046} \textcolor{preprocessor}{#define COLONNE\_CLASSE          2}
+\Hypertarget{ihmgestioncross_8h_source_l00047}\hyperlink{ihmgestioncross_8h_a24ffa4392b8af69a94a6500ec4a60a7e}{00047} \textcolor{preprocessor}{#define COLONNE\_CATEGORIE       3}
+\Hypertarget{ihmgestioncross_8h_source_l00048}\hyperlink{ihmgestioncross_8h_aa8208c9f9fd2ea2418e4b7bb28175f80}{00048} \textcolor{preprocessor}{#define COLONNE\_INE             4}
+\Hypertarget{ihmgestioncross_8h_source_l00049}\hyperlink{ihmgestioncross_8h_a985c9028f6a7ed4b42d0e93eeef6c28c}{00049} \textcolor{preprocessor}{#define COLONNE\_DATENAISSANCE   5}
+\Hypertarget{ihmgestioncross_8h_source_l00050}\hyperlink{ihmgestioncross_8h_a9ef0920ad9f4f65e80e5d9f8e1b263b2}{00050} \textcolor{preprocessor}{#define COLONNE\_SEXE            6}
+00051 
+00052 \textcolor{keyword}{class }\hyperlink{class_coureur}{Coureur};
+00053 
+\Hypertarget{ihmgestioncross_8h_source_l00060}\hyperlink{class_i_h_m_gestion_cross}{00060} \textcolor{keyword}{class }\hyperlink{class_i_h_m_gestion_cross}{IHMGestionCross} : \textcolor{keyword}{public} \hyperlink{class_q_widget}{QWidget}
+00061 \{
+00062     Q\_OBJECT
+00063 
+00064 \textcolor{keyword}{private}:
+\Hypertarget{ihmgestioncross_8h_source_l00065}\hyperlink{class_i_h_m_gestion_cross_a5da4390d71dbd5d05cff339f93c7c85a}{00065}     QString \hyperlink{class_i_h_m_gestion_cross_a5da4390d71dbd5d05cff339f93c7c85a}{etat};
+\Hypertarget{ihmgestioncross_8h_source_l00066}\hyperlink{class_i_h_m_gestion_cross_a9352a649126c14e7d0da3694c10c3cef}{00066}     QString \hyperlink{class_i_h_m_gestion_cross_a9352a649126c14e7d0da3694c10c3cef}{idCoureur};
+\Hypertarget{ihmgestioncross_8h_source_l00067}\hyperlink{class_i_h_m_gestion_cross_a440bac63a3e51db3e2c08e883f8cafc9}{00067}     \hyperlink{class_gestion_b_d_d}{GestionBDD} *\hyperlink{class_i_h_m_gestion_cross_a440bac63a3e51db3e2c08e883f8cafc9}{gestionnaireBDD};
+\Hypertarget{ihmgestioncross_8h_source_l00068}\hyperlink{class_i_h_m_gestion_cross_ac42ca910fa9802b3f63e3393aaa14e8a}{00068}     QVector<QString> \hyperlink{class_i_h_m_gestion_cross_ac42ca910fa9802b3f63e3393aaa14e8a}{listeManifestations};
+\Hypertarget{ihmgestioncross_8h_source_l00069}\hyperlink{class_i_h_m_gestion_cross_a66fc14c0ed874e72b6ada34e9b83603a}{00069}     QVector<QString> \hyperlink{class_i_h_m_gestion_cross_a66fc14c0ed874e72b6ada34e9b83603a}{listeCourses};
+\Hypertarget{ihmgestioncross_8h_source_l00070}\hyperlink{class_i_h_m_gestion_cross_a8b2673ec9996d010d3d45f72770ddd87}{00070}     QVector<QStringList> \hyperlink{class_i_h_m_gestion_cross_a8b2673ec9996d010d3d45f72770ddd87}{listeCoureurs};
+\Hypertarget{ihmgestioncross_8h_source_l00071}\hyperlink{class_i_h_m_gestion_cross_a6b7c699caf9ae80c89f4cf5c58ae93d6}{00071}     QVector<QStringList> \hyperlink{class_i_h_m_gestion_cross_a6b7c699caf9ae80c89f4cf5c58ae93d6}{listeCoureursInscrit};
+\Hypertarget{ihmgestioncross_8h_source_l00072}\hyperlink{class_i_h_m_gestion_cross_ab1d62909817e9828796a8c28da193c38}{00072}     QVector<QStringList> \hyperlink{class_i_h_m_gestion_cross_ab1d62909817e9828796a8c28da193c38}{listeClasses};
+\Hypertarget{ihmgestioncross_8h_source_l00073}\hyperlink{class_i_h_m_gestion_cross_a3b5749783a83acaeb513e4170c97bb0e}{00073}     QVector<QStringList> \hyperlink{class_i_h_m_gestion_cross_a3b5749783a83acaeb513e4170c97bb0e}{listeCategories};
+\Hypertarget{ihmgestioncross_8h_source_l00074}\hyperlink{class_i_h_m_gestion_cross_a9bf93b48403da7bf152f013055152630}{00074}     QVector<QStringList> \hyperlink{class_i_h_m_gestion_cross_a9bf93b48403da7bf152f013055152630}{tableCoureurs};
+\Hypertarget{ihmgestioncross_8h_source_l00075}\hyperlink{class_i_h_m_gestion_cross_a0f4f5886077b1c5cbfa9cc0680d0380f}{00075}     \textcolor{keywordtype}{int} \hyperlink{class_i_h_m_gestion_cross_a0f4f5886077b1c5cbfa9cc0680d0380f}{nbLignesTableCoureurs};
+\Hypertarget{ihmgestioncross_8h_source_l00076}\hyperlink{class_i_h_m_gestion_cross_ad33a263cb137ae991a9be57dacc6760a}{00076}     \textcolor{keywordtype}{int} \hyperlink{class_i_h_m_gestion_cross_ad33a263cb137ae991a9be57dacc6760a}{nbLignesTableInscrit};
+\Hypertarget{ihmgestioncross_8h_source_l00077}\hyperlink{class_i_h_m_gestion_cross_a94c58ce12155f117e0515ce0fc6503bc}{00077}     QStringList \hyperlink{class_i_h_m_gestion_cross_a94c58ce12155f117e0515ce0fc6503bc}{nomColonnesInscrit};
+\Hypertarget{ihmgestioncross_8h_source_l00078}\hyperlink{class_i_h_m_gestion_cross_a021706ef369d2bf3b95bcb4a8ecfdbe4}{00078}     QDate \hyperlink{class_i_h_m_gestion_cross_a021706ef369d2bf3b95bcb4a8ecfdbe4}{dateDefault};
+00079 
+\Hypertarget{ihmgestioncross_8h_source_l00080}\hyperlink{class_i_h_m_gestion_cross_a2ae4807c25f35813507ff0a2abb2ffb3}{00080}     QStackedWidget *\hyperlink{class_i_h_m_gestion_cross_a2ae4807c25f35813507ff0a2abb2ffb3}{fenetreGestionCross};
+\Hypertarget{ihmgestioncross_8h_source_l00081}\hyperlink{class_i_h_m_gestion_cross_a0e1ed40bb375744135f70cb22d302b02}{00081}     \hyperlink{class_q_widget}{QWidget} *\hyperlink{class_i_h_m_gestion_cross_a0e1ed40bb375744135f70cb22d302b02}{fenetreManifestation};
+\Hypertarget{ihmgestioncross_8h_source_l00082}\hyperlink{class_i_h_m_gestion_cross_a939278dde9c1375400bbdd0b3b2476fc}{00082}     \hyperlink{class_q_widget}{QWidget} *\hyperlink{class_i_h_m_gestion_cross_a939278dde9c1375400bbdd0b3b2476fc}{fenetreCourse};
+\Hypertarget{ihmgestioncross_8h_source_l00083}\hyperlink{class_i_h_m_gestion_cross_aa776ee3d04b5e02414e4f97ace344c0c}{00083}     \hyperlink{class_q_widget}{QWidget} *\hyperlink{class_i_h_m_gestion_cross_aa776ee3d04b5e02414e4f97ace344c0c}{fenetreCoureur};
+\Hypertarget{ihmgestioncross_8h_source_l00084}\hyperlink{class_i_h_m_gestion_cross_a540b4525e546b6d61988245ae53768ce}{00084}     QPushButton *\hyperlink{class_i_h_m_gestion_cross_a540b4525e546b6d61988245ae53768ce}{bManifestations};
+\Hypertarget{ihmgestioncross_8h_source_l00085}\hyperlink{class_i_h_m_gestion_cross_a0df377aec07ada51a115cc458854c966}{00085}     QPushButton *\hyperlink{class_i_h_m_gestion_cross_a0df377aec07ada51a115cc458854c966}{bCourses};
+\Hypertarget{ihmgestioncross_8h_source_l00086}\hyperlink{class_i_h_m_gestion_cross_ac2819198bae00b7e0f23e8bc491b4cbb}{00086}     QPushButton *\hyperlink{class_i_h_m_gestion_cross_ac2819198bae00b7e0f23e8bc491b4cbb}{bCoureurs};
+00087 
+00088     \textcolor{comment}{// Widgets pour la fenêtre Coureur}
+\Hypertarget{ihmgestioncross_8h_source_l00089}\hyperlink{class_i_h_m_gestion_cross_abfb2504c2d5189d08e24677e04ddf3ba}{00089}     QLabel *\hyperlink{class_i_h_m_gestion_cross_abfb2504c2d5189d08e24677e04ddf3ba}{labelGestion};
+\Hypertarget{ihmgestioncross_8h_source_l00090}\hyperlink{class_i_h_m_gestion_cross_a58c321e2d95796d99e70a05260b8aff3}{00090}     QLabel *\hyperlink{class_i_h_m_gestion_cross_a58c321e2d95796d99e70a05260b8aff3}{labelInscription};
+\Hypertarget{ihmgestioncross_8h_source_l00091}\hyperlink{class_i_h_m_gestion_cross_a2025ba71cf1bdbfbec56a8f5552d7a83}{00091}     QLabel *\hyperlink{class_i_h_m_gestion_cross_a2025ba71cf1bdbfbec56a8f5552d7a83}{logoChronoCross};
+\Hypertarget{ihmgestioncross_8h_source_l00092}\hyperlink{class_i_h_m_gestion_cross_a866a6f0ba317b299d4aede5fc276b2bb}{00092}     QLabel *\hyperlink{class_i_h_m_gestion_cross_a866a6f0ba317b299d4aede5fc276b2bb}{labelGestionNom};
+\Hypertarget{ihmgestioncross_8h_source_l00093}\hyperlink{class_i_h_m_gestion_cross_ae213fa44e6e291f9ca02d8b091ab0d06}{00093}     QLabel *\hyperlink{class_i_h_m_gestion_cross_ae213fa44e6e291f9ca02d8b091ab0d06}{labelGestionPrenom};
+\Hypertarget{ihmgestioncross_8h_source_l00094}\hyperlink{class_i_h_m_gestion_cross_af15625b1b1bfb04468f0ed7c6ba39b1b}{00094}     QLabel *\hyperlink{class_i_h_m_gestion_cross_af15625b1b1bfb04468f0ed7c6ba39b1b}{labelGestionDateNaissance};
+\Hypertarget{ihmgestioncross_8h_source_l00095}\hyperlink{class_i_h_m_gestion_cross_a4f070ed70d6d076d07c96562e366c805}{00095}     QLabel *\hyperlink{class_i_h_m_gestion_cross_a4f070ed70d6d076d07c96562e366c805}{labelGestionClasse};
+\Hypertarget{ihmgestioncross_8h_source_l00096}\hyperlink{class_i_h_m_gestion_cross_a04af17f1ebbbbac6d9c4509c94bc6f39}{00096}     QLabel *\hyperlink{class_i_h_m_gestion_cross_a04af17f1ebbbbac6d9c4509c94bc6f39}{labelGestionCategorie};
+\Hypertarget{ihmgestioncross_8h_source_l00097}\hyperlink{class_i_h_m_gestion_cross_a56e8930b11c38475450df50a48d4581e}{00097}     QLabel *\hyperlink{class_i_h_m_gestion_cross_a56e8930b11c38475450df50a48d4581e}{labelGestionINE};
+\Hypertarget{ihmgestioncross_8h_source_l00098}\hyperlink{class_i_h_m_gestion_cross_a2e720e692a029a3f4f516a9ad00d2731}{00098}     QLabel *\hyperlink{class_i_h_m_gestion_cross_a2e720e692a029a3f4f516a9ad00d2731}{labelGestionSexe};
+\Hypertarget{ihmgestioncross_8h_source_l00099}\hyperlink{class_i_h_m_gestion_cross_a0106cdcaf86997642d48dfad96a2368f}{00099}     QLabel *\hyperlink{class_i_h_m_gestion_cross_a0106cdcaf86997642d48dfad96a2368f}{labelGestionParticipe};
+\Hypertarget{ihmgestioncross_8h_source_l00100}\hyperlink{class_i_h_m_gestion_cross_ab987235a79961d3d186878052a02b21b}{00100}     QPushButton *\hyperlink{class_i_h_m_gestion_cross_ab987235a79961d3d186878052a02b21b}{bGestionNouveau};
+\Hypertarget{ihmgestioncross_8h_source_l00101}\hyperlink{class_i_h_m_gestion_cross_aac8a7363e20bc9ba2f65b7d9b3bc856e}{00101}     QPushButton *\hyperlink{class_i_h_m_gestion_cross_aac8a7363e20bc9ba2f65b7d9b3bc856e}{bCreationConfirmer};
+\Hypertarget{ihmgestioncross_8h_source_l00102}\hyperlink{class_i_h_m_gestion_cross_a297a77054dc0f54e461c0f9b0382efb3}{00102}     QPushButton *\hyperlink{class_i_h_m_gestion_cross_a297a77054dc0f54e461c0f9b0382efb3}{bCreationAnnuler};
+\Hypertarget{ihmgestioncross_8h_source_l00103}\hyperlink{class_i_h_m_gestion_cross_a524ced9992dcc4e7ee25b01e30c4c5df}{00103}     QPushButton *\hyperlink{class_i_h_m_gestion_cross_a524ced9992dcc4e7ee25b01e30c4c5df}{bGestionModifier};
+\Hypertarget{ihmgestioncross_8h_source_l00104}\hyperlink{class_i_h_m_gestion_cross_adc5bed6caf7f597dd30999bc871e695b}{00104}     QPushButton *\hyperlink{class_i_h_m_gestion_cross_adc5bed6caf7f597dd30999bc871e695b}{bGestionSupprimer};
+\Hypertarget{ihmgestioncross_8h_source_l00105}\hyperlink{class_i_h_m_gestion_cross_a1afbc04ebd42deafebbbdc998d0fc246}{00105}     QPushButton *\hyperlink{class_i_h_m_gestion_cross_a1afbc04ebd42deafebbbdc998d0fc246}{bInscrire};
+\Hypertarget{ihmgestioncross_8h_source_l00106}\hyperlink{class_i_h_m_gestion_cross_a1c63c5c91be88aef13d2582e48dff7d0}{00106}     QDateEdit *\hyperlink{class_i_h_m_gestion_cross_a1c63c5c91be88aef13d2582e48dff7d0}{deDateNaissance};
+\Hypertarget{ihmgestioncross_8h_source_l00107}\hyperlink{class_i_h_m_gestion_cross_a633102626c5dedd575b51a1ba5c6e708}{00107}     QLineEdit *\hyperlink{class_i_h_m_gestion_cross_a633102626c5dedd575b51a1ba5c6e708}{lineEditNom};
+\Hypertarget{ihmgestioncross_8h_source_l00108}\hyperlink{class_i_h_m_gestion_cross_a7bea7529f01cf8ca8f365d418aae52d5}{00108}     QLineEdit *\hyperlink{class_i_h_m_gestion_cross_a7bea7529f01cf8ca8f365d418aae52d5}{lineEditPrenom};
+\Hypertarget{ihmgestioncross_8h_source_l00109}\hyperlink{class_i_h_m_gestion_cross_af734c4b13942dd83fbbd0355e3728c9f}{00109}     QComboBox *\hyperlink{class_i_h_m_gestion_cross_af734c4b13942dd83fbbd0355e3728c9f}{cbGestionClasse};
+\Hypertarget{ihmgestioncross_8h_source_l00110}\hyperlink{class_i_h_m_gestion_cross_a60cdc44c61bcd4e1e189c8de5556b89e}{00110}     QComboBox *\hyperlink{class_i_h_m_gestion_cross_a60cdc44c61bcd4e1e189c8de5556b89e}{cbGestionCategorie};
+\Hypertarget{ihmgestioncross_8h_source_l00111}\hyperlink{class_i_h_m_gestion_cross_a89aff3b1c5d5198dd7aaecd932331e0d}{00111}     QComboBox *\hyperlink{class_i_h_m_gestion_cross_a89aff3b1c5d5198dd7aaecd932331e0d}{cbGestionParticipe};
+\Hypertarget{ihmgestioncross_8h_source_l00112}\hyperlink{class_i_h_m_gestion_cross_ab6c32fd079f81c4fa0b9ec0b4ef9bb61}{00112}     QLineEdit *\hyperlink{class_i_h_m_gestion_cross_ab6c32fd079f81c4fa0b9ec0b4ef9bb61}{lineEditINE};
+\Hypertarget{ihmgestioncross_8h_source_l00113}\hyperlink{class_i_h_m_gestion_cross_a4474ef47310eb3511befdf1beaa18b56}{00113}     QRadioButton *\hyperlink{class_i_h_m_gestion_cross_a4474ef47310eb3511befdf1beaa18b56}{rbGestionSexeF};
+\Hypertarget{ihmgestioncross_8h_source_l00114}\hyperlink{class_i_h_m_gestion_cross_a7d471a7f96862dcd302f7f8cc52dfea4}{00114}     QRadioButton *\hyperlink{class_i_h_m_gestion_cross_a7d471a7f96862dcd302f7f8cc52dfea4}{rbGestionSexeM};
+00115 
+00116     \textcolor{comment}{// inscription}
+\Hypertarget{ihmgestioncross_8h_source_l00117}\hyperlink{class_i_h_m_gestion_cross_affb681e48eb407d5d69d1ecb24da8377}{00117}     QLabel *\hyperlink{class_i_h_m_gestion_cross_affb681e48eb407d5d69d1ecb24da8377}{labelInscriptionManifestation};
+\Hypertarget{ihmgestioncross_8h_source_l00118}\hyperlink{class_i_h_m_gestion_cross_a317ffd7cc1c9aa5d6e55c53568e44f98}{00118}     QComboBox *\hyperlink{class_i_h_m_gestion_cross_a317ffd7cc1c9aa5d6e55c53568e44f98}{cbInscriptionListeManifestation};
+\Hypertarget{ihmgestioncross_8h_source_l00119}\hyperlink{class_i_h_m_gestion_cross_a88b058cc1d4031891e26eb62409af6bb}{00119}     QLabel *\hyperlink{class_i_h_m_gestion_cross_a88b058cc1d4031891e26eb62409af6bb}{labelInscriptionCourse};
+\Hypertarget{ihmgestioncross_8h_source_l00120}\hyperlink{class_i_h_m_gestion_cross_aff44e6f1a225ee5b55783afe72049f83}{00120}     QComboBox *\hyperlink{class_i_h_m_gestion_cross_aff44e6f1a225ee5b55783afe72049f83}{cbInscriptionListeCourse};
+\Hypertarget{ihmgestioncross_8h_source_l00121}\hyperlink{class_i_h_m_gestion_cross_a3209e0dfc51bb3a17e2ef700a778178b}{00121}     QLabel *\hyperlink{class_i_h_m_gestion_cross_a3209e0dfc51bb3a17e2ef700a778178b}{labelNumeroDossard};
+\Hypertarget{ihmgestioncross_8h_source_l00122}\hyperlink{class_i_h_m_gestion_cross_adeb4cfc9a218c06fca5cabc280a611e2}{00122}     QLineEdit *\hyperlink{class_i_h_m_gestion_cross_adeb4cfc9a218c06fca5cabc280a611e2}{lineEditNumeroDossard};
+\Hypertarget{ihmgestioncross_8h_source_l00123}\hyperlink{class_i_h_m_gestion_cross_a4a0ba98c5b671a38d67942254d2329db}{00123}     QTableView *\hyperlink{class_i_h_m_gestion_cross_a4a0ba98c5b671a38d67942254d2329db}{vueTableCoureurs};
+\Hypertarget{ihmgestioncross_8h_source_l00124}\hyperlink{class_i_h_m_gestion_cross_ad9560c4804694dbbf969de5f6f56eb30}{00124}     QStandardItemModel *\hyperlink{class_i_h_m_gestion_cross_ad9560c4804694dbbf969de5f6f56eb30}{modeleTableCoureurs};
+\Hypertarget{ihmgestioncross_8h_source_l00125}\hyperlink{class_i_h_m_gestion_cross_ab95ce87fd2f9427023040cc8d0077681}{00125}     QStringList \hyperlink{class_i_h_m_gestion_cross_ab95ce87fd2f9427023040cc8d0077681}{nomColonnesCoureur};
+\Hypertarget{ihmgestioncross_8h_source_l00126}\hyperlink{class_i_h_m_gestion_cross_a79b4e49cf8b22c9894d366e08b722c55}{00126}     QTableView *\hyperlink{class_i_h_m_gestion_cross_a79b4e49cf8b22c9894d366e08b722c55}{vueTableInscrits};
+\Hypertarget{ihmgestioncross_8h_source_l00127}\hyperlink{class_i_h_m_gestion_cross_a19565551280115e642ceb9790c7317bc}{00127}     QStandardItemModel *\hyperlink{class_i_h_m_gestion_cross_a19565551280115e642ceb9790c7317bc}{modeleTableInscrits};
+\Hypertarget{ihmgestioncross_8h_source_l00128}\hyperlink{class_i_h_m_gestion_cross_a1855bd63290c39c20660064b41710e8c}{00128}     QLabel *\hyperlink{class_i_h_m_gestion_cross_a1855bd63290c39c20660064b41710e8c}{labelMessageInscription};
+00129 
+\Hypertarget{ihmgestioncross_8h_source_l00130}\hyperlink{class_i_h_m_gestion_cross_a417b63ff11c3be6623d17718d9058768}{00130}     QDialog *\hyperlink{class_i_h_m_gestion_cross_a417b63ff11c3be6623d17718d9058768}{confirmationDialog};
+\Hypertarget{ihmgestioncross_8h_source_l00131}\hyperlink{class_i_h_m_gestion_cross_a9b51d06493979981248ecc2641f82be4}{00131}     QLabel *\hyperlink{class_i_h_m_gestion_cross_a9b51d06493979981248ecc2641f82be4}{labelConfirmationDialog};
+\Hypertarget{ihmgestioncross_8h_source_l00132}\hyperlink{class_i_h_m_gestion_cross_a8aaf51ea455654df21f65ed496384b60}{00132}     QPushButton *\hyperlink{class_i_h_m_gestion_cross_a8aaf51ea455654df21f65ed496384b60}{bConfirmationDialog};
+\Hypertarget{ihmgestioncross_8h_source_l00133}\hyperlink{class_i_h_m_gestion_cross_a2efd604a10cae21b2f85e7196c3927fd}{00133}     QPushButton *\hyperlink{class_i_h_m_gestion_cross_a2efd604a10cae21b2f85e7196c3927fd}{bAnnulerDialog};
+00134 
+00135     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_aa5d9de499a66e52b843c4ef4c6074a60}{initialiserFenetreCoureur}();
+00136     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a0eadd8592c966c89bf7b5a25a0ae7589}{listerManifestations}();
+00137     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a34567afe3e94862ebd9af51528dedb65}{listerCourses}(QString idManifestation);
+00138     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_ae1510779a1efa3defecb517467e84f91}{afficherTable}(QString nomTable);
+00139     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_ac1ca02b1cb49d9c2f60785c8bd441d60}{viderTableInscrit}();
+00140     QString \hyperlink{class_i_h_m_gestion_cross_a7e1cdc8b3b01f2f2f666f80bf1cc9f5a}{recupererSexeCoureur}();
+00141     \textcolor{keywordtype}{bool} \hyperlink{class_i_h_m_gestion_cross_a164be2d046cf18ee03e3939d03a5580d}{verifierNumeroDossardInscription}(QString numeroDossard);
+00142     \textcolor{keywordtype}{bool} \hyperlink{class_i_h_m_gestion_cross_ae08eec25f5a6d33bf133b0cee78c7c5c}{verifierInformationsCreerCoureur}(QStringList informations);
+00143     \textcolor{keywordtype}{bool} \hyperlink{class_i_h_m_gestion_cross_a0e088653019d8adefb371348f272d2e2}{verifierInformationsModifierCoureur}(QStringList informations);
+00144     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a92fa6016b00d2d4429c901e77d37bf10}{messageErreur}(QString message);
+00145     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a71412d0c3e1d059a646c755803077a7b}{messageSucces}(QString message);
+00146     QVector<int> \hyperlink{class_i_h_m_gestion_cross_a4846dcb0c5f95b2b774ab328654bf716}{traiterDateNaissance}(QString dateNaissance);
+00147     QStringList \hyperlink{class_i_h_m_gestion_cross_a271efe8d31fbe05fccfb2dc81e71971a}{recupererChampsGestion}();
+00148     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a85c44933ec0dcbb591e01c832063367e}{reinitialiserGestionCoureur}();
+00149 
+00150 \textcolor{keyword}{public}:
+00151     \hyperlink{class_i_h_m_gestion_cross_a2c62fd83326a87456a403f46acc408c8}{IHMGestionCross}(\hyperlink{class_q_widget}{QWidget} *parent = \textcolor{keyword}{nullptr});
+00152     \hyperlink{class_i_h_m_gestion_cross_a47cc1d5e80bea3d5e3396a8c16158c45}{~IHMGestionCross}();
+00153 
+00154 \textcolor{keyword}{private} slots:
+00155     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_ad46a2295500cf98dbc18f862f6020103}{gererCoureurs}();
+00156     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a82e3861f4959d3599d1d85ee0b3b8654}{gererCourses}();
+00157     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a406efb83dac8a8ac5d04e9b8cbeaf316}{gererManifestations}();
+00158     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a60fc58610d01534b3df66ac7dd76b4dc}{selectionnerManifestation}(QString nom);
+00159     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_ae555b32462455a2cdaf0f8dc2e016d14}{selectionnerCourse}(QString nom);
+00160     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_ad71963d500fd61995fdae94e833db163}{selectionnerCoureur}(QModelIndex index);
+00161     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a1d3c7f83d4c960f38b237499d2a89731}{initialiserConfirmationDialog}(QString nomTache);
+00162     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_af0165d32344af78b4edce59f88c90ff6}{ajouterNouvelleInscription}();
+00163     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a3c96fb9d92e9392ea83b380c3648bf55}{mettreAJourTableInscrit}(QStringList inscription);
+00164     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_aa3e6f06ff2f4e724e2f0688528bcf386}{ajouterNouveauCoureurTable}(QStringList informationCoureur);
+00165     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_af13fabb9831fcd237c9c1e7ee75c47b8}{supprimerCoureurTable}();
+00166     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a3a969f85f31f25ed6df6a75a1cee2de1}{modifierCoureurTable}();
+00167     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a53c84315d723d75ad7b4a7d4c317efc5}{mettreAJourTableCoureur}();
+00168     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_ac8f336c95a5f0c9eb8a4bc1c4bb83445}{passerModeNouveauCoureur}();
+00169     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a6000b152ba3febb45d6c409519168ba2}{creerCoureur}();
+00170     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a4fd00fda0e47366d66d046e344a1617e}{supprimerCoureur}();
+00171     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a1f41cea488ab477505f9d1792c4c2f36}{modifierCoureur}();
+00172     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a1d3c7f83d4c960f38b237499d2a89731}{initialiserConfirmationDialog}();
+00173     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a1bf6838771bef4796def7a5ba58d74b3}{annulerNouveauCoureur}();
+00174     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a144933ab31ae263be7267b93bfd53a82}{confirmerDialog}();
+00175     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a58b19fa84a16060a3dd951abeba2c543}{quitterDialog}();
+00176     \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_gestion_cross_a9c24746993f720c1067cfe7396ecd5c4}{quitter}();
+00177 
+00178 signals:
+00179 \};
+00180 
+00181 \textcolor{preprocessor}{#endif // IHMGESTIONCROSS\_H}
+\end{DoxyCode}

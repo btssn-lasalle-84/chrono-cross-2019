@@ -1,0 +1,70 @@
+\hypertarget{ihmresultatscross_8h_source}{}\subsection{ihmresultatscross.\+h}
+\label{ihmresultatscross_8h_source}\index{ihmresultatscross.\+h@{ihmresultatscross.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef IHMRESULTATSCROSS\_H}
+00002 \textcolor{preprocessor}{#define IHMRESULTATSCROSS\_H}
+00003 
+\Hypertarget{ihmresultatscross_8h_source_l00016}\hyperlink{ihmresultatscross_8h_a407f067284fd7ac16426ac29cbfcd356}{00016} \textcolor{preprocessor}{#define TAILLETEXTELABEL 20}
+\Hypertarget{ihmresultatscross_8h_source_l00017}\hyperlink{ihmresultatscross_8h_a93c1a7628e080979c2ae8f83b6c69606}{00017} \textcolor{preprocessor}{#define TAILLETEXTEBUTON 20}
+\Hypertarget{ihmresultatscross_8h_source_l00018}\hyperlink{ihmresultatscross_8h_ab9a42df347efcfb62cef09920a200588}{00018} \textcolor{preprocessor}{#define HAUTEUR\_TABLEAU 1}
+00019 
+\Hypertarget{ihmresultatscross_8h_source_l00020}\hyperlink{ihmresultatscross_8h_aa8208c9f9fd2ea2418e4b7bb28175f80}{00020} \textcolor{preprocessor}{#define COLONNE\_INE         0}
+\Hypertarget{ihmresultatscross_8h_source_l00021}\hyperlink{ihmresultatscross_8h_aeee76385895c145ef5a633e6c6812603}{00021} \textcolor{preprocessor}{#define COLONNE\_NOM         1}
+\Hypertarget{ihmresultatscross_8h_source_l00022}\hyperlink{ihmresultatscross_8h_a5d6f240d26209cd66db8aa5e1aac62f9}{00022} \textcolor{preprocessor}{#define COLONNE\_PRENOM      2}
+\Hypertarget{ihmresultatscross_8h_source_l00023}\hyperlink{ihmresultatscross_8h_a114680edc01528f77bb689b0a2ca18a2}{00023} \textcolor{preprocessor}{#define COLONNE\_CLASSE      3}
+00024 
+\Hypertarget{ihmresultatscross_8h_source_l00025}\hyperlink{ihmresultatscross_8h_a2e5435ad2b0c61674b2dad6c0ea46301}{00025} \textcolor{preprocessor}{#define INFO\_COUREUR\_INE        0}
+\Hypertarget{ihmresultatscross_8h_source_l00026}\hyperlink{ihmresultatscross_8h_a71b99ea06ae916bcd158edbd441c8c24}{00026} \textcolor{preprocessor}{#define INFO\_COUREUR\_NOM        1}
+\Hypertarget{ihmresultatscross_8h_source_l00027}\hyperlink{ihmresultatscross_8h_a68fd2611ad0ef66da1a71726675067e7}{00027} \textcolor{preprocessor}{#define INFO\_COUREUR\_PRENOM     2}
+\Hypertarget{ihmresultatscross_8h_source_l00028}\hyperlink{ihmresultatscross_8h_a104dfa4cfc656a690caaec36fd4d3e2d}{00028} \textcolor{preprocessor}{#define INFO\_COUREUR\_CLASSE     3}
+00029 
+00030 \textcolor{preprocessor}{#include <QtWidgets>} \textcolor{comment}{/* tous les widgets de Qt5 */}
+00031 \textcolor{preprocessor}{#include <QMainWindow>}
+00032 \textcolor{preprocessor}{#include <QDebug>}
+00033 
+00034 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00035 \textcolor{keyword}{class }\hyperlink{class_coureur}{Coureur};
+\Hypertarget{ihmresultatscross_8h_source_l00047}\hyperlink{class_i_h_m_resultats_cross}{00047}     \textcolor{keyword}{class }\hyperlink{class_i_h_m_resultats_cross}{IHMResultatsCross} : \textcolor{keyword}{public} \hyperlink{class_q_widget}{QWidget}
+00048     \{
+00049 
+00050     Q\_OBJECT
+00051 
+00052     \textcolor{keyword}{private}:
+\Hypertarget{ihmresultatscross_8h_source_l00053}\hyperlink{class_i_h_m_resultats_cross_abfda0d5dc4b65c0525a94a74faf68ce0}{00053}         QStringList \hyperlink{class_i_h_m_resultats_cross_abfda0d5dc4b65c0525a94a74faf68ce0}{nomColonnes};
+\Hypertarget{ihmresultatscross_8h_source_l00054}\hyperlink{class_i_h_m_resultats_cross_a3f27f95ca0fb27d1a46814d2fddfc3b1}{00054}         \hyperlink{class_base_de_donnees}{BaseDeDonnees} *\hyperlink{class_i_h_m_resultats_cross_a3f27f95ca0fb27d1a46814d2fddfc3b1}{BDD}; 
+\Hypertarget{ihmresultatscross_8h_source_l00055}\hyperlink{class_i_h_m_resultats_cross_a8f35fc63f8c3a1351658d3148daf13e0}{00055}         QTableView *\hyperlink{class_i_h_m_resultats_cross_a8f35fc63f8c3a1351658d3148daf13e0}{vueListeClassement}; 
+\Hypertarget{ihmresultatscross_8h_source_l00056}\hyperlink{class_i_h_m_resultats_cross_a9d4e02948f64b6d9fef422d7f5a2b9b5}{00056}         QStandardItemModel *\hyperlink{class_i_h_m_resultats_cross_a9d4e02948f64b6d9fef422d7f5a2b9b5}{modeleClassement};
+\Hypertarget{ihmresultatscross_8h_source_l00057}\hyperlink{class_i_h_m_resultats_cross_a696f826387c8fa8b9925ca468a52482e}{00057}         \textcolor{keywordtype}{int} \hyperlink{class_i_h_m_resultats_cross_a696f826387c8fa8b9925ca468a52482e}{nbLignesClassement};
+\Hypertarget{ihmresultatscross_8h_source_l00058}\hyperlink{class_i_h_m_resultats_cross_ab637383c58d9ce784aec696ccd69d709}{00058}         \hyperlink{class_coureur}{Coureur} *\hyperlink{class_i_h_m_resultats_cross_ab637383c58d9ce784aec696ccd69d709}{coureur}; 
+00059         \textcolor{comment}{// les widgets}
+\Hypertarget{ihmresultatscross_8h_source_l00060}\hyperlink{class_i_h_m_resultats_cross_ae1190e783fc117504abf614fe170ad54}{00060}         QComboBox *\hyperlink{class_i_h_m_resultats_cross_ae1190e783fc117504abf614fe170ad54}{cblisteCoureurs}; 
+00061 
+\Hypertarget{ihmresultatscross_8h_source_l00062}\hyperlink{class_i_h_m_resultats_cross_a455bc28e3605cd327067be2db255c911}{00062}         QLabel *\hyperlink{class_i_h_m_resultats_cross_a455bc28e3605cd327067be2db255c911}{labelClassement};
+\Hypertarget{ihmresultatscross_8h_source_l00063}\hyperlink{class_i_h_m_resultats_cross_a0cec9448e3ac680fd93cff9c4c709e1b}{00063}         QLabel *\hyperlink{class_i_h_m_resultats_cross_a0cec9448e3ac680fd93cff9c4c709e1b}{labelCoureurs};
+00064         \textcolor{comment}{//QPushButton *bAjouter; //!< Bouton Ajouter}
+00065 
+00066         \textcolor{comment}{// QLabel *labelNomCoureur;}
+00067         \textcolor{comment}{// QLabel *labelPrenomCoureur;}
+00068         \textcolor{comment}{// QLabel *labelINECoureur;}
+00069 
+00070         \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_resultats_cross_a5e8e7f363a93e1e5e6b3c5eb0ad29c28}{listeCoureurs}();
+00071 
+00072     \textcolor{keyword}{public}:
+00073         \hyperlink{class_i_h_m_resultats_cross_a94afa0356ebc98e497dfecca3e1bb00b}{IHMResultatsCross}(\hyperlink{class_q_widget}{QWidget} *parent = \textcolor{keyword}{nullptr});
+00074         \hyperlink{class_i_h_m_resultats_cross_a62afe926862fddcb340e4a2c57c3cddf}{~IHMResultatsCross}();
+00075         \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_resultats_cross_a4311c35a2869a24be1a06d7410623eda}{classerArrivee}();
+00076 
+00077 
+00078     \textcolor{keyword}{private} slots:
+00079 
+00080      \textcolor{keywordtype}{void} \hyperlink{class_i_h_m_resultats_cross_a4311c35a2869a24be1a06d7410623eda}{classerArrivee}(QStringList classementCoureurs);
+00081 
+00082 \};
+00083 
+00084 \textcolor{preprocessor}{#endif // IHMRESULTATSCROSS\_H}
+00085 
+00086 
+00087 
+00088 
+\end{DoxyCode}

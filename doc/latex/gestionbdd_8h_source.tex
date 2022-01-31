@@ -1,0 +1,58 @@
+\hypertarget{gestionbdd_8h_source}{}\subsection{gestionbdd.\+h}
+\label{gestionbdd_8h_source}\index{gestionbdd.\+h@{gestionbdd.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef GESTIONBDD\_H}
+00002 \textcolor{preprocessor}{#define GESTIONBDD\_H}
+00003 
+00011 \textcolor{preprocessor}{#include <QObject>}
+00012 \textcolor{preprocessor}{#include <QDebug>}
+00013 \textcolor{preprocessor}{#include "../BaseDeDonnees/basededonnees.h"}
+00014 
+\Hypertarget{gestionbdd_8h_source_l00022}\hyperlink{class_gestion_b_d_d}{00022} \textcolor{keyword}{class }\hyperlink{class_gestion_b_d_d}{GestionBDD} : \textcolor{keyword}{public} \hyperlink{class_q_object}{QObject}
+00023 \{
+00024     Q\_OBJECT
+00025 
+00026 \textcolor{keyword}{private}:
+\Hypertarget{gestionbdd_8h_source_l00027}\hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{00027}     \hyperlink{class_base_de_donnees}{BaseDeDonnees} *\hyperlink{class_gestion_b_d_d_a1bd17cbf5754eb6e54ae351f1d02dca2}{BDD};
+\Hypertarget{gestionbdd_8h_source_l00028}\hyperlink{class_gestion_b_d_d_afa3e974fb5afa7f25f275a662e182960}{00028}     QVector<QStringList> \hyperlink{class_gestion_b_d_d_afa3e974fb5afa7f25f275a662e182960}{table};
+00029 
+00030 
+00031 \textcolor{keyword}{public}:
+00032     \hyperlink{class_gestion_b_d_d_a406bdb9b1714b204fa6fab015baffc27}{GestionBDD}(\hyperlink{class_q_object}{QObject} *parent = \textcolor{keyword}{nullptr});
+00033     \hyperlink{class_gestion_b_d_d_a4d98c4008182a5749c57c97772b3c303}{~GestionBDD}();
+00034 
+00035     QVector<QString> \hyperlink{class_gestion_b_d_d_a6c1ab5e51fbd6c92bb096badbeac0df5}{recupererListeManifestationsInscription}(QString
+       INE);
+00036     QVector<QString> \hyperlink{class_gestion_b_d_d_a59ef29e28993c64aa4d5a8c42a8fb08d}{recupererListeCoursesInscription}(QString nom, QString 
+      sexe);
+00037     QStringList \hyperlink{class_gestion_b_d_d_ac35de40fd5860b3130f71788ecaa5ef3}{recupererListeCoursesGestion}(QString INE);
+00038     QVector<QStringList> \hyperlink{class_gestion_b_d_d_a09b547cb065256acd269c64e273c93fd}{recupererListeCoureursInscrit}(QString nomCourse);
+00039     QVector<QStringList> \hyperlink{class_gestion_b_d_d_a2b44ebc5bf5b1a7babde6512817a85b4}{recupererTableBDD}(QString table);
+00040     QString \hyperlink{class_gestion_b_d_d_ad7b0117ad5d55f21e6f00858038f4a85}{recupererCatergorieCoureur}(QString idCategorie);
+00041     QString \hyperlink{class_gestion_b_d_d_a0e90b16b2e330de9cc80f72f0d648e5d}{recupererClasseCoureur}(QString idClasse);
+00042     QString \hyperlink{class_gestion_b_d_d_a0a2fa02b90974684658937fbfb55bf0a}{recupererInformation}(QString info, QString nomTable, QString 
+      nomEnregistrement);
+00043     QVector<QString> \hyperlink{class_gestion_b_d_d_a76ab3e307ad9005dcdb2781fc77fc5c8}{recupererCategoriesCreation}();
+00044     QVector<QString> \hyperlink{class_gestion_b_d_d_a38d728d644f23048f1a6d3e6d4656764}{recupererClassesCreation}();
+00045     \textcolor{keywordtype}{bool} \hyperlink{class_gestion_b_d_d_af6a83eb058d71d9c583c403bf5a8ce3b}{verifierCreation}(QStringList enregistrement);
+00046     \textcolor{keywordtype}{bool} \hyperlink{class_gestion_b_d_d_abfd3cfb9553a83aafd86c3149869d6c0}{verifierInformation}(QString information, QString table);
+00047     \textcolor{keywordtype}{void} \hyperlink{class_gestion_b_d_d_ae71561eea6d1163ff067f079ccc6d169}{ajouterNouveauCoureur}(QStringList enregistrement);
+00048     \textcolor{keywordtype}{bool} \hyperlink{class_gestion_b_d_d_a5ea332563e5be2116084ed2886c355c8}{verifierModification}(QStringList enregistrement);
+00049     \textcolor{keywordtype}{void} \hyperlink{class_gestion_b_d_d_af64457de89c484bf854db0910bef790e}{modifierEnregistrement}(QStringList enregistrement);
+00050     \textcolor{keywordtype}{bool} \hyperlink{class_gestion_b_d_d_a1a39bbc7bfcb60d286363b9d2dd7f88b}{verifierDossard}(QString dossard);
+00051     \textcolor{keywordtype}{void} \hyperlink{class_gestion_b_d_d_a71391d5419969b52cd999463b5326599}{ajouterNouvelInscrit}(QStringList inscription);
+00052     \textcolor{keywordtype}{void} \hyperlink{class_gestion_b_d_d_afe47ec92274b7998131c5d4e6551d177}{supprimerCoureur}(QString INE);
+00053     \textcolor{keywordtype}{void} \hyperlink{class_gestion_b_d_d_afad096d7e405d35a818d4858ee34df61}{modifierCoureur}(QStringList enregistrement);
+00054 
+00055 \textcolor{keyword}{public} slots:
+00056 
+00057 signals:
+00058     \textcolor{keywordtype}{void} \hyperlink{class_gestion_b_d_d_a61bc349c8942a196e2edd3083465286f}{nouvelInscrit}(QStringList inscription);
+00059     \textcolor{keywordtype}{void} \hyperlink{class_gestion_b_d_d_acf915265e83f03b500f10ffbde2680bb}{nouveauCoureur}(QStringList informationsCoureurClassement);
+00060     \textcolor{keywordtype}{void} \hyperlink{class_gestion_b_d_d_aabb5dfcdcec4ef37477fff65f6624784}{coureurSupprime}();
+00061     \textcolor{keywordtype}{void} \hyperlink{class_gestion_b_d_d_a911c1e7a4d8bc38566512db37b13c9f0}{coureurModifie}();
+00062 \};
+00063 
+00064 \textcolor{preprocessor}{#endif // GESTIONBDD\_H}
+\end{DoxyCode}

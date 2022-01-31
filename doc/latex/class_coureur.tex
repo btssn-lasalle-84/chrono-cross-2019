@@ -1,0 +1,276 @@
+\hypertarget{class_coureur}{}\subsection{Référence de la classe Coureur}
+\label{class_coureur}\index{Coureur@{Coureur}}
+
+
+Gérer les coureurs.  
+
+
+
+
+{\ttfamily \#include $<$coureur.\+h$>$}
+
+
+
+Graphe de collaboration de Coureur\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_coureur__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String\+List \hyperlink{class_coureur_a99e640aba229bb629e894729413b4e84}{get\+Liste\+Coureurs} (Q\+String, Q\+String, Q\+String, Q\+String)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_coureur_af3a5607d96a0960b1666164f6a74d539}{Coureur} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_coureur}{Coureur}. \end{DoxyCompactList}\item 
+\hyperlink{class_coureur_acbaa69246e4da18c0951f651f9ab3d69}{$\sim$\+Coureur} ()
+\item 
+Q\+String \hyperlink{class_coureur_a1808f13910638c6f2a57e87be522adf3}{get\+Nom} () const
+\item 
+Q\+String \hyperlink{class_coureur_a54a92a0fcaf7db9079f9d3f5d043539c}{get\+Prenom} () const
+\item 
+Q\+String \hyperlink{class_coureur_a724d13c5c34757fcd70491da44a918e3}{get\+I\+NE} () const
+\item 
+Q\+String \hyperlink{class_coureur_aa611e208767c4db4999e00296aa12632}{get\+Classe} () const
+\item 
+Q\+Vector$<$ Q\+String $>$ \hyperlink{class_coureur_a1d9f2cb15f74ff1c7b20fde081b5c5d6}{get\+Liste\+Coureurs} (Q\+String \hyperlink{class_coureur}{Coureur})
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_coureur_ad46f9151c1d00fbddb31c352ba331d78}{formuler\+Requete\+Select} (Q\+String renseignements, Q\+String sources, Q\+String conditions)
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_coureur_ac96ff159efad8a6fd3abbe1a37b51c24}{nom}
+\item 
+Q\+String \hyperlink{class_coureur_a5e37d256b17765909423e183879c9e58}{prenom}
+\item 
+Q\+String \hyperlink{class_coureur_ac4028301fbd425848c2a81d69f8f94ac}{I\+NE}
+\item 
+Q\+String \hyperlink{class_coureur_a274255068bb91a5c66a365cd10528280}{classe}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_coureur_a9890c210d97e593644b22cb0e8228527}{B\+DD}
+\begin{DoxyCompactList}\small\item\em agrégation \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Gérer les coureurs. 
+
+\begin{DoxyAuthor}{Auteur}
+Suzie Turlin
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_coureur_af3a5607d96a0960b1666164f6a74d539}\label{class_coureur_af3a5607d96a0960b1666164f6a74d539}} 
+\index{Coureur@{Coureur}!Coureur@{Coureur}}
+\index{Coureur@{Coureur}!Coureur@{Coureur}}
+\paragraph{\texorpdfstring{Coureur()}{Coureur()}}
+{\footnotesize\ttfamily Coureur\+::\+Coureur (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_object}{Q\+Object} $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\hyperlink{class_coureur}{Coureur}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \hyperlink{class_q_object}{Q\+Object} Adresse de l\textquotesingle{}objet Qt parent \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_coureur_a9890c210d97e593644b22cb0e8228527}{B\+DD}, \hyperlink{class_base_de_donnees_ab2e092285ccc0ee1cce61a1774218561}{Base\+De\+Donnees\+::connecter()}, \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{Base\+De\+Donnees\+::est\+Connecte()}, et \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}.
+
+
+\begin{DoxyCode}
+00025                                 : \hyperlink{class_q_object}{QObject}(parent)
+00026 \{
+00027     \textcolor{comment}{//**TODO BASE DE DONNEE**//}
+00028 
+00029     \hyperlink{class_coureur_a9890c210d97e593644b22cb0e8228527}{BDD} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}();
+00030     \textcolor{keywordflow}{if}(!\hyperlink{class_coureur_a9890c210d97e593644b22cb0e8228527}{BDD}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}())
+00031         \hyperlink{class_coureur_a9890c210d97e593644b22cb0e8228527}{BDD}->\hyperlink{class_base_de_donnees_ab2e092285ccc0ee1cce61a1774218561}{connecter}(\textcolor{stringliteral}{"Resultats-Cross"});
+00032     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Etat connexion BDD : "} << \hyperlink{class_coureur_a9890c210d97e593644b22cb0e8228527}{BDD}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}();
+00033 
+00034 
+00035 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_coureur_acbaa69246e4da18c0951f651f9ab3d69}\label{class_coureur_acbaa69246e4da18c0951f651f9ab3d69}} 
+\index{Coureur@{Coureur}!````~Coureur@{$\sim$\+Coureur}}
+\index{````~Coureur@{$\sim$\+Coureur}!Coureur@{Coureur}}
+\paragraph{\texorpdfstring{$\sim$\+Coureur()}{~Coureur()}}
+{\footnotesize\ttfamily Coureur\+::$\sim$\+Coureur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00038 \{
+00039 
+00040 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_coureur_ad46f9151c1d00fbddb31c352ba331d78}\label{class_coureur_ad46f9151c1d00fbddb31c352ba331d78}} 
+\index{Coureur@{Coureur}!formuler\+Requete\+Select@{formuler\+Requete\+Select}}
+\index{formuler\+Requete\+Select@{formuler\+Requete\+Select}!Coureur@{Coureur}}
+\paragraph{\texorpdfstring{formuler\+Requete\+Select()}{formulerRequeteSelect()}}
+{\footnotesize\ttfamily Q\+String Coureur\+::formuler\+Requete\+Select (\begin{DoxyParamCaption}\item[{Q\+String}]{renseignements,  }\item[{Q\+String}]{sources,  }\item[{Q\+String}]{conditions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+00069 \{
+00070     QString requete = QString(\textcolor{stringliteral}{"SELECT %1 FROM %2 WHERE %3"}).arg(renseignements).arg(sources).arg(conditions
+      );
+00071     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Requête select : "} << requete;
+00072     \textcolor{keywordflow}{return} requete;
+00073 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_coureur_aa611e208767c4db4999e00296aa12632}\label{class_coureur_aa611e208767c4db4999e00296aa12632}} 
+\index{Coureur@{Coureur}!get\+Classe@{get\+Classe}}
+\index{get\+Classe@{get\+Classe}!Coureur@{Coureur}}
+\paragraph{\texorpdfstring{get\+Classe()}{getClasse()}}
+{\footnotesize\ttfamily Q\+String Coureur\+::get\+Classe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_coureur_a274255068bb91a5c66a365cd10528280}{classe}.
+
+
+\begin{DoxyCode}
+00053 \{
+00054     \textcolor{keywordflow}{return} \hyperlink{class_coureur_a274255068bb91a5c66a365cd10528280}{classe};
+00055 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_coureur_a724d13c5c34757fcd70491da44a918e3}\label{class_coureur_a724d13c5c34757fcd70491da44a918e3}} 
+\index{Coureur@{Coureur}!get\+I\+NE@{get\+I\+NE}}
+\index{get\+I\+NE@{get\+I\+NE}!Coureur@{Coureur}}
+\paragraph{\texorpdfstring{get\+I\+N\+E()}{getINE()}}
+{\footnotesize\ttfamily Q\+String Coureur\+::get\+I\+NE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_coureur_ac4028301fbd425848c2a81d69f8f94ac}{I\+NE}.
+
+
+\begin{DoxyCode}
+00058 \{
+00059     \textcolor{keywordflow}{return} \hyperlink{class_coureur_ac4028301fbd425848c2a81d69f8f94ac}{INE};
+00060 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_coureur_a1d9f2cb15f74ff1c7b20fde081b5c5d6}\label{class_coureur_a1d9f2cb15f74ff1c7b20fde081b5c5d6}} 
+\index{Coureur@{Coureur}!get\+Liste\+Coureurs@{get\+Liste\+Coureurs}}
+\index{get\+Liste\+Coureurs@{get\+Liste\+Coureurs}!Coureur@{Coureur}}
+\paragraph{\texorpdfstring{get\+Liste\+Coureurs()}{getListeCoureurs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Q\+Vector$<$Q\+String$>$ Coureur\+::get\+Liste\+Coureurs (\begin{DoxyParamCaption}\item[{Q\+String}]{Coureur }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_coureur_a99e640aba229bb629e894729413b4e84}\label{class_coureur_a99e640aba229bb629e894729413b4e84}} 
+\index{Coureur@{Coureur}!get\+Liste\+Coureurs@{get\+Liste\+Coureurs}}
+\index{get\+Liste\+Coureurs@{get\+Liste\+Coureurs}!Coureur@{Coureur}}
+\paragraph{\texorpdfstring{get\+Liste\+Coureurs}{getListeCoureurs}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Q\+String\+List Coureur\+::get\+Liste\+Coureurs (\begin{DoxyParamCaption}\item[{Q\+String}]{,  }\item[{Q\+String}]{,  }\item[{Q\+String}]{,  }\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+\mbox{\Hypertarget{class_coureur_a1808f13910638c6f2a57e87be522adf3}\label{class_coureur_a1808f13910638c6f2a57e87be522adf3}} 
+\index{Coureur@{Coureur}!get\+Nom@{get\+Nom}}
+\index{get\+Nom@{get\+Nom}!Coureur@{Coureur}}
+\paragraph{\texorpdfstring{get\+Nom()}{getNom()}}
+{\footnotesize\ttfamily Q\+String Coureur\+::get\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_coureur_ac96ff159efad8a6fd3abbe1a37b51c24}{nom}.
+
+
+\begin{DoxyCode}
+00043 \{
+00044     \textcolor{keywordflow}{return} \hyperlink{class_coureur_ac96ff159efad8a6fd3abbe1a37b51c24}{nom};
+00045 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_coureur_a54a92a0fcaf7db9079f9d3f5d043539c}\label{class_coureur_a54a92a0fcaf7db9079f9d3f5d043539c}} 
+\index{Coureur@{Coureur}!get\+Prenom@{get\+Prenom}}
+\index{get\+Prenom@{get\+Prenom}!Coureur@{Coureur}}
+\paragraph{\texorpdfstring{get\+Prenom()}{getPrenom()}}
+{\footnotesize\ttfamily Q\+String Coureur\+::get\+Prenom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_coureur_a5e37d256b17765909423e183879c9e58}{prenom}.
+
+
+\begin{DoxyCode}
+00048 \{
+00049     \textcolor{keywordflow}{return} \hyperlink{class_coureur_a5e37d256b17765909423e183879c9e58}{prenom};
+00050 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_coureur_a9890c210d97e593644b22cb0e8228527}\label{class_coureur_a9890c210d97e593644b22cb0e8228527}} 
+\index{Coureur@{Coureur}!B\+DD@{B\+DD}}
+\index{B\+DD@{B\+DD}!Coureur@{Coureur}}
+\paragraph{\texorpdfstring{B\+DD}{BDD}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Coureur\+::\+B\+DD\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+agrégation \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} 
+
+
+
+Référencé par \hyperlink{class_coureur_af3a5607d96a0960b1666164f6a74d539}{Coureur()}.
+
+\mbox{\Hypertarget{class_coureur_a274255068bb91a5c66a365cd10528280}\label{class_coureur_a274255068bb91a5c66a365cd10528280}} 
+\index{Coureur@{Coureur}!classe@{classe}}
+\index{classe@{classe}!Coureur@{Coureur}}
+\paragraph{\texorpdfstring{classe}{classe}}
+{\footnotesize\ttfamily Q\+String Coureur\+::classe\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_coureur_aa611e208767c4db4999e00296aa12632}{get\+Classe()}.
+
+\mbox{\Hypertarget{class_coureur_ac4028301fbd425848c2a81d69f8f94ac}\label{class_coureur_ac4028301fbd425848c2a81d69f8f94ac}} 
+\index{Coureur@{Coureur}!I\+NE@{I\+NE}}
+\index{I\+NE@{I\+NE}!Coureur@{Coureur}}
+\paragraph{\texorpdfstring{I\+NE}{INE}}
+{\footnotesize\ttfamily Q\+String Coureur\+::\+I\+NE\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_coureur_a724d13c5c34757fcd70491da44a918e3}{get\+I\+N\+E()}.
+
+\mbox{\Hypertarget{class_coureur_ac96ff159efad8a6fd3abbe1a37b51c24}\label{class_coureur_ac96ff159efad8a6fd3abbe1a37b51c24}} 
+\index{Coureur@{Coureur}!nom@{nom}}
+\index{nom@{nom}!Coureur@{Coureur}}
+\paragraph{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily Q\+String Coureur\+::nom\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_coureur_a1808f13910638c6f2a57e87be522adf3}{get\+Nom()}.
+
+\mbox{\Hypertarget{class_coureur_a5e37d256b17765909423e183879c9e58}\label{class_coureur_a5e37d256b17765909423e183879c9e58}} 
+\index{Coureur@{Coureur}!prenom@{prenom}}
+\index{prenom@{prenom}!Coureur@{Coureur}}
+\paragraph{\texorpdfstring{prenom}{prenom}}
+{\footnotesize\ttfamily Q\+String Coureur\+::prenom\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_coureur_a54a92a0fcaf7db9079f9d3f5d043539c}{get\+Prenom()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{coureur_8h}{coureur.\+h}\item 
+\hyperlink{coureur_8cpp}{coureur.\+cpp}\end{DoxyCompactItemize}

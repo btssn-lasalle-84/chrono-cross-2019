@@ -1,0 +1,702 @@
+\hypertarget{class_base_de_donnees}{}\subsection{Référence de la classe Base\+De\+Donnees}
+\label{class_base_de_donnees}\index{Base\+De\+Donnees@{Base\+De\+Donnees}}
+
+
+{\ttfamily \#include $<$basededonnees.\+h$>$}
+
+
+
+Graphe de collaboration de Base\+De\+Donnees\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{class_base_de_donnees__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{est\+Connecte} ()
+\item 
+bool \hyperlink{class_base_de_donnees_ab2e092285ccc0ee1cce61a1774218561}{connecter} (Q\+String nom\+Base, Q\+String username=\hyperlink{basededonnees_8h_a88b5f5b81fa534553c68802384beff2c}{B\+D\+D\+\_\+\+U\+S\+E\+R\+N\+A\+ME}, Q\+String password=\hyperlink{basededonnees_8h_ae2ded9166ed2553182545e97514c04f7}{B\+D\+D\+\_\+\+P\+A\+S\+S\+W\+O\+RD}, Q\+String serveur=\hyperlink{basededonnees_8h_af06096ec4ec654090fa78ab359d4a0dd}{B\+D\+D\+\_\+\+H\+O\+S\+T\+N\+A\+ME})
+\item 
+bool \hyperlink{class_base_de_donnees_af9ac332082ffd0dd35e412cefabe5e9c}{est\+Ouvert} ()
+\item 
+bool \hyperlink{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}{ouvrir} (Q\+String fichier\+Base)
+\item 
+bool \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer} (Q\+String requete)
+\item 
+bool \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer} (Q\+String requete, Q\+String \&donnees)
+\item 
+bool \hyperlink{class_base_de_donnees_a2a5c461fa11d404810ae3ebe035d5190}{recuperer} (Q\+String requete, Q\+String\+List \&donnees)
+\item 
+bool \hyperlink{class_base_de_donnees_af9a76eb2b12df784280c379a4b22af62}{recuperer} (Q\+String requete, Q\+Vector$<$ Q\+String $>$ \&donnees)
+\item 
+bool \hyperlink{class_base_de_donnees_a68dd0d62ba03b9e8e5aa759d0666cb59}{recuperer} (Q\+String requete, Q\+Vector$<$ Q\+String\+List $>$ \&donnees)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{get\+Instance} (Q\+String type=\char`\"{}Q\+M\+Y\+S\+QL\char`\"{})
+\item 
+static void \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{detruire\+Instance} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_base_de_donnees_a10dd177f1008f675ab78c2221b2a6750}{Base\+De\+Donnees} (Q\+String type)
+\item 
+\hyperlink{class_base_de_donnees_a5dc474cdbe003644fb0ca7b8f2ec6b93}{$\sim$\+Base\+De\+Donnees} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Sql\+Database \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}
+\item 
+Q\+Mutex \hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex}
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_base_de_donnees_a822ba0b7cf85b1e48ced8efd3d65e266}{base\+De\+Donnees} = nullptr
+\item 
+static Q\+String \hyperlink{class_base_de_donnees_ab682b82167f494496a6531bfe522b42b}{type\+Base} = \char`\"{}Q\+M\+Y\+S\+QL\char`\"{}
+\item 
+static int \hyperlink{class_base_de_donnees_a5099ecb2922bb31d84cd5d4505298a29}{nb\+Acces} = 0
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_base_de_donnees_a10dd177f1008f675ab78c2221b2a6750}\label{class_base_de_donnees_a10dd177f1008f675ab78c2221b2a6750}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{Base\+De\+Donnees()}{BaseDeDonnees()}}
+{\footnotesize\ttfamily Base\+De\+Donnees\+::\+Base\+De\+Donnees (\begin{DoxyParamCaption}\item[{Q\+String}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}, et \hyperlink{class_base_de_donnees_ab682b82167f494496a6531bfe522b42b}{type\+Base}.
+
+
+
+Référencé par \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{get\+Instance()}.
+
+
+\begin{DoxyCode}
+00023 \{
+00024 \textcolor{preprocessor}{    #ifdef DEBUG\_BASEDEDONNEES}
+00025     qDebug() << Q\_FUNC\_INFO << type;
+00026 \textcolor{preprocessor}{    #endif}
+00027     \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db} = QSqlDatabase::addDatabase(type);
+00028     \hyperlink{class_base_de_donnees_ab682b82167f494496a6531bfe522b42b}{typeBase} = type;
+00029 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_de_donnees_a5dc474cdbe003644fb0ca7b8f2ec6b93}\label{class_base_de_donnees_a5dc474cdbe003644fb0ca7b8f2ec6b93}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!````~Base\+De\+Donnees@{$\sim$\+Base\+De\+Donnees}}
+\index{````~Base\+De\+Donnees@{$\sim$\+Base\+De\+Donnees}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{$\sim$\+Base\+De\+Donnees()}{~BaseDeDonnees()}}
+{\footnotesize\ttfamily Base\+De\+Donnees\+::$\sim$\+Base\+De\+Donnees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+00032 \{
+00033 \textcolor{preprocessor}{    #ifdef DEBUG\_BASEDEDONNEES}
+00034     qDebug() << Q\_FUNC\_INFO;
+00035 \textcolor{preprocessor}{    #endif}
+00036 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_base_de_donnees_ab2e092285ccc0ee1cce61a1774218561}\label{class_base_de_donnees_ab2e092285ccc0ee1cce61a1774218561}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!connecter@{connecter}}
+\index{connecter@{connecter}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{connecter()}{connecter()}}
+{\footnotesize\ttfamily bool Base\+De\+Donnees\+::connecter (\begin{DoxyParamCaption}\item[{Q\+String}]{nom\+Base,  }\item[{Q\+String}]{username = {\ttfamily \hyperlink{basededonnees_8h_a88b5f5b81fa534553c68802384beff2c}{B\+D\+D\+\_\+\+U\+S\+E\+R\+N\+A\+ME}},  }\item[{Q\+String}]{password = {\ttfamily \hyperlink{basededonnees_8h_ae2ded9166ed2553182545e97514c04f7}{B\+D\+D\+\_\+\+P\+A\+S\+S\+W\+O\+RD}},  }\item[{Q\+String}]{serveur = {\ttfamily \hyperlink{basededonnees_8h_af06096ec4ec654090fa78ab359d4a0dd}{B\+D\+D\+\_\+\+H\+O\+S\+T\+N\+A\+ME}} }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}, \hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex}, et \hyperlink{class_base_de_donnees_ab682b82167f494496a6531bfe522b42b}{type\+Base}.
+
+
+
+Référencé par \hyperlink{class_coureur_af3a5607d96a0960b1666164f6a74d539}{Coureur\+::\+Coureur()}, \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course\+::\+Course()}, \hyperlink{class_gestion_b_d_d_a406bdb9b1714b204fa6fab015baffc27}{Gestion\+B\+D\+D\+::\+Gestion\+B\+D\+D()}, \hyperlink{class_i_h_m_resultats_cross_a94afa0356ebc98e497dfecca3e1bb00b}{I\+H\+M\+Resultats\+Cross\+::\+I\+H\+M\+Resultats\+Cross()}, et \hyperlink{class_resultat_a57e458f7abfc7463786ae9212bf55cd5}{Resultat\+::\+Resultat()}.
+
+
+\begin{DoxyCode}
+00077 \{
+00078     \textcolor{keywordflow}{if}(\hyperlink{class_base_de_donnees_ab682b82167f494496a6531bfe522b42b}{typeBase} != \textcolor{stringliteral}{"QMYSQL"})
+00079         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00080     QMutexLocker verrou(&\hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex});
+00081     \textcolor{keywordflow}{if}(!\hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}.isOpen())
+00082     \{
+00083        \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}.setHostName(serveur);
+00084        \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}.setUserName(username);
+00085        \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}.setPassword(password);
+00086        \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}.setDatabaseName(nomBase);
+00087 
+00088        qDebug() << Q\_FUNC\_INFO << \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db};
+00089 \textcolor{preprocessor}{       #ifdef DEBUG\_BASEDEDONNEES}
+00090        qDebug() << Q\_FUNC\_INFO;
+00091        qDebug() << \textcolor{stringliteral}{"HostName : "} << db.hostName();
+00092        qDebug() << \textcolor{stringliteral}{"UserName : "} << db.userName();
+00093        qDebug() << \textcolor{stringliteral}{"DatabaseName : "} << db.databaseName();
+00094 \textcolor{preprocessor}{       #endif}
+00095        \textcolor{keywordflow}{if}(db.open())
+00096        \{
+00097 \textcolor{preprocessor}{           #ifdef DEBUG\_BASEDEDONNEES}
+00098            qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Connexion réussie à %1"}).arg(db.hostName());
+00099 \textcolor{preprocessor}{           #endif}
+00100            \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00101        \}
+00102        \textcolor{keywordflow}{else}
+00103        \{
+00104            qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Erreur : impossible de se connecter à la base de
+       données !"});
+00105            QMessageBox::critical(0, QString::fromUtf8(\textcolor{stringliteral}{"BaseDeDonnees"}), QString::fromUtf8(\textcolor{stringliteral}{"Impossible de se
+       connecter à la base de données !"}));
+00106            \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00107        \}
+00108     \}
+00109     \textcolor{keywordflow}{else}
+00110         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00111 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}\label{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!detruire\+Instance@{detruire\+Instance}}
+\index{detruire\+Instance@{detruire\+Instance}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{detruire\+Instance()}{detruireInstance()}}
+{\footnotesize\ttfamily void Base\+De\+Donnees\+::detruire\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Références \hyperlink{class_base_de_donnees_a822ba0b7cf85b1e48ced8efd3d65e266}{base\+De\+Donnees}, et \hyperlink{class_base_de_donnees_a5099ecb2922bb31d84cd5d4505298a29}{nb\+Acces}.
+
+
+
+Référencé par \hyperlink{class_course_aa9038f2e129526920037dda9e76d69d0}{Course\+::$\sim$\+Course()}, \hyperlink{class_gestion_b_d_d_a4d98c4008182a5749c57c97772b3c303}{Gestion\+B\+D\+D\+::$\sim$\+Gestion\+B\+D\+D()}, \hyperlink{class_i_h_m_chrono_cross_a312f21e1d150096b3f36ba36476907eb}{I\+H\+M\+Chrono\+Cross\+::$\sim$\+I\+H\+M\+Chrono\+Cross()}, \hyperlink{class_i_h_m_gestion_cross_a47cc1d5e80bea3d5e3396a8c16158c45}{I\+H\+M\+Gestion\+Cross\+::$\sim$\+I\+H\+M\+Gestion\+Cross()}, \hyperlink{class_i_h_m_resultats_cross_a62afe926862fddcb340e4a2c57c3cddf}{I\+H\+M\+Resultats\+Cross\+::$\sim$\+I\+H\+M\+Resultats\+Cross()}, et \hyperlink{class_resultat_ae159333a3c5b89b8f307086bac618d7c}{Resultat\+::$\sim$\+Resultat()}.
+
+
+\begin{DoxyCode}
+00052 \{
+00053     \textcolor{comment}{// instance ?}
+00054     \textcolor{keywordflow}{if}(\hyperlink{class_base_de_donnees_a822ba0b7cf85b1e48ced8efd3d65e266}{baseDeDonnees} != \textcolor{keyword}{nullptr})
+00055     \{
+00056         \textcolor{keywordflow}{if}(\hyperlink{class_base_de_donnees_a5099ecb2922bb31d84cd5d4505298a29}{nbAcces} > 0)
+00057             \hyperlink{class_base_de_donnees_a5099ecb2922bb31d84cd5d4505298a29}{nbAcces}--;
+00058 \textcolor{preprocessor}{        #ifdef DEBUG\_BASEDEDONNEES}
+00059         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"nbAcces restants"} << \hyperlink{class_base_de_donnees_a5099ecb2922bb31d84cd5d4505298a29}{nbAcces};
+00060 \textcolor{preprocessor}{        #endif}
+00061         \textcolor{comment}{// dernier ?}
+00062         \textcolor{keywordflow}{if}(nbAcces == 0)
+00063         \{
+00064             \textcolor{keyword}{delete} \hyperlink{class_base_de_donnees_a822ba0b7cf85b1e48ced8efd3d65e266}{baseDeDonnees};
+00065             \hyperlink{class_base_de_donnees_a822ba0b7cf85b1e48ced8efd3d65e266}{baseDeDonnees} = \textcolor{keyword}{nullptr};
+00066         \}
+00067     \}
+00068 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}\label{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!est\+Connecte@{est\+Connecte}}
+\index{est\+Connecte@{est\+Connecte}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{est\+Connecte()}{estConnecte()}}
+{\footnotesize\ttfamily bool Base\+De\+Donnees\+::est\+Connecte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}, et \hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex}.
+
+
+
+Référencé par \hyperlink{class_coureur_af3a5607d96a0960b1666164f6a74d539}{Coureur\+::\+Coureur()}, \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course\+::\+Course()}, \hyperlink{class_gestion_b_d_d_a406bdb9b1714b204fa6fab015baffc27}{Gestion\+B\+D\+D\+::\+Gestion\+B\+D\+D()}, \hyperlink{class_i_h_m_resultats_cross_a94afa0356ebc98e497dfecca3e1bb00b}{I\+H\+M\+Resultats\+Cross\+::\+I\+H\+M\+Resultats\+Cross()}, et \hyperlink{class_resultat_a57e458f7abfc7463786ae9212bf55cd5}{Resultat\+::\+Resultat()}.
+
+
+\begin{DoxyCode}
+00071 \{
+00072     QMutexLocker verrou(&\hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex});
+00073     \textcolor{keywordflow}{return} \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}.isOpen();
+00074 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_de_donnees_af9ac332082ffd0dd35e412cefabe5e9c}\label{class_base_de_donnees_af9ac332082ffd0dd35e412cefabe5e9c}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!est\+Ouvert@{est\+Ouvert}}
+\index{est\+Ouvert@{est\+Ouvert}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{est\+Ouvert()}{estOuvert()}}
+{\footnotesize\ttfamily bool Base\+De\+Donnees\+::est\+Ouvert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}, et \hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex}.
+
+
+\begin{DoxyCode}
+00114 \{
+00115     QMutexLocker verrou(&\hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex});
+00116     \textcolor{keywordflow}{return} \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}.isOpen();
+00117 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}\label{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!executer@{executer}}
+\index{executer@{executer}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{executer()}{executer()}}
+{\footnotesize\ttfamily bool Base\+De\+Donnees\+::executer (\begin{DoxyParamCaption}\item[{Q\+String}]{requete }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}, et \hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex}.
+
+
+
+Référencé par \hyperlink{class_course_ac99042bf8b20e8d3a54e72c8a80f7ee7}{Course\+::ajoute\+Arrivee\+B\+D\+D()}, \hyperlink{class_gestion_b_d_d_ae71561eea6d1163ff067f079ccc6d169}{Gestion\+B\+D\+D\+::ajouter\+Nouveau\+Coureur()}, \hyperlink{class_gestion_b_d_d_a71391d5419969b52cd999463b5326599}{Gestion\+B\+D\+D\+::ajouter\+Nouvel\+Inscrit()}, \hyperlink{class_gestion_b_d_d_afad096d7e405d35a818d4858ee34df61}{Gestion\+B\+D\+D\+::modifier\+Coureur()}, \hyperlink{class_course_a3ebcde1fa443cb20d71fb98af4d0c418}{Course\+::set\+Etat()}, et \hyperlink{class_gestion_b_d_d_afe47ec92274b7998131c5d4e6551d177}{Gestion\+B\+D\+D\+::supprimer\+Coureur()}.
+
+
+\begin{DoxyCode}
+00152 \{
+00153     QMutexLocker verrou(&\hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex});
+00154     QSqlQuery r;
+00155     \textcolor{keywordtype}{bool} retour;
+00156 
+00157     \textcolor{keywordflow}{if}(\hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}.isOpen())
+00158     \{
+00159         \textcolor{keywordflow}{if}(requete.contains(\textcolor{stringliteral}{"UPDATE"}) || requete.contains(\textcolor{stringliteral}{"INSERT"}) || requete.contains(\textcolor{stringliteral}{"DELETE"}))
+00160         \{
+00161             retour = r.exec(requete);
+00162 \textcolor{preprocessor}{            #ifdef DEBUG\_BASEDEDONNEES}
+00163             qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Retour %1 pour la requete : %2"}).arg(
+      QString::number(retour)).arg(requete);
+00164 \textcolor{preprocessor}{            #endif}
+00165             \textcolor{keywordflow}{if}(retour)
+00166             \{
+00167                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00168             \}
+00169             \textcolor{keywordflow}{else}
+00170             \{
+00171                 qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Erreur : %1 pour la requête %2"}).arg(r.
+      lastError().text()).arg(requete);
+00172                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00173             \}
+00174         \}
+00175         \textcolor{keywordflow}{else}
+00176         \{
+00177             qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Erreur : requête %1 non autorisée !"}).arg(requete
+      );
+00178             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00179         \}
+00180     \}
+00181     \textcolor{keywordflow}{else}
+00182         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00183 
+00184 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}\label{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ Base\+De\+Donnees\+::get\+Instance (\begin{DoxyParamCaption}\item[{Q\+String}]{type = {\ttfamily \char`\"{}QMYSQL\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Références \hyperlink{class_base_de_donnees_a10dd177f1008f675ab78c2221b2a6750}{Base\+De\+Donnees()}, \hyperlink{class_base_de_donnees_a822ba0b7cf85b1e48ced8efd3d65e266}{base\+De\+Donnees}, et \hyperlink{class_base_de_donnees_a5099ecb2922bb31d84cd5d4505298a29}{nb\+Acces}.
+
+
+
+Référencé par \hyperlink{class_coureur_af3a5607d96a0960b1666164f6a74d539}{Coureur\+::\+Coureur()}, \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course\+::\+Course()}, \hyperlink{class_gestion_b_d_d_a406bdb9b1714b204fa6fab015baffc27}{Gestion\+B\+D\+D\+::\+Gestion\+B\+D\+D()}, \hyperlink{class_i_h_m_resultats_cross_a94afa0356ebc98e497dfecca3e1bb00b}{I\+H\+M\+Resultats\+Cross\+::\+I\+H\+M\+Resultats\+Cross()}, et \hyperlink{class_resultat_a57e458f7abfc7463786ae9212bf55cd5}{Resultat\+::\+Resultat()}.
+
+
+\begin{DoxyCode}
+00039 \{
+00040     \textcolor{keywordflow}{if}(\hyperlink{class_base_de_donnees_a822ba0b7cf85b1e48ced8efd3d65e266}{baseDeDonnees} == \textcolor{keyword}{nullptr})
+00041         \hyperlink{class_base_de_donnees_a822ba0b7cf85b1e48ced8efd3d65e266}{baseDeDonnees} = \textcolor{keyword}{new} \hyperlink{class_base_de_donnees_a10dd177f1008f675ab78c2221b2a6750}{BaseDeDonnees}(type);
+00042 
+00043     \hyperlink{class_base_de_donnees_a5099ecb2922bb31d84cd5d4505298a29}{nbAcces}++;
+00044 \textcolor{preprocessor}{    #ifdef DEBUG\_BASEDEDONNEES}
+00045     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"nbAcces"} << \hyperlink{class_base_de_donnees_a5099ecb2922bb31d84cd5d4505298a29}{nbAcces};
+00046 \textcolor{preprocessor}{    #endif}
+00047 
+00048     \textcolor{keywordflow}{return} \hyperlink{class_base_de_donnees_a822ba0b7cf85b1e48ced8efd3d65e266}{baseDeDonnees};
+00049 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}\label{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!ouvrir@{ouvrir}}
+\index{ouvrir@{ouvrir}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{ouvrir()}{ouvrir()}}
+{\footnotesize\ttfamily bool Base\+De\+Donnees\+::ouvrir (\begin{DoxyParamCaption}\item[{Q\+String}]{fichier\+Base }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}, \hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex}, et \hyperlink{class_base_de_donnees_ab682b82167f494496a6531bfe522b42b}{type\+Base}.
+
+
+\begin{DoxyCode}
+00120 \{
+00121     \textcolor{keywordflow}{if}(\hyperlink{class_base_de_donnees_ab682b82167f494496a6531bfe522b42b}{typeBase} != \textcolor{stringliteral}{"QSQLITE"})
+00122         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00123     QMutexLocker verrou(&\hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex});
+00124     \textcolor{keywordflow}{if}(!\hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}.isOpen())
+00125     \{
+00126        \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}.setDatabaseName(fichierBase);
+00127 
+00128 \textcolor{preprocessor}{       #ifdef DEBUG\_BASEDEDONNEES}
+00129        qDebug() << Q\_FUNC\_INFO << \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}.databaseName();       
+00130 \textcolor{preprocessor}{       #endif}
+00131        \textcolor{keywordflow}{if}(\hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}.open())
+00132        \{
+00133 \textcolor{preprocessor}{           #ifdef DEBUG\_BASEDEDONNEES}
+00134            qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Ouvertir réussie à %1"}).arg(
+      \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}.databaseName());
+00135 \textcolor{preprocessor}{           #endif}
+00136 
+00137            \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00138        \}
+00139        \textcolor{keywordflow}{else}
+00140        \{
+00141            qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Erreur : impossible d'ouvrir la base de données !"}
+      );
+00142            QMessageBox::critical(0, QString::fromUtf8(\textcolor{stringliteral}{"BaseDeDonnees"}), QString::fromUtf8(\textcolor{stringliteral}{"Impossible
+       d'ouvrir la base de données !"}));
+00143            \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00144        \}
+00145     \}
+00146     \textcolor{keywordflow}{else}
+00147         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00148 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}\label{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!recuperer@{recuperer}}
+\index{recuperer@{recuperer}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{recuperer()}{recuperer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily bool Base\+De\+Donnees\+::recuperer (\begin{DoxyParamCaption}\item[{Q\+String}]{requete,  }\item[{Q\+String \&}]{donnees }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}, et \hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex}.
+
+
+
+Référencé par \hyperlink{class_course_ac99042bf8b20e8d3a54e72c8a80f7ee7}{Course\+::ajoute\+Arrivee\+B\+D\+D()}, \hyperlink{class_gestion_b_d_d_ae71561eea6d1163ff067f079ccc6d169}{Gestion\+B\+D\+D\+::ajouter\+Nouveau\+Coureur()}, \hyperlink{class_gestion_b_d_d_a71391d5419969b52cd999463b5326599}{Gestion\+B\+D\+D\+::ajouter\+Nouvel\+Inscrit()}, \hyperlink{class_course_af20fcd6d6eb2dfbd3b0f12e273f12b27}{Course\+::get\+Distance()}, \hyperlink{class_course_afc21f8195edd50c9fd266cff0c401b7c}{Course\+::get\+Heure()}, \hyperlink{class_course_a7ba5d2c9865065e95f49a24fbeec7857}{Course\+::get\+Information\+Coureur()}, \hyperlink{class_course_ae5e74946d973166ad3000e38600acf20}{Course\+::get\+Liste\+Courses()}, \hyperlink{class_course_a0d995ef72152208e02eb3b10315dfabb}{Course\+::get\+Liste\+Manifestations()}, \hyperlink{class_course_ad8dd87e7f299bc938f40423f28c837e8}{Course\+::get\+Nb\+Arrivee()}, \hyperlink{class_course_ad0ff4153f1e02826d551f478f95ad260}{Course\+::get\+Nb\+Inscrit()}, \hyperlink{class_course_a7b4485a0b38bc3b908131962b705d880}{Course\+::get\+Nom\+Course()}, \hyperlink{class_gestion_b_d_d_afad096d7e405d35a818d4858ee34df61}{Gestion\+B\+D\+D\+::modifier\+Coureur()}, \hyperlink{class_gestion_b_d_d_a76ab3e307ad9005dcdb2781fc77fc5c8}{Gestion\+B\+D\+D\+::recuperer\+Categories\+Creation()}, \hyperlink{class_gestion_b_d_d_ad7b0117ad5d55f21e6f00858038f4a85}{Gestion\+B\+D\+D\+::recuperer\+Catergorie\+Coureur()}, \hyperlink{class_gestion_b_d_d_a0e90b16b2e330de9cc80f72f0d648e5d}{Gestion\+B\+D\+D\+::recuperer\+Classe\+Coureur()}, \hyperlink{class_gestion_b_d_d_a38d728d644f23048f1a6d3e6d4656764}{Gestion\+B\+D\+D\+::recuperer\+Classes\+Creation()}, \hyperlink{class_gestion_b_d_d_a0a2fa02b90974684658937fbfb55bf0a}{Gestion\+B\+D\+D\+::recuperer\+Information()}, \hyperlink{class_gestion_b_d_d_a09b547cb065256acd269c64e273c93fd}{Gestion\+B\+D\+D\+::recuperer\+Liste\+Coureurs\+Inscrit()}, \hyperlink{class_gestion_b_d_d_ac35de40fd5860b3130f71788ecaa5ef3}{Gestion\+B\+D\+D\+::recuperer\+Liste\+Courses\+Gestion()}, \hyperlink{class_gestion_b_d_d_a59ef29e28993c64aa4d5a8c42a8fb08d}{Gestion\+B\+D\+D\+::recuperer\+Liste\+Courses\+Inscription()}, \hyperlink{class_gestion_b_d_d_a6c1ab5e51fbd6c92bb096badbeac0df5}{Gestion\+B\+D\+D\+::recuperer\+Liste\+Manifestations\+Inscription()}, \hyperlink{class_gestion_b_d_d_a2b44ebc5bf5b1a7babde6512817a85b4}{Gestion\+B\+D\+D\+::recuperer\+Table\+B\+D\+D()}, \hyperlink{class_course_a36cf16c971841431947b6fbe2b3f3d27}{Course\+::set\+Id\+Course()}, \hyperlink{class_gestion_b_d_d_afe47ec92274b7998131c5d4e6551d177}{Gestion\+B\+D\+D\+::supprimer\+Coureur()}, \hyperlink{class_gestion_b_d_d_a1a39bbc7bfcb60d286363b9d2dd7f88b}{Gestion\+B\+D\+D\+::verifier\+Dossard()}, \hyperlink{class_course_a6cb3ede6a11e4813f95be92f4459a3c2}{Course\+::verifier\+Dossard()}, et \hyperlink{class_gestion_b_d_d_abfd3cfb9553a83aafd86c3149869d6c0}{Gestion\+B\+D\+D\+::verifier\+Information()}.
+
+
+\begin{DoxyCode}
+00190 \{
+00191     QMutexLocker verrou(&\hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex});
+00192     QSqlQuery r;
+00193     \textcolor{keywordtype}{bool} retour;
+00194 
+00195     \textcolor{keywordflow}{if}(\hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}.isOpen())
+00196     \{
+00197         \textcolor{keywordflow}{if}(requete.contains(\textcolor{stringliteral}{"SELECT"}))
+00198         \{
+00199             retour = r.exec(requete);
+00200 \textcolor{preprocessor}{            #ifdef DEBUG\_BASEDEDONNEES}
+00201             qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Retour %1 pour la requete : %2"}).arg(
+      QString::number(retour)).arg(requete);
+00202 \textcolor{preprocessor}{            #endif}
+00203             \textcolor{keywordflow}{if}(retour)
+00204             \{
+00205                 \textcolor{comment}{// on se positionne sur l'enregistrement}
+00206                 r.first();
+00207 
+00208                 \textcolor{comment}{// on vérifie l'état de l'enregistrement retourné}
+00209                 \textcolor{keywordflow}{if}(!r.isValid())
+00210                 \{
+00211 \textcolor{preprocessor}{                    #ifdef DEBUG\_BASEDEDONNEES}
+00212                     qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Résultat non valide !"});
+00213 \textcolor{preprocessor}{                    #endif}
+00214                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00215                 \}
+00216 
+00217                 \textcolor{comment}{// on récupère sous forme de QString la valeur du champ}
+00218                 \textcolor{keywordflow}{if}(r.isNull(0))
+00219                 \{
+00220 \textcolor{preprocessor}{                    #ifdef DEBUG\_BASEDEDONNEES}
+00221                     qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Aucun résultat !"});
+00222 \textcolor{preprocessor}{                    #endif}
+00223                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00224                 \}
+00225                 donnees = r.value(0).toString();
+00226 \textcolor{preprocessor}{                #ifdef DEBUG\_BASEDEDONNEES}
+00227                 qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Enregistrement -> "} << donnees;
+00228 \textcolor{preprocessor}{                #endif}
+00229                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00230             \}
+00231             \textcolor{keywordflow}{else}
+00232             \{
+00233                 qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Erreur : %1 pour la requête %2"}).arg(r.
+      lastError().text()).arg(requete);
+00234                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00235             \}
+00236         \}
+00237         \textcolor{keywordflow}{else}
+00238         \{
+00239             qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Erreur : requête %1 non autorisée !"}).arg(requete
+      );
+00240             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00241         \}
+00242     \}
+00243     \textcolor{keywordflow}{else}
+00244         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00245 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_de_donnees_a2a5c461fa11d404810ae3ebe035d5190}\label{class_base_de_donnees_a2a5c461fa11d404810ae3ebe035d5190}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!recuperer@{recuperer}}
+\index{recuperer@{recuperer}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{recuperer()}{recuperer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily bool Base\+De\+Donnees\+::recuperer (\begin{DoxyParamCaption}\item[{Q\+String}]{requete,  }\item[{Q\+String\+List \&}]{donnees }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}, et \hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex}.
+
+
+\begin{DoxyCode}
+00251 \{
+00252     QMutexLocker verrou(&\hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex});
+00253     QSqlQuery r;
+00254     \textcolor{keywordtype}{bool} retour;
+00255 
+00256     \textcolor{keywordflow}{if}(\hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}.isOpen())
+00257     \{
+00258         \textcolor{keywordflow}{if}(requete.contains(\textcolor{stringliteral}{"SELECT"}))
+00259         \{
+00260             retour = r.exec(requete);
+00261 \textcolor{preprocessor}{            #ifdef DEBUG\_BASEDEDONNEES}
+00262             qDebug() << QString::fromUtf8(\textcolor{stringliteral}{"<BaseDeDonnees::recuperer(QString, QStringList)> retour %1 pour
+       la requete : %2"}).arg(QString::number(retour)).arg(requete);
+00263 \textcolor{preprocessor}{            #endif}
+00264             \textcolor{keywordflow}{if}(retour)
+00265             \{
+00266                 \textcolor{comment}{// on se positionne sur l'enregistrement}
+00267                 r.first();
+00268 
+00269                 \textcolor{comment}{// on vérifie l'état de l'enregistrement retourné}
+00270                 \textcolor{keywordflow}{if}(!r.isValid())
+00271                 \{
+00272 \textcolor{preprocessor}{                    #ifdef DEBUG\_BASEDEDONNEES}
+00273                     qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Résultat non valide !"});
+00274 \textcolor{preprocessor}{                    #endif}
+00275                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00276                 \}
+00277 
+00278                 \textcolor{comment}{// on récupère sous forme de QString la valeur de tous les champs sélectionnés}
+00279                 \textcolor{comment}{// et on les stocke dans une liste de QString}
+00280                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<r.record().count();i++)
+00281                     \textcolor{keywordflow}{if}(!r.isNull(i))
+00282                         donnees << r.value(i).toString();
+00283 \textcolor{preprocessor}{                #ifdef DEBUG\_BASEDEDONNEES}
+00284                 qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Enregistrement -> "} << donnees;
+00285 \textcolor{preprocessor}{                #endif}
+00286                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00287             \}
+00288             \textcolor{keywordflow}{else}
+00289             \{
+00290                 qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Erreur : %1 pour la requête %2"}).arg(r.
+      lastError().text()).arg(requete);
+00291                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00292             \}
+00293         \}
+00294         \textcolor{keywordflow}{else}
+00295         \{
+00296             qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Erreur : requête %1 non autorisée !"}).arg(requete
+      );
+00297             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00298         \}
+00299     \}
+00300     \textcolor{keywordflow}{else}
+00301         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00302 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_de_donnees_af9a76eb2b12df784280c379a4b22af62}\label{class_base_de_donnees_af9a76eb2b12df784280c379a4b22af62}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!recuperer@{recuperer}}
+\index{recuperer@{recuperer}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{recuperer()}{recuperer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily bool Base\+De\+Donnees\+::recuperer (\begin{DoxyParamCaption}\item[{Q\+String}]{requete,  }\item[{Q\+Vector$<$ Q\+String $>$ \&}]{donnees }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}, et \hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex}.
+
+
+\begin{DoxyCode}
+00308 \{
+00309     QMutexLocker verrou(&\hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex});
+00310     QSqlQuery r;
+00311     \textcolor{keywordtype}{bool} retour;
+00312     QString data;
+00313 
+00314     \textcolor{keywordflow}{if}(\hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}.isOpen())
+00315     \{
+00316         \textcolor{keywordflow}{if}(requete.contains(\textcolor{stringliteral}{"SELECT"}))
+00317         \{
+00318             retour = r.exec(requete);
+00319 \textcolor{preprocessor}{            #ifdef DEBUG\_BASEDEDONNEES}
+00320             qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Retour %1 pour la requete : %2"}).arg(
+      QString::number(retour)).arg(requete);
+00321 \textcolor{preprocessor}{            #endif}
+00322             \textcolor{keywordflow}{if}(retour)
+00323             \{
+00324                 \textcolor{comment}{// pour chaque enregistrement}
+00325                 \textcolor{keywordflow}{while} ( r.next() )
+00326                 \{
+00327                     \textcolor{comment}{// on récupère sous forme de QString la valeur du champs sélectionné}
+00328                     data = r.value(0).toString();
+00329 
+00330 \textcolor{preprocessor}{                    #ifdef DEBUG\_BASEDEDONNEES}
+00331                     \textcolor{comment}{//qDebug() << Q\_FUNC\_INFO << "Enregistrement -> " << data;}
+00332 \textcolor{preprocessor}{                    #endif}
+00333 
+00334                     \textcolor{comment}{// on stocke l'enregistrement dans le QVector}
+00335                     donnees.push\_back(data);
+00336                 \}
+00337 \textcolor{preprocessor}{                #ifdef DEBUG\_BASEDEDONNEES}
+00338                 qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Enregistrement -> "} << donnees;
+00339 \textcolor{preprocessor}{                #endif}
+00340                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00341             \}
+00342             \textcolor{keywordflow}{else}
+00343             \{
+00344                 qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Erreur : %1 pour la requête %2"}).arg(r.
+      lastError().text()).arg(requete);
+00345                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00346             \}
+00347         \}
+00348         \textcolor{keywordflow}{else}
+00349         \{
+00350             qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Erreur : requête %1 non autorisée !"}).arg(requete
+      );
+00351             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00352         \}
+00353     \}
+00354     \textcolor{keywordflow}{else}
+00355         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00356 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_base_de_donnees_a68dd0d62ba03b9e8e5aa759d0666cb59}\label{class_base_de_donnees_a68dd0d62ba03b9e8e5aa759d0666cb59}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!recuperer@{recuperer}}
+\index{recuperer@{recuperer}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{recuperer()}{recuperer()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily bool Base\+De\+Donnees\+::recuperer (\begin{DoxyParamCaption}\item[{Q\+String}]{requete,  }\item[{Q\+Vector$<$ Q\+String\+List $>$ \&}]{donnees }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}, et \hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex}.
+
+
+\begin{DoxyCode}
+00362 \{
+00363     QMutexLocker verrou(&\hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex});
+00364     QSqlQuery r;
+00365     \textcolor{keywordtype}{bool} retour;
+00366     QStringList data;
+00367 
+00368     \textcolor{keywordflow}{if}(\hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db}.isOpen())
+00369     \{
+00370         \textcolor{keywordflow}{if}(requete.contains(\textcolor{stringliteral}{"SELECT"}))
+00371         \{
+00372             retour = r.exec(requete);
+00373 \textcolor{preprocessor}{            #ifdef DEBUG\_BASEDEDONNEES}
+00374             qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Retour %1 pour la requete : %2"}).arg(
+      QString::number(retour)).arg(requete);
+00375 \textcolor{preprocessor}{            #endif}
+00376             \textcolor{keywordflow}{if}(retour)
+00377             \{
+00378                 \textcolor{comment}{// pour chaque enregistrement}
+00379                 \textcolor{keywordflow}{while} ( r.next() )
+00380                 \{
+00381                     \textcolor{comment}{// on récupère sous forme de QString la valeur de tous les champs sélectionnés}
+00382                     \textcolor{comment}{// et on les stocke dans une liste de QString}
+00383                     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<r.record().count();i++)
+00384                         data << r.value(i).toString();
+00385 
+00386 \textcolor{preprocessor}{                    #ifdef DEBUG\_BASEDEDONNEES}
+00387                     \textcolor{comment}{//qDebug() << Q\_FUNC\_INFO << "Enregistrement -> " << data;}
+00388                     \textcolor{comment}{/*for(int i=0;i<r.record().count();i++)}
+00389 \textcolor{comment}{                        qDebug() << r.value(i).toString();*/}
+00390 \textcolor{preprocessor}{                    #endif}
+00391 
+00392                     \textcolor{comment}{// on stocke l'enregistrement dans le QVector}
+00393                     donnees.push\_back(data);
+00394 
+00395                     \textcolor{comment}{// on efface la liste de QString pour le prochain enregistrement}
+00396                     data.clear();
+00397                 \}
+00398 \textcolor{preprocessor}{                #ifdef DEBUG\_BASEDEDONNEES}
+00399                 qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Enregistrement -> "} << donnees;
+00400 \textcolor{preprocessor}{                #endif}
+00401                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00402             \}
+00403             \textcolor{keywordflow}{else}
+00404             \{
+00405                 qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Erreur : %1 pour la requête %2"}).arg(r.
+      lastError().text()).arg(requete);
+00406                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00407             \}
+00408         \}
+00409         \textcolor{keywordflow}{else}
+00410         \{
+00411             qDebug() << Q\_FUNC\_INFO << QString::fromUtf8(\textcolor{stringliteral}{"Erreur : requête %1 non autorisée !"}).arg(requete
+      );
+00412             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00413         \}
+00414     \}
+00415     \textcolor{keywordflow}{else}
+00416         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00417 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_base_de_donnees_a822ba0b7cf85b1e48ced8efd3d65e266}\label{class_base_de_donnees_a822ba0b7cf85b1e48ced8efd3d65e266}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!base\+De\+Donnees@{base\+De\+Donnees}}
+\index{base\+De\+Donnees@{base\+De\+Donnees}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{base\+De\+Donnees}{baseDeDonnees}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ Base\+De\+Donnees\+::base\+De\+Donnees = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{detruire\+Instance()}, et \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{get\+Instance()}.
+
+\mbox{\Hypertarget{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}\label{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!db@{db}}
+\index{db@{db}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{db}{db}}
+{\footnotesize\ttfamily Q\+Sql\+Database Base\+De\+Donnees\+::db\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_base_de_donnees_a10dd177f1008f675ab78c2221b2a6750}{Base\+De\+Donnees()}, \hyperlink{class_base_de_donnees_ab2e092285ccc0ee1cce61a1774218561}{connecter()}, \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{est\+Connecte()}, \hyperlink{class_base_de_donnees_af9ac332082ffd0dd35e412cefabe5e9c}{est\+Ouvert()}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer()}, \hyperlink{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}{ouvrir()}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer()}.
+
+\mbox{\Hypertarget{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}\label{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!mutex@{mutex}}
+\index{mutex@{mutex}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{mutex}{mutex}}
+{\footnotesize\ttfamily Q\+Mutex Base\+De\+Donnees\+::mutex\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_base_de_donnees_ab2e092285ccc0ee1cce61a1774218561}{connecter()}, \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{est\+Connecte()}, \hyperlink{class_base_de_donnees_af9ac332082ffd0dd35e412cefabe5e9c}{est\+Ouvert()}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer()}, \hyperlink{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}{ouvrir()}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer()}.
+
+\mbox{\Hypertarget{class_base_de_donnees_a5099ecb2922bb31d84cd5d4505298a29}\label{class_base_de_donnees_a5099ecb2922bb31d84cd5d4505298a29}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!nb\+Acces@{nb\+Acces}}
+\index{nb\+Acces@{nb\+Acces}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{nb\+Acces}{nbAcces}}
+{\footnotesize\ttfamily int Base\+De\+Donnees\+::nb\+Acces = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{detruire\+Instance()}, et \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{get\+Instance()}.
+
+\mbox{\Hypertarget{class_base_de_donnees_ab682b82167f494496a6531bfe522b42b}\label{class_base_de_donnees_ab682b82167f494496a6531bfe522b42b}} 
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!type\+Base@{type\+Base}}
+\index{type\+Base@{type\+Base}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{type\+Base}{typeBase}}
+{\footnotesize\ttfamily Q\+String Base\+De\+Donnees\+::type\+Base = \char`\"{}Q\+M\+Y\+S\+QL\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_base_de_donnees_a10dd177f1008f675ab78c2221b2a6750}{Base\+De\+Donnees()}, \hyperlink{class_base_de_donnees_ab2e092285ccc0ee1cce61a1774218561}{connecter()}, et \hyperlink{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}{ouvrir()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{basededonnees_8h}{basededonnees.\+h}\item 
+\hyperlink{basededonnees_8cpp}{basededonnees.\+cpp}\end{DoxyCompactItemize}

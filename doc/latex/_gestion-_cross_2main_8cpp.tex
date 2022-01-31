@@ -1,0 +1,46 @@
+\hypertarget{_gestion-_cross_2main_8cpp}{}\subsection{Référence du fichier main.\+cpp}
+\label{_gestion-_cross_2main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+Programme principal Gestion-\/\+Cross.  
+
+
+{\ttfamily \#include \char`\"{}ihmgestioncross.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Q\+Application$>$}\newline
+\subsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_gestion-_cross_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Programme principal Gestion-\/\+Cross. 
+
+Gère des manifestation de courses de Cross
+
+\begin{DoxyAuthor}{Auteur}
+A\+N\+D\+R\+EO Michaël \href{mailto:andreo.michael@outlook.fr}{\tt andreo.\+michael@outlook.\+fr}
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des fonctions}
+\mbox{\Hypertarget{_gestion-_cross_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{_gestion-_cross_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{Gestion-\/\+Cross/main.\+cpp@{Gestion-\/\+Cross/main.\+cpp}!main@{main}}
+\index{main@{main}!Gestion-\/\+Cross/main.\+cpp@{Gestion-\/\+Cross/main.\+cpp}}
+\paragraph{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00023 \{
+00024     QApplication a(argc, argv);
+00025     \hyperlink{class_i_h_m_gestion_cross}{IHMGestionCross} w;
+00026     w.show();
+00027 
+00028     \textcolor{keywordflow}{return} a.exec();
+00029 \}
+\end{DoxyCode}

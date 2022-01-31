@@ -1,0 +1,364 @@
+\hypertarget{class_i_h_m_resultats_cross}{}\subsection{Référence de la classe I\+H\+M\+Resultats\+Cross}
+\label{class_i_h_m_resultats_cross}\index{I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}}
+
+
+La fenêtre principale de l\textquotesingle{}application Resultats-\/\+Cross.  
+
+
+
+
+{\ttfamily \#include $<$ihmresultatscross.\+h$>$}
+
+
+
+Graphe de collaboration de I\+H\+M\+Resultats\+Cross\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_i_h_m_resultats_cross__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_i_h_m_resultats_cross_a94afa0356ebc98e497dfecca3e1bb00b}{I\+H\+M\+Resultats\+Cross} (\hyperlink{class_q_widget}{Q\+Widget} $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la fenêtre principale. \end{DoxyCompactList}\item 
+\hyperlink{class_i_h_m_resultats_cross_a62afe926862fddcb340e4a2c57c3cddf}{$\sim$\+I\+H\+M\+Resultats\+Cross} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la fenêtre principale. \end{DoxyCompactList}\item 
+void \hyperlink{class_i_h_m_resultats_cross_a4311c35a2869a24be1a06d7410623eda}{classer\+Arrivee} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Connecteurs privés}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_i_h_m_resultats_cross_a5f4a74c4c024aaa9d39050ac176c9e37}{classer\+Arrivee} (Q\+String\+List classement\+Coureurs)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_i_h_m_resultats_cross_a5e8e7f363a93e1e5e6b3c5eb0ad29c28}{liste\+Coureurs} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String\+List \hyperlink{class_i_h_m_resultats_cross_abfda0d5dc4b65c0525a94a74faf68ce0}{nom\+Colonnes}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_i_h_m_resultats_cross_a3f27f95ca0fb27d1a46814d2fddfc3b1}{B\+DD}
+\begin{DoxyCompactList}\small\item\em agrégation Base\+De\+Donnee \end{DoxyCompactList}\item 
+Q\+Table\+View $\ast$ \hyperlink{class_i_h_m_resultats_cross_a8f35fc63f8c3a1351658d3148daf13e0}{vue\+Liste\+Classement}
+\begin{DoxyCompactList}\small\item\em Tableau classement. \end{DoxyCompactList}\item 
+Q\+Standard\+Item\+Model $\ast$ \hyperlink{class_i_h_m_resultats_cross_a9d4e02948f64b6d9fef422d7f5a2b9b5}{modele\+Classement}
+\item 
+int \hyperlink{class_i_h_m_resultats_cross_a696f826387c8fa8b9925ca468a52482e}{nb\+Lignes\+Classement}
+\item 
+\hyperlink{class_coureur}{Coureur} $\ast$ \hyperlink{class_i_h_m_resultats_cross_ab637383c58d9ce784aec696ccd69d709}{coureur}
+\begin{DoxyCompactList}\small\item\em agrégation coureur \end{DoxyCompactList}\item 
+Q\+Combo\+Box $\ast$ \hyperlink{class_i_h_m_resultats_cross_ae1190e783fc117504abf614fe170ad54}{cbliste\+Coureurs}
+\begin{DoxyCompactList}\small\item\em Combobox contenant les différentes coureurs dans la base de données. \end{DoxyCompactList}\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_resultats_cross_a455bc28e3605cd327067be2db255c911}{label\+Classement}
+\item 
+Q\+Label $\ast$ \hyperlink{class_i_h_m_resultats_cross_a0cec9448e3ac680fd93cff9c4c709e1b}{label\+Coureurs}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+La fenêtre principale de l\textquotesingle{}application Resultats-\/\+Cross. 
+
+\begin{DoxyAuthor}{Auteur}
+Suzie Turlin
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_i_h_m_resultats_cross_a94afa0356ebc98e497dfecca3e1bb00b}\label{class_i_h_m_resultats_cross_a94afa0356ebc98e497dfecca3e1bb00b}} 
+\index{I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}!I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}}
+\index{I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}!I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}}
+\paragraph{\texorpdfstring{I\+H\+M\+Resultats\+Cross()}{IHMResultatsCross()}}
+{\footnotesize\ttfamily I\+H\+M\+Resultats\+Cross\+::\+I\+H\+M\+Resultats\+Cross (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_widget}{Q\+Widget} $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la fenêtre principale. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \hyperlink{class_q_object}{Q\+Object} Adresse de l\textquotesingle{}objet Qt parent (0 = pas de parent car c\textquotesingle{}est la fenêtre principale) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{A faire}
+\item[\hyperlink{todo__todo000002}{A faire}]Définir le contenu de l\textquotesingle{}I\+HM \end{DoxyRefDesc}
+
+
+Références \hyperlink{class_i_h_m_resultats_cross_a3f27f95ca0fb27d1a46814d2fddfc3b1}{B\+DD}, \hyperlink{class_i_h_m_resultats_cross_ae1190e783fc117504abf614fe170ad54}{cbliste\+Coureurs}, \hyperlink{class_base_de_donnees_ab2e092285ccc0ee1cce61a1774218561}{Base\+De\+Donnees\+::connecter()}, \hyperlink{class_i_h_m_resultats_cross_ab637383c58d9ce784aec696ccd69d709}{coureur}, \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{Base\+De\+Donnees\+::est\+Connecte()}, \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}, \hyperlink{class_i_h_m_resultats_cross_a455bc28e3605cd327067be2db255c911}{label\+Classement}, \hyperlink{class_i_h_m_resultats_cross_a0cec9448e3ac680fd93cff9c4c709e1b}{label\+Coureurs}, \hyperlink{class_i_h_m_resultats_cross_a9d4e02948f64b6d9fef422d7f5a2b9b5}{modele\+Classement}, \hyperlink{class_i_h_m_resultats_cross_abfda0d5dc4b65c0525a94a74faf68ce0}{nom\+Colonnes}, \hyperlink{ihmchronocross_8h_a407f067284fd7ac16426ac29cbfcd356}{T\+A\+I\+L\+L\+E\+T\+E\+X\+T\+E\+L\+A\+B\+EL}, et \hyperlink{class_i_h_m_resultats_cross_a8f35fc63f8c3a1351658d3148daf13e0}{vue\+Liste\+Classement}.
+
+
+\begin{DoxyCode}
+00025                                                     : \hyperlink{class_q_widget}{QWidget}(parent)
+00026 \{
+00031     \hyperlink{class_i_h_m_resultats_cross_ab637383c58d9ce784aec696ccd69d709}{coureur} = \textcolor{keyword}{new} \hyperlink{class_coureur}{Coureur}(\textcolor{keyword}{this});
+00032 
+00033     \hyperlink{class_i_h_m_resultats_cross_a3f27f95ca0fb27d1a46814d2fddfc3b1}{BDD} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}();
+00034     \textcolor{keywordflow}{if}(!\hyperlink{class_i_h_m_resultats_cross_a3f27f95ca0fb27d1a46814d2fddfc3b1}{BDD}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}())
+00035         \hyperlink{class_i_h_m_resultats_cross_a3f27f95ca0fb27d1a46814d2fddfc3b1}{BDD}->\hyperlink{class_base_de_donnees_ab2e092285ccc0ee1cce61a1774218561}{connecter}(\textcolor{stringliteral}{"Resultats-Cross"});
+00036 
+00037     \hyperlink{class_i_h_m_resultats_cross_a8f35fc63f8c3a1351658d3148daf13e0}{vueListeClassement} = \textcolor{keyword}{new} QTableView(\textcolor{keyword}{this});
+00038     \hyperlink{class_i_h_m_resultats_cross_a9d4e02948f64b6d9fef422d7f5a2b9b5}{modeleClassement} = \textcolor{keyword}{new} QStandardItemModel(1, 4);
+00039     \hyperlink{class_i_h_m_resultats_cross_abfda0d5dc4b65c0525a94a74faf68ce0}{nomColonnes} << \textcolor{stringliteral}{"Nom"} << \textcolor{stringliteral}{"Prénom"} << \textcolor{stringliteral}{"Classe"} << \textcolor{stringliteral}{"INE"};
+00040     \hyperlink{class_i_h_m_resultats_cross_a9d4e02948f64b6d9fef422d7f5a2b9b5}{modeleClassement}->setHorizontalHeaderLabels(\hyperlink{class_i_h_m_resultats_cross_abfda0d5dc4b65c0525a94a74faf68ce0}{nomColonnes});
+00041     \hyperlink{class_i_h_m_resultats_cross_a8f35fc63f8c3a1351658d3148daf13e0}{vueListeClassement}->setModel(\hyperlink{class_i_h_m_resultats_cross_a9d4e02948f64b6d9fef422d7f5a2b9b5}{modeleClassement});
+00042     \hyperlink{class_i_h_m_resultats_cross_a8f35fc63f8c3a1351658d3148daf13e0}{vueListeClassement}->setEditTriggers(QAbstractItemView::NoEditTriggers);
+00043     \hyperlink{class_i_h_m_resultats_cross_a8f35fc63f8c3a1351658d3148daf13e0}{vueListeClassement}->setFixedSize(this->width(), this->height());
+00044 
+00045     \hyperlink{class_i_h_m_resultats_cross_a8f35fc63f8c3a1351658d3148daf13e0}{vueListeClassement}->show();
+00046 
+00047     \textcolor{comment}{// les widgets}
+00048 
+00049     \textcolor{comment}{// défini la taille du text dans les QPushButtons}
+00050     \textcolor{comment}{/*QFont texteBouton;}
+00051 \textcolor{comment}{    texteBouton.setPointSize(TAILLETEXTEBUTON);}
+00052 \textcolor{comment}{}
+00053 \textcolor{comment}{    bAjouter = new QPushButton(QString::fromUtf8("Démarrer"), this);}
+00054 \textcolor{comment}{    bAjouter->setDefault(false);}
+00055 \textcolor{comment}{    bAjouter->setEnabled(false);}
+00056 \textcolor{comment}{    bAjouter->setFont(texteBouton);*/}
+00057 
+00058    \textcolor{comment}{/* cblisteCoureurs = new QComboBox(this);}
+00059 \textcolor{comment}{    cblisteCoureurs->setFixedSize(this->width()*0.66, this->height()*0.08);}
+00060 \textcolor{comment}{    cblisteCoureurs->addItem(("< Séléctionner Coureur >"));*/}
+00061 
+00062 
+00063     \textcolor{comment}{// défini la taille du text des labels}
+00064     QFont texteLabel;
+00065     texteLabel.setPointSize(\hyperlink{ihmchronocross_8h_a407f067284fd7ac16426ac29cbfcd356}{TAILLETEXTELABEL});
+00066 
+00067     \hyperlink{class_i_h_m_resultats_cross_a455bc28e3605cd327067be2db255c911}{labelClassement} = \textcolor{keyword}{new} QLabel(tr(\textcolor{stringliteral}{"Classement : "}), \textcolor{keyword}{this});
+00068     \hyperlink{class_i_h_m_resultats_cross_a455bc28e3605cd327067be2db255c911}{labelClassement}->setFont(texteLabel);
+00069     \hyperlink{class_i_h_m_resultats_cross_a0cec9448e3ac680fd93cff9c4c709e1b}{labelCoureurs} = \textcolor{keyword}{new} QLabel(tr(\textcolor{stringliteral}{"Coureurs : "}), \textcolor{keyword}{this});
+00070     \hyperlink{class_i_h_m_resultats_cross_a0cec9448e3ac680fd93cff9c4c709e1b}{labelCoureurs}->setFont(texteLabel);
+00071 
+00072     QVBoxLayout *classementLayout = \textcolor{keyword}{new} QVBoxLayout;
+00073     classementLayout->addWidget(\hyperlink{class_i_h_m_resultats_cross_a455bc28e3605cd327067be2db255c911}{labelClassement});
+00074     classementLayout->addWidget(\hyperlink{class_i_h_m_resultats_cross_a8f35fc63f8c3a1351658d3148daf13e0}{vueListeClassement});
+00075 
+00076     \textcolor{comment}{// le positionnement des widgets}
+00077     QHBoxLayout *listesLayout = \textcolor{keyword}{new} QHBoxLayout;
+00078     \textcolor{comment}{//QHBoxLayout *boutonsLayout = new QHBoxLayout;}
+00079 
+00080     listesLayout->addWidget(\hyperlink{class_i_h_m_resultats_cross_ae1190e783fc117504abf614fe170ad54}{cblisteCoureurs});
+00081     listesLayout->addWidget(\hyperlink{class_i_h_m_resultats_cross_a0cec9448e3ac680fd93cff9c4c709e1b}{labelCoureurs});
+00082 
+00083     QVBoxLayout *mainLayout = \textcolor{keyword}{new} QVBoxLayout;
+00084     mainLayout->addLayout(listesLayout);
+00085 
+00086     setLayout(mainLayout);
+00087     setWindowTitle(tr(\textcolor{stringliteral}{"Résultat-Cross"}));
+00088     setContextMenuPolicy(Qt::ActionsContextMenu);
+00089 
+00090 
+00091     \textcolor{comment}{//boutonsLayout->addWidget(bAjouter);}
+00092     \textcolor{comment}{//boutonsLayout->setContentsMargins(0, 0, 0, 20); // G H D B}
+00093 
+00094     \textcolor{comment}{// Les labels}
+00095 
+00096     \textcolor{comment}{// Les connexions}
+00097 
+00098     \textcolor{comment}{// connect(bDemarrer, SIGNAL(clicked()), this, SLOT(coureur()));}
+00099 
+00100     showMaximized(); \textcolor{comment}{// Fenêtre d'ouverture maximale}
+00101 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_resultats_cross_a62afe926862fddcb340e4a2c57c3cddf}\label{class_i_h_m_resultats_cross_a62afe926862fddcb340e4a2c57c3cddf}} 
+\index{I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}!````~I\+H\+M\+Resultats\+Cross@{$\sim$\+I\+H\+M\+Resultats\+Cross}}
+\index{````~I\+H\+M\+Resultats\+Cross@{$\sim$\+I\+H\+M\+Resultats\+Cross}!I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}}
+\paragraph{\texorpdfstring{$\sim$\+I\+H\+M\+Resultats\+Cross()}{~IHMResultatsCross()}}
+{\footnotesize\ttfamily I\+H\+M\+Resultats\+Cross\+::$\sim$\+I\+H\+M\+Resultats\+Cross (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur de la fenêtre principale. 
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+
+\begin{DoxyCode}
+00110 \{
+00111     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}();
+00112     qDebug() << Q\_FUNC\_INFO;
+00113 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_i_h_m_resultats_cross_a4311c35a2869a24be1a06d7410623eda}\label{class_i_h_m_resultats_cross_a4311c35a2869a24be1a06d7410623eda}} 
+\index{I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}!classer\+Arrivee@{classer\+Arrivee}}
+\index{classer\+Arrivee@{classer\+Arrivee}!I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}}
+\paragraph{\texorpdfstring{classer\+Arrivee()}{classerArrivee()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void I\+H\+M\+Resultats\+Cross\+::classer\+Arrivee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_i_h_m_resultats_cross_a5f4a74c4c024aaa9d39050ac176c9e37}\label{class_i_h_m_resultats_cross_a5f4a74c4c024aaa9d39050ac176c9e37}} 
+\index{I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}!classer\+Arrivee@{classer\+Arrivee}}
+\index{classer\+Arrivee@{classer\+Arrivee}!I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}}
+\paragraph{\texorpdfstring{classer\+Arrivee}{classerArrivee}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void I\+H\+M\+Resultats\+Cross\+::classer\+Arrivee (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{classement\+Coureurs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Références \hyperlink{ihmchronocross_8h_a114680edc01528f77bb689b0a2ca18a2}{C\+O\+L\+O\+N\+N\+E\+\_\+\+C\+L\+A\+S\+SE}, \hyperlink{ihmgestioncross_8h_aa8208c9f9fd2ea2418e4b7bb28175f80}{C\+O\+L\+O\+N\+N\+E\+\_\+\+I\+NE}, \hyperlink{ihmchronocross_8h_aeee76385895c145ef5a633e6c6812603}{C\+O\+L\+O\+N\+N\+E\+\_\+\+N\+OM}, \hyperlink{ihmchronocross_8h_a5d6f240d26209cd66db8aa5e1aac62f9}{C\+O\+L\+O\+N\+N\+E\+\_\+\+P\+R\+E\+N\+OM}, \hyperlink{ihmchronocross_8h_a104dfa4cfc656a690caaec36fd4d3e2d}{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+C\+L\+A\+S\+SE}, \hyperlink{ihmgestioncross_8h_a2e5435ad2b0c61674b2dad6c0ea46301}{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+I\+NE}, \hyperlink{ihmchronocross_8h_a71b99ea06ae916bcd158edbd441c8c24}{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+N\+OM}, \hyperlink{ihmchronocross_8h_a68fd2611ad0ef66da1a71726675067e7}{I\+N\+F\+O\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+P\+R\+E\+N\+OM}, \hyperlink{class_i_h_m_resultats_cross_a9d4e02948f64b6d9fef422d7f5a2b9b5}{modele\+Classement}, \hyperlink{class_i_h_m_resultats_cross_a696f826387c8fa8b9925ca468a52482e}{nb\+Lignes\+Classement}, et \hyperlink{class_i_h_m_resultats_cross_a8f35fc63f8c3a1351658d3148daf13e0}{vue\+Liste\+Classement}.
+
+
+\begin{DoxyCode}
+00117 \{
+00118     qDebug() << Q\_FUNC\_INFO << informationCoureur;
+00119     \textcolor{comment}{//informationCoureur[Nom, Prenom, Classe, INE]}
+00120     \textcolor{comment}{// Redimensionner automatiquement la colonne pour occuper l'espace disponible}
+00121 
+00122     \hyperlink{class_i_h_m_resultats_cross_a8f35fc63f8c3a1351658d3148daf13e0}{vueListeClassement}->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+00123     \hyperlink{class_i_h_m_resultats_cross_a696f826387c8fa8b9925ca468a52482e}{nbLignesClassement} = 1 - \hyperlink{class_i_h_m_resultats_cross_a9d4e02948f64b6d9fef422d7f5a2b9b5}{modeleClassement}->rowCount();
+00124 
+00125 
+00126     QStandardItem *nom = \textcolor{keyword}{new} QStandardItem(informationCoureur.at(
+      \hyperlink{ihmchronocross_8h_a71b99ea06ae916bcd158edbd441c8c24}{INFO\_COUREUR\_NOM}));
+00127     QStandardItem *prenom = \textcolor{keyword}{new} QStandardItem(informationCoureur.at(
+      \hyperlink{ihmchronocross_8h_a68fd2611ad0ef66da1a71726675067e7}{INFO\_COUREUR\_PRENOM}));
+00128     QStandardItem *classe = \textcolor{keyword}{new} QStandardItem(informationCoureur.at(
+      \hyperlink{ihmchronocross_8h_a104dfa4cfc656a690caaec36fd4d3e2d}{INFO\_COUREUR\_CLASSE}));
+00129     QStandardItem *INE = \textcolor{keyword}{new} QStandardItem(informationCoureur.at(
+      \hyperlink{ihmgestioncross_8h_a2e5435ad2b0c61674b2dad6c0ea46301}{INFO\_COUREUR\_INE}));
+00130 
+00131 
+00132     \hyperlink{class_i_h_m_resultats_cross_a9d4e02948f64b6d9fef422d7f5a2b9b5}{modeleClassement}->setItem(\hyperlink{class_i_h_m_resultats_cross_a696f826387c8fa8b9925ca468a52482e}{nbLignesClassement}, 
+      \hyperlink{ihmchronocross_8h_aeee76385895c145ef5a633e6c6812603}{COLONNE\_NOM}, nom);
+00133     \hyperlink{class_i_h_m_resultats_cross_a9d4e02948f64b6d9fef422d7f5a2b9b5}{modeleClassement}->setItem(\hyperlink{class_i_h_m_resultats_cross_a696f826387c8fa8b9925ca468a52482e}{nbLignesClassement}, 
+      \hyperlink{ihmchronocross_8h_a5d6f240d26209cd66db8aa5e1aac62f9}{COLONNE\_PRENOM}, prenom);
+00134     \hyperlink{class_i_h_m_resultats_cross_a9d4e02948f64b6d9fef422d7f5a2b9b5}{modeleClassement}->setItem(\hyperlink{class_i_h_m_resultats_cross_a696f826387c8fa8b9925ca468a52482e}{nbLignesClassement}, 
+      \hyperlink{ihmchronocross_8h_a114680edc01528f77bb689b0a2ca18a2}{COLONNE\_CLASSE}, classe);
+00135     \hyperlink{class_i_h_m_resultats_cross_a9d4e02948f64b6d9fef422d7f5a2b9b5}{modeleClassement}->setItem(\hyperlink{class_i_h_m_resultats_cross_a696f826387c8fa8b9925ca468a52482e}{nbLignesClassement}, 
+      \hyperlink{ihmgestioncross_8h_aa8208c9f9fd2ea2418e4b7bb28175f80}{COLONNE\_INE}, INE);
+00136     \hyperlink{class_i_h_m_resultats_cross_a696f826387c8fa8b9925ca468a52482e}{nbLignesClassement} += 1;
+00137 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_i_h_m_resultats_cross_a5e8e7f363a93e1e5e6b3c5eb0ad29c28}\label{class_i_h_m_resultats_cross_a5e8e7f363a93e1e5e6b3c5eb0ad29c28}} 
+\index{I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}!liste\+Coureurs@{liste\+Coureurs}}
+\index{liste\+Coureurs@{liste\+Coureurs}!I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}}
+\paragraph{\texorpdfstring{liste\+Coureurs()}{listeCoureurs()}}
+{\footnotesize\ttfamily void I\+H\+M\+Resultats\+Cross\+::liste\+Coureurs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_i_h_m_resultats_cross_a3f27f95ca0fb27d1a46814d2fddfc3b1}\label{class_i_h_m_resultats_cross_a3f27f95ca0fb27d1a46814d2fddfc3b1}} 
+\index{I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}!B\+DD@{B\+DD}}
+\index{B\+DD@{B\+DD}!I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}}
+\paragraph{\texorpdfstring{B\+DD}{BDD}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ I\+H\+M\+Resultats\+Cross\+::\+B\+DD\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+agrégation Base\+De\+Donnee 
+
+
+
+Référencé par \hyperlink{class_i_h_m_resultats_cross_a94afa0356ebc98e497dfecca3e1bb00b}{I\+H\+M\+Resultats\+Cross()}.
+
+\mbox{\Hypertarget{class_i_h_m_resultats_cross_ae1190e783fc117504abf614fe170ad54}\label{class_i_h_m_resultats_cross_ae1190e783fc117504abf614fe170ad54}} 
+\index{I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}!cbliste\+Coureurs@{cbliste\+Coureurs}}
+\index{cbliste\+Coureurs@{cbliste\+Coureurs}!I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}}
+\paragraph{\texorpdfstring{cbliste\+Coureurs}{cblisteCoureurs}}
+{\footnotesize\ttfamily Q\+Combo\+Box$\ast$ I\+H\+M\+Resultats\+Cross\+::cbliste\+Coureurs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Combobox contenant les différentes coureurs dans la base de données. 
+
+
+
+Référencé par \hyperlink{class_i_h_m_resultats_cross_a94afa0356ebc98e497dfecca3e1bb00b}{I\+H\+M\+Resultats\+Cross()}.
+
+\mbox{\Hypertarget{class_i_h_m_resultats_cross_ab637383c58d9ce784aec696ccd69d709}\label{class_i_h_m_resultats_cross_ab637383c58d9ce784aec696ccd69d709}} 
+\index{I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}!coureur@{coureur}}
+\index{coureur@{coureur}!I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}}
+\paragraph{\texorpdfstring{coureur}{coureur}}
+{\footnotesize\ttfamily \hyperlink{class_coureur}{Coureur}$\ast$ I\+H\+M\+Resultats\+Cross\+::coureur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+agrégation coureur 
+
+
+
+Référencé par \hyperlink{class_i_h_m_resultats_cross_a94afa0356ebc98e497dfecca3e1bb00b}{I\+H\+M\+Resultats\+Cross()}.
+
+\mbox{\Hypertarget{class_i_h_m_resultats_cross_a455bc28e3605cd327067be2db255c911}\label{class_i_h_m_resultats_cross_a455bc28e3605cd327067be2db255c911}} 
+\index{I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}!label\+Classement@{label\+Classement}}
+\index{label\+Classement@{label\+Classement}!I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}}
+\paragraph{\texorpdfstring{label\+Classement}{labelClassement}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Resultats\+Cross\+::label\+Classement\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_resultats_cross_a94afa0356ebc98e497dfecca3e1bb00b}{I\+H\+M\+Resultats\+Cross()}.
+
+\mbox{\Hypertarget{class_i_h_m_resultats_cross_a0cec9448e3ac680fd93cff9c4c709e1b}\label{class_i_h_m_resultats_cross_a0cec9448e3ac680fd93cff9c4c709e1b}} 
+\index{I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}!label\+Coureurs@{label\+Coureurs}}
+\index{label\+Coureurs@{label\+Coureurs}!I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}}
+\paragraph{\texorpdfstring{label\+Coureurs}{labelCoureurs}}
+{\footnotesize\ttfamily Q\+Label$\ast$ I\+H\+M\+Resultats\+Cross\+::label\+Coureurs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_resultats_cross_a94afa0356ebc98e497dfecca3e1bb00b}{I\+H\+M\+Resultats\+Cross()}.
+
+\mbox{\Hypertarget{class_i_h_m_resultats_cross_a9d4e02948f64b6d9fef422d7f5a2b9b5}\label{class_i_h_m_resultats_cross_a9d4e02948f64b6d9fef422d7f5a2b9b5}} 
+\index{I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}!modele\+Classement@{modele\+Classement}}
+\index{modele\+Classement@{modele\+Classement}!I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}}
+\paragraph{\texorpdfstring{modele\+Classement}{modeleClassement}}
+{\footnotesize\ttfamily Q\+Standard\+Item\+Model$\ast$ I\+H\+M\+Resultats\+Cross\+::modele\+Classement\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_resultats_cross_a5f4a74c4c024aaa9d39050ac176c9e37}{classer\+Arrivee()}, et \hyperlink{class_i_h_m_resultats_cross_a94afa0356ebc98e497dfecca3e1bb00b}{I\+H\+M\+Resultats\+Cross()}.
+
+\mbox{\Hypertarget{class_i_h_m_resultats_cross_a696f826387c8fa8b9925ca468a52482e}\label{class_i_h_m_resultats_cross_a696f826387c8fa8b9925ca468a52482e}} 
+\index{I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}!nb\+Lignes\+Classement@{nb\+Lignes\+Classement}}
+\index{nb\+Lignes\+Classement@{nb\+Lignes\+Classement}!I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}}
+\paragraph{\texorpdfstring{nb\+Lignes\+Classement}{nbLignesClassement}}
+{\footnotesize\ttfamily int I\+H\+M\+Resultats\+Cross\+::nb\+Lignes\+Classement\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_resultats_cross_a5f4a74c4c024aaa9d39050ac176c9e37}{classer\+Arrivee()}.
+
+\mbox{\Hypertarget{class_i_h_m_resultats_cross_abfda0d5dc4b65c0525a94a74faf68ce0}\label{class_i_h_m_resultats_cross_abfda0d5dc4b65c0525a94a74faf68ce0}} 
+\index{I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}!nom\+Colonnes@{nom\+Colonnes}}
+\index{nom\+Colonnes@{nom\+Colonnes}!I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}}
+\paragraph{\texorpdfstring{nom\+Colonnes}{nomColonnes}}
+{\footnotesize\ttfamily Q\+String\+List I\+H\+M\+Resultats\+Cross\+::nom\+Colonnes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_i_h_m_resultats_cross_a94afa0356ebc98e497dfecca3e1bb00b}{I\+H\+M\+Resultats\+Cross()}.
+
+\mbox{\Hypertarget{class_i_h_m_resultats_cross_a8f35fc63f8c3a1351658d3148daf13e0}\label{class_i_h_m_resultats_cross_a8f35fc63f8c3a1351658d3148daf13e0}} 
+\index{I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}!vue\+Liste\+Classement@{vue\+Liste\+Classement}}
+\index{vue\+Liste\+Classement@{vue\+Liste\+Classement}!I\+H\+M\+Resultats\+Cross@{I\+H\+M\+Resultats\+Cross}}
+\paragraph{\texorpdfstring{vue\+Liste\+Classement}{vueListeClassement}}
+{\footnotesize\ttfamily Q\+Table\+View$\ast$ I\+H\+M\+Resultats\+Cross\+::vue\+Liste\+Classement\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tableau classement. 
+
+
+
+Référencé par \hyperlink{class_i_h_m_resultats_cross_a5f4a74c4c024aaa9d39050ac176c9e37}{classer\+Arrivee()}, et \hyperlink{class_i_h_m_resultats_cross_a94afa0356ebc98e497dfecca3e1bb00b}{I\+H\+M\+Resultats\+Cross()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ihmresultatscross_8h}{ihmresultatscross.\+h}\item 
+\hyperlink{ihmresultatscross_8cpp}{ihmresultatscross.\+cpp}\end{DoxyCompactItemize}

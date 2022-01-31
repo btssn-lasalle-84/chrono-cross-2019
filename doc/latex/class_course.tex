@@ -1,0 +1,1434 @@
+\hypertarget{class_course}{}\subsection{Référence de la classe Course}
+\label{class_course}\index{Course@{Course}}
+
+
+Déclaration de la classe \hyperlink{class_course}{Course}.  
+
+
+
+
+{\ttfamily \#include $<$course.\+h$>$}
+
+
+
+Graphe de collaboration de Course\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_course__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_course_ada484058a0180a31a98ee77c4fad93f8}{a\+Chrono\+Cree} ()
+\begin{DoxyCompactList}\small\item\em S\+L\+OT \hyperlink{class_course_ada484058a0180a31a98ee77c4fad93f8}{a\+Chrono\+Cree()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+void \hyperlink{class_course_a90c66d620f0726d92c40069f052e0cd0}{a\+Chrono\+Synchronise} ()
+\begin{DoxyCompactList}\small\item\em S\+L\+OT \hyperlink{class_course_a90c66d620f0726d92c40069f052e0cd0}{a\+Chrono\+Synchronise()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+void \hyperlink{class_course_a4a4f788b4ff5ca687c67f29753d26928}{a\+Classement\+Cree} ()
+\begin{DoxyCompactList}\small\item\em S\+L\+OT a\+Classement\+Cree de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+void \hyperlink{class_course_a8df970d7150703c3279903b09aa38855}{a\+Commencee} ()
+\begin{DoxyCompactList}\small\item\em S\+L\+OT \hyperlink{class_course_a8df970d7150703c3279903b09aa38855}{a\+Commencee()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+void \hyperlink{class_course_a43696137587262b721767f6113621772}{a\+Classement\+Arrete} ()
+\begin{DoxyCompactList}\small\item\em S\+L\+OT \hyperlink{class_course_a43696137587262b721767f6113621772}{a\+Classement\+Arrete()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+void \hyperlink{class_course_abbcfaecd40b5ec5e47419068423e767f}{est\+Finie} ()
+\begin{DoxyCompactList}\small\item\em S\+L\+OT \hyperlink{class_course_abbcfaecd40b5ec5e47419068423e767f}{est\+Finie()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+void \hyperlink{class_course_addeae907c4bc0a268f51479041de389c}{recommencer\+Chrono} ()
+\begin{DoxyCompactList}\small\item\em S\+L\+OT \hyperlink{class_course_addeae907c4bc0a268f51479041de389c}{recommencer\+Chrono()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+void \hyperlink{class_course_a60073d16efd4ccefa81bddb4aaa88fab}{traiter\+Arrivee\+Coureur} (Q\+String temps\+Arrivee)
+\begin{DoxyCompactList}\small\item\em S\+L\+OT \hyperlink{class_course_a60073d16efd4ccefa81bddb4aaa88fab}{traiter\+Arrivee\+Coureur(\+Q\+String temps\+Arrivee)} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+void \hyperlink{class_course_a7ba5d2c9865065e95f49a24fbeec7857}{get\+Information\+Coureur} (Q\+String dossard, Q\+String temps\+A\+Rrivee)
+\begin{DoxyCompactList}\small\item\em S\+L\+OT \hyperlink{class_course_a7ba5d2c9865065e95f49a24fbeec7857}{get\+Information\+Coureur(\+Q\+String dossard, Q\+String temps\+Arrivee)} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_course_a3ebcde1fa443cb20d71fb98af4d0c418}{set\+Etat} (Q\+String etat)
+\begin{DoxyCompactList}\small\item\em S\+L\+OT set\+Etat de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_course_a1c7830a51af59f70998ff0576f0aa7cd}{chrono\+Creer} ()
+\item 
+void \hyperlink{class_course_ab3f2a2c1bb8ed8a2550dc8fabc59e54e}{chrono\+Course\+Pret} ()
+\item 
+void \hyperlink{class_course_a2056f5c20f56e2c7eeea8195a55857bc}{course\+Commence} ()
+\item 
+void \hyperlink{class_course_a630aea833dccd20e52ada1548c334c78}{classement\+Arrete} ()
+\item 
+void \hyperlink{class_course_aa66c89bb34e692f17caabb21b11feeb2}{course\+Finie} ()
+\item 
+void \hyperlink{class_course_a178f2015d20ef5d838564671567f6831}{chrono\+Recommence} ()
+\item 
+void \hyperlink{class_course_abea30de9b6cec333bf19134608e5bccf}{nouveau\+Temps\+Arrivee} (Q\+String temps\+Arrivee)
+\item 
+void \hyperlink{class_course_aa2f0312e68f57e1437c3257d13af8186}{arrivee\+Ajoutee\+B\+DD} (Q\+String dossard, Q\+String temps\+Arrivee)
+\item 
+void \hyperlink{class_course_a9073b7cb57b9b8a2aee33582bb61eb20}{information\+Coureur\+Recuperees} (Q\+String\+List information\+Coureur)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+\hyperlink{class_course_aa9038f2e129526920037dda9e76d69d0}{$\sim$\+Course} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la fenêtre principale. \end{DoxyCompactList}\item 
+void \hyperlink{class_course_a6eb96222d8dc1f352e28f36e9b414448}{creer\+Chrono} ()
+\begin{DoxyCompactList}\small\item\em Méthode \hyperlink{class_course_a6eb96222d8dc1f352e28f36e9b414448}{creer\+Chrono()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+void \hyperlink{class_course_a50596f54553b48fa29170a6b42b6e9d4}{preparer\+Chrono} ()
+\begin{DoxyCompactList}\small\item\em Méthode \hyperlink{class_course_a50596f54553b48fa29170a6b42b6e9d4}{preparer\+Chrono()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_course_a44a14d431bd64a507f2c2aa5f465b1b0}{est\+Chronometrage\+Pret} ()
+\begin{DoxyCompactList}\small\item\em Méthode \hyperlink{class_course_a44a14d431bd64a507f2c2aa5f465b1b0}{est\+Chronometrage\+Pret()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+void \hyperlink{class_course_a589447dd63dca89395119ffd4e4a8c8c}{chronometrer} ()
+\begin{DoxyCompactList}\small\item\em Méthode chronometrer de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+void \hyperlink{class_course_a4426310a411d8ecf7f4a2dc64c24a42d}{arreter\+Classement} ()
+\begin{DoxyCompactList}\small\item\em Méthode \hyperlink{class_course_a4426310a411d8ecf7f4a2dc64c24a42d}{arreter\+Classement()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+void \hyperlink{class_course_a939635ac8301a7018475cc2ce347375f}{arreter\+Chrono} ()
+\begin{DoxyCompactList}\small\item\em Méthode arreter\+Chronomètre() de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+int \hyperlink{class_course_a6cb3ede6a11e4813f95be92f4459a3c2}{verifier\+Dossard} (Q\+String dossard)
+\begin{DoxyCompactList}\small\item\em Méthode \hyperlink{class_course_a6cb3ede6a11e4813f95be92f4459a3c2}{verifier\+Dossard()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_course_ab98bbd1a92e468df7b8b45bb7877afef}{convertir\+Temps} (Q\+String temps\+MS)
+\begin{DoxyCompactList}\small\item\em Méthode \hyperlink{class_course_ab98bbd1a92e468df7b8b45bb7877afef}{convertir\+Temps()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+int \hyperlink{class_course_ad0ff4153f1e02826d551f478f95ad260}{get\+Nb\+Inscrit} (Q\+String course)
+\begin{DoxyCompactList}\small\item\em Méthode get\+Nb\+Inscrit de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+int \hyperlink{class_course_af20fcd6d6eb2dfbd3b0f12e273f12b27}{get\+Distance} (Q\+String course)
+\begin{DoxyCompactList}\small\item\em Méthode \hyperlink{class_course_af20fcd6d6eb2dfbd3b0f12e273f12b27}{get\+Distance()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_course_afc21f8195edd50c9fd266cff0c401b7c}{get\+Heure} (Q\+String course)
+\begin{DoxyCompactList}\small\item\em Méthode \hyperlink{class_course_afc21f8195edd50c9fd266cff0c401b7c}{get\+Heure()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+int \hyperlink{class_course_ad8dd87e7f299bc938f40423f28c837e8}{get\+Nb\+Arrivee} ()
+\begin{DoxyCompactList}\small\item\em Méthode \hyperlink{class_course_ad8dd87e7f299bc938f40423f28c837e8}{get\+Nb\+Arrivee()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_course_a7b4485a0b38bc3b908131962b705d880}{get\+Nom\+Course} (Q\+String dossard)
+\begin{DoxyCompactList}\small\item\em Méthode \hyperlink{class_course_a7b4485a0b38bc3b908131962b705d880}{get\+Nom\+Course()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+void \hyperlink{class_course_a36cf16c971841431947b6fbe2b3f3d27}{set\+Id\+Course} (Q\+String nom\+Course)
+\begin{DoxyCompactList}\small\item\em Méthode \hyperlink{class_course_a36cf16c971841431947b6fbe2b3f3d27}{set\+Id\+Course()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+void \hyperlink{class_course_ac99042bf8b20e8d3a54e72c8a80f7ee7}{ajoute\+Arrivee\+B\+DD} (Q\+String dossard, Q\+String temps\+Arrivee)
+\begin{DoxyCompactList}\small\item\em Méthode \hyperlink{class_course_ac99042bf8b20e8d3a54e72c8a80f7ee7}{ajoute\+Arrivee\+B\+D\+D()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+Q\+String\+List \hyperlink{class_course_a0d995ef72152208e02eb3b10315dfabb}{get\+Liste\+Manifestations} ()
+\begin{DoxyCompactList}\small\item\em Méthode \hyperlink{class_course_a0d995ef72152208e02eb3b10315dfabb}{get\+Liste\+Manifestations()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\item 
+Q\+Vector$<$ Q\+String $>$ \hyperlink{class_course_ae5e74946d973166ad3000e38600acf20}{get\+Liste\+Courses} (Q\+String manifestation)
+\begin{DoxyCompactList}\small\item\em Méthode \hyperlink{class_course_ae5e74946d973166ad3000e38600acf20}{get\+Liste\+Courses()} de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formuler\+Requete\+Select} (Q\+String renseignements, Q\+String sources, Q\+String conditions)
+\begin{DoxyCompactList}\small\item\em Méthode formuler\+Requete\+Select de la classe \hyperlink{class_course}{Course}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{B\+DD}
+\begin{DoxyCompactList}\small\item\em agrégation \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} \end{DoxyCompactList}\item 
+\hyperlink{class_chrono}{Chrono} $\ast$ \hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{mon\+Chrono}
+\begin{DoxyCompactList}\small\item\em association \hyperlink{class_chrono}{Chrono} \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_course_a1f80798e50be6db9911a882a2491c698}{id\+Course}
+\begin{DoxyCompactList}\small\item\em Identifiant de la course. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_course_af2f7b814a0ec0d76291a2743c61615a8}{distance}
+\begin{DoxyCompactList}\small\item\em Distance de la course. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_course_aa2da10dd2fc8c1ca1d5831249181e61f}{heure\+Depart}
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}heure de départ de la course. \end{DoxyCompactList}\item 
+Q\+String\+List \hyperlink{class_course_a14838cc0c491a76baf7e5f12d8d08ab4}{information\+Coureur\+Arrive}
+\begin{DoxyCompactList}\small\item\em Informations d\textquotesingle{}un coure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Déclaration de la classe \hyperlink{class_course}{Course}. 
+
+\begin{DoxyAuthor}{Auteur}
+Michael Andréo 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_course_af6317ecab95f8a2eb205b4f91b530992}\label{class_course_af6317ecab95f8a2eb205b4f91b530992}} 
+\index{Course@{Course}!Course@{Course}}
+\index{Course@{Course}!Course@{Course}}
+\paragraph{\texorpdfstring{Course()}{Course()}}
+{\footnotesize\ttfamily Course\+::\+Course (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_object}{Q\+Object} $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \hyperlink{class_course}{Course}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \hyperlink{class_q_object}{Q\+Object} Adresse de l\textquotesingle{}objet Qt parent (0 = pas de parent car c\textquotesingle{}est la fenêtre principale) \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_course_ada484058a0180a31a98ee77c4fad93f8}{a\+Chrono\+Cree()}, \hyperlink{class_course_a90c66d620f0726d92c40069f052e0cd0}{a\+Chrono\+Synchronise()}, \hyperlink{class_course_a43696137587262b721767f6113621772}{a\+Classement\+Arrete()}, \hyperlink{class_course_a4a4f788b4ff5ca687c67f29753d26928}{a\+Classement\+Cree()}, \hyperlink{class_course_a8df970d7150703c3279903b09aa38855}{a\+Commencee()}, \hyperlink{class_course_aa2f0312e68f57e1437c3257d13af8186}{arrivee\+Ajoutee\+B\+D\+D()}, \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{B\+DD}, \hyperlink{class_course_a1c7830a51af59f70998ff0576f0aa7cd}{chrono\+Creer()}, \hyperlink{class_course_a178f2015d20ef5d838564671567f6831}{chrono\+Recommence()}, \hyperlink{class_base_de_donnees_ab2e092285ccc0ee1cce61a1774218561}{Base\+De\+Donnees\+::connecter()}, \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{Base\+De\+Donnees\+::est\+Connecte()}, \hyperlink{class_course_abbcfaecd40b5ec5e47419068423e767f}{est\+Finie()}, \hyperlink{class_course_a7ba5d2c9865065e95f49a24fbeec7857}{get\+Information\+Coureur()}, \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}, \hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{mon\+Chrono}, \hyperlink{class_course_addeae907c4bc0a268f51479041de389c}{recommencer\+Chrono()}, et \hyperlink{class_course_a60073d16efd4ccefa81bddb4aaa88fab}{traiter\+Arrivee\+Coureur()}.
+
+
+\begin{DoxyCode}
+00015                               : \hyperlink{class_q_object}{QObject}(parent)
+00016 \{
+00017     \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}();
+00018     \textcolor{keywordflow}{if}(!\hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}())
+00019         \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_ab2e092285ccc0ee1cce61a1774218561}{connecter}(\textcolor{stringliteral}{"Chrono-Cross"});
+00020     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Etat connexion BDD : "} << \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}();
+00021 
+00022     \hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono} = \textcolor{keyword}{new} \hyperlink{class_chrono}{Chrono}(\textcolor{keyword}{this});
+00023 
+00024     connect(\hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono}, SIGNAL(\hyperlink{class_course_a1c7830a51af59f70998ff0576f0aa7cd}{chronoCreer}()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_course_ada484058a0180a31a98ee77c4fad93f8}{aChronoCree}()));
+00025     connect(\hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono}, SIGNAL(chronoSynchroniser()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_course_a90c66d620f0726d92c40069f052e0cd0}{aChronoSynchronise}()));
+00026     connect(\hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono}, SIGNAL(classementCree()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_course_a4a4f788b4ff5ca687c67f29753d26928}{aClassementCree}()));
+00027     connect(\hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono}, SIGNAL(chronoLance()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_course_a8df970d7150703c3279903b09aa38855}{aCommencee}()));
+00028     connect(\hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono}, SIGNAL(courseArretee()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_course_a43696137587262b721767f6113621772}{aClassementArrete}()));
+00029     connect(\hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono}, SIGNAL(chronoArrete()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_course_abbcfaecd40b5ec5e47419068423e767f}{estFinie}()));
+00030     connect(\hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono}, SIGNAL(nouvelleArrivee(QString)), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_course_a60073d16efd4ccefa81bddb4aaa88fab}{traiterArriveeCoureur}(QString)));
+00031     connect(\hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono}, SIGNAL(\hyperlink{class_course_a178f2015d20ef5d838564671567f6831}{chronoRecommence}()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_course_addeae907c4bc0a268f51479041de389c}{recommencerChrono}()));
+00032     connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_course_aa2f0312e68f57e1437c3257d13af8186}{arriveeAjouteeBDD}(QString, QString)), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_course_a7ba5d2c9865065e95f49a24fbeec7857}{getInformationCoureur}(QString, QString)));
+00033 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_aa9038f2e129526920037dda9e76d69d0}\label{class_course_aa9038f2e129526920037dda9e76d69d0}} 
+\index{Course@{Course}!````~Course@{$\sim$\+Course}}
+\index{````~Course@{$\sim$\+Course}!Course@{Course}}
+\paragraph{\texorpdfstring{$\sim$\+Course()}{~Course()}}
+{\footnotesize\ttfamily Course\+::$\sim$\+Course (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur de la fenêtre principale. 
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+
+\begin{DoxyCode}
+00040 \{
+00041     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}();
+00042     qDebug() << Q\_FUNC\_INFO;
+00043 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_course_ada484058a0180a31a98ee77c4fad93f8}\label{class_course_ada484058a0180a31a98ee77c4fad93f8}} 
+\index{Course@{Course}!a\+Chrono\+Cree@{a\+Chrono\+Cree}}
+\index{a\+Chrono\+Cree@{a\+Chrono\+Cree}!Course@{Course}}
+\paragraph{\texorpdfstring{a\+Chrono\+Cree}{aChronoCree}}
+{\footnotesize\ttfamily void Course\+::a\+Chrono\+Cree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+S\+L\+OT \hyperlink{class_course_ada484058a0180a31a98ee77c4fad93f8}{a\+Chrono\+Cree()} de la classe \hyperlink{class_course}{Course}. 
+
+Emet le signal chrono\+Creer 
+
+Références \hyperlink{class_course_a1c7830a51af59f70998ff0576f0aa7cd}{chrono\+Creer()}.
+
+
+
+Référencé par \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course()}.
+
+
+\begin{DoxyCode}
+00467 \{
+00468     emit \hyperlink{class_course_a1c7830a51af59f70998ff0576f0aa7cd}{chronoCreer}();
+00469 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a90c66d620f0726d92c40069f052e0cd0}\label{class_course_a90c66d620f0726d92c40069f052e0cd0}} 
+\index{Course@{Course}!a\+Chrono\+Synchronise@{a\+Chrono\+Synchronise}}
+\index{a\+Chrono\+Synchronise@{a\+Chrono\+Synchronise}!Course@{Course}}
+\paragraph{\texorpdfstring{a\+Chrono\+Synchronise}{aChronoSynchronise}}
+{\footnotesize\ttfamily void Course\+::a\+Chrono\+Synchronise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+S\+L\+OT \hyperlink{class_course_a90c66d620f0726d92c40069f052e0cd0}{a\+Chrono\+Synchronise()} de la classe \hyperlink{class_course}{Course}. 
+
+Appelle la méthode creer\+Classement() de la classe \hyperlink{class_chrono}{Chrono} 
+
+Références \hyperlink{class_chrono_a0d7e3e50fcef0f2b0b7bfadc3d4f737d}{Chrono\+::creer\+Classement()}, et \hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{mon\+Chrono}.
+
+
+
+Référencé par \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course()}.
+
+
+\begin{DoxyCode}
+00477 \{
+00478     \textcolor{keywordflow}{if}(\hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono}->\hyperlink{class_chrono_a0d7e3e50fcef0f2b0b7bfadc3d4f737d}{creerClassement}())
+00479         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"NouveauClassement OK"};
+00480     \textcolor{keywordflow}{else}
+00481         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ERREUR"};
+00482 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a43696137587262b721767f6113621772}\label{class_course_a43696137587262b721767f6113621772}} 
+\index{Course@{Course}!a\+Classement\+Arrete@{a\+Classement\+Arrete}}
+\index{a\+Classement\+Arrete@{a\+Classement\+Arrete}!Course@{Course}}
+\paragraph{\texorpdfstring{a\+Classement\+Arrete}{aClassementArrete}}
+{\footnotesize\ttfamily void Course\+::a\+Classement\+Arrete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+S\+L\+OT \hyperlink{class_course_a43696137587262b721767f6113621772}{a\+Classement\+Arrete()} de la classe \hyperlink{class_course}{Course}. 
+
+Emet le signal classement\+Arrete 
+
+Références \hyperlink{class_course_a630aea833dccd20e52ada1548c334c78}{classement\+Arrete()}.
+
+
+
+Référencé par \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course()}.
+
+
+\begin{DoxyCode}
+00512 \{
+00513     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"classement est arrété"};
+00514     emit \hyperlink{class_course_a630aea833dccd20e52ada1548c334c78}{classementArrete}();
+00515 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a4a4f788b4ff5ca687c67f29753d26928}\label{class_course_a4a4f788b4ff5ca687c67f29753d26928}} 
+\index{Course@{Course}!a\+Classement\+Cree@{a\+Classement\+Cree}}
+\index{a\+Classement\+Cree@{a\+Classement\+Cree}!Course@{Course}}
+\paragraph{\texorpdfstring{a\+Classement\+Cree}{aClassementCree}}
+{\footnotesize\ttfamily void Course\+::a\+Classement\+Cree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+S\+L\+OT a\+Classement\+Cree de la classe \hyperlink{class_course}{Course}. 
+
+Permet de signaler à la classe I\+HM que le chronomètre de la course est pret. 
+
+Références \hyperlink{class_course_ab3f2a2c1bb8ed8a2550dc8fabc59e54e}{chrono\+Course\+Pret()}.
+
+
+
+Référencé par \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course()}.
+
+
+\begin{DoxyCode}
+00490 \{
+00491     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Chrono pret"};
+00492     emit \hyperlink{class_course_ab3f2a2c1bb8ed8a2550dc8fabc59e54e}{chronoCoursePret}();
+00493 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a8df970d7150703c3279903b09aa38855}\label{class_course_a8df970d7150703c3279903b09aa38855}} 
+\index{Course@{Course}!a\+Commencee@{a\+Commencee}}
+\index{a\+Commencee@{a\+Commencee}!Course@{Course}}
+\paragraph{\texorpdfstring{a\+Commencee}{aCommencee}}
+{\footnotesize\ttfamily void Course\+::a\+Commencee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+S\+L\+OT \hyperlink{class_course_a8df970d7150703c3279903b09aa38855}{a\+Commencee()} de la classe \hyperlink{class_course}{Course}. 
+
+Emet le signal course\+Commence. 
+
+Références \hyperlink{class_course_a2056f5c20f56e2c7eeea8195a55857bc}{course\+Commence()}.
+
+
+
+Référencé par \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course()}.
+
+
+\begin{DoxyCode}
+00501 \{
+00502     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Course a commencée"};
+00503     emit \hyperlink{class_course_a2056f5c20f56e2c7eeea8195a55857bc}{courseCommence}();
+00504 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_ac99042bf8b20e8d3a54e72c8a80f7ee7}\label{class_course_ac99042bf8b20e8d3a54e72c8a80f7ee7}} 
+\index{Course@{Course}!ajoute\+Arrivee\+B\+DD@{ajoute\+Arrivee\+B\+DD}}
+\index{ajoute\+Arrivee\+B\+DD@{ajoute\+Arrivee\+B\+DD}!Course@{Course}}
+\paragraph{\texorpdfstring{ajoute\+Arrivee\+B\+D\+D()}{ajouteArriveeBDD()}}
+{\footnotesize\ttfamily void Course\+::ajoute\+Arrivee\+B\+DD (\begin{DoxyParamCaption}\item[{Q\+String}]{dossard,  }\item[{Q\+String}]{temps\+Arrivee }\end{DoxyParamCaption})}
+
+
+
+Méthode \hyperlink{class_course_ac99042bf8b20e8d3a54e72c8a80f7ee7}{ajoute\+Arrivee\+B\+D\+D()} de la classe \hyperlink{class_course}{Course}. 
+
+Permet de récupérer l\textquotesingle{}es informations \textquotesingle{}id\+Inscrit d\textquotesingle{}un coureur d\textquotesingle{}après son numéro de dosasrd et l\textquotesingle{}ajoute à la table Arrivee 
+\begin{DoxyParams}{Paramètres}
+{\em dossard} & Q\+String \\
+\hline
+{\em temps\+Arrivee} & Q\+String \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_course_aa2f0312e68f57e1437c3257d13af8186}{arrivee\+Ajoutee\+B\+D\+D()}, \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{B\+DD}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, \hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formuler\+Requete\+Select()}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a9f7f1ad130b60300a879694b6234f161}{I\+H\+M\+Chrono\+Cross\+::associer\+Arrivee\+Dossard()}.
+
+
+\begin{DoxyCode}
+00382 \{
+00383     QString idInscrit;
+00384     QString condition = QString(\textcolor{stringliteral}{"NumeroDossard = %1"}).arg(dossard);
+00385 
+00386     \textcolor{keywordtype}{bool} retourId = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(this->\hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formulerRequeteSelect}(\textcolor{stringliteral}{"idInscrit"}
+      , \textcolor{stringliteral}{"Inscrit"}, condition),idInscrit);
+00387 
+00388     \textcolor{keywordtype}{bool} retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(QString(\textcolor{stringliteral}{"INSERT INTO `Arrivee`(`idInscrit`, `Temps`) VALUES
+       (%1,'%2')"}).arg(idInscrit).arg(tempsArrivee));
+00389 
+00390     \textcolor{keywordflow}{if}(retourId)
+00391     \{
+00392         \textcolor{keywordflow}{if}(retour)
+00393         \{
+00394             qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Ajout ok !"};
+00395             emit \hyperlink{class_course_aa2f0312e68f57e1437c3257d13af8186}{arriveeAjouteeBDD}(dossard, tempsArrivee);
+00396         \}
+00397     \}
+00398     \textcolor{keywordflow}{else}
+00399         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Ajout echec !"};
+00400 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a939635ac8301a7018475cc2ce347375f}\label{class_course_a939635ac8301a7018475cc2ce347375f}} 
+\index{Course@{Course}!arreter\+Chrono@{arreter\+Chrono}}
+\index{arreter\+Chrono@{arreter\+Chrono}!Course@{Course}}
+\paragraph{\texorpdfstring{arreter\+Chrono()}{arreterChrono()}}
+{\footnotesize\ttfamily void Course\+::arreter\+Chrono (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode arreter\+Chronomètre() de la classe \hyperlink{class_course}{Course}. 
+
+Appelle la méthode \hyperlink{class_course_a939635ac8301a7018475cc2ce347375f}{arreter\+Chrono()} de la classe \hyperlink{class_chrono}{Chrono} 
+
+Références \hyperlink{class_chrono_a5e2781ab78dcaa0ecb37e301399d819b}{Chrono\+::arreter\+Chrono()}, et \hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{mon\+Chrono}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a8d5c89a4d2ca34252acd8737e29d37fe}{I\+H\+M\+Chrono\+Cross\+::arreter\+Chrono()}.
+
+
+\begin{DoxyCode}
+00127 \{
+00128     \hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono}->\hyperlink{class_chrono_a5e2781ab78dcaa0ecb37e301399d819b}{arreterChrono}();
+00129 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a4426310a411d8ecf7f4a2dc64c24a42d}\label{class_course_a4426310a411d8ecf7f4a2dc64c24a42d}} 
+\index{Course@{Course}!arreter\+Classement@{arreter\+Classement}}
+\index{arreter\+Classement@{arreter\+Classement}!Course@{Course}}
+\paragraph{\texorpdfstring{arreter\+Classement()}{arreterClassement()}}
+{\footnotesize\ttfamily void Course\+::arreter\+Classement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode \hyperlink{class_course_a4426310a411d8ecf7f4a2dc64c24a42d}{arreter\+Classement()} de la classe \hyperlink{class_course}{Course}. 
+
+Appelle la méthode arreter\+Classement () de la classe \hyperlink{class_chrono}{Chrono} 
+
+Références \hyperlink{class_chrono_a2a0d899b09eb044caa83b41574ac5edf}{Chrono\+::arreter\+Course()}, et \hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{mon\+Chrono}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_ad3d8f287d08dd9aa0c6b10c9973672a4}{I\+H\+M\+Chrono\+Cross\+::arreter\+Course()}.
+
+
+\begin{DoxyCode}
+00117 \{
+00118     \hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono}->\hyperlink{class_chrono_a2a0d899b09eb044caa83b41574ac5edf}{arreterCourse}();
+00119 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_aa2f0312e68f57e1437c3257d13af8186}\label{class_course_aa2f0312e68f57e1437c3257d13af8186}} 
+\index{Course@{Course}!arrivee\+Ajoutee\+B\+DD@{arrivee\+Ajoutee\+B\+DD}}
+\index{arrivee\+Ajoutee\+B\+DD@{arrivee\+Ajoutee\+B\+DD}!Course@{Course}}
+\paragraph{\texorpdfstring{arrivee\+Ajoutee\+B\+DD}{arriveeAjouteeBDD}}
+{\footnotesize\ttfamily void Course\+::arrivee\+Ajoutee\+B\+DD (\begin{DoxyParamCaption}\item[{Q\+String}]{dossard,  }\item[{Q\+String}]{temps\+Arrivee }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_course_ac99042bf8b20e8d3a54e72c8a80f7ee7}{ajoute\+Arrivee\+B\+D\+D()}, et \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course()}.
+
+\mbox{\Hypertarget{class_course_ab3f2a2c1bb8ed8a2550dc8fabc59e54e}\label{class_course_ab3f2a2c1bb8ed8a2550dc8fabc59e54e}} 
+\index{Course@{Course}!chrono\+Course\+Pret@{chrono\+Course\+Pret}}
+\index{chrono\+Course\+Pret@{chrono\+Course\+Pret}!Course@{Course}}
+\paragraph{\texorpdfstring{chrono\+Course\+Pret}{chronoCoursePret}}
+{\footnotesize\ttfamily void Course\+::chrono\+Course\+Pret (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_course_a4a4f788b4ff5ca687c67f29753d26928}{a\+Classement\+Cree()}.
+
+\mbox{\Hypertarget{class_course_a1c7830a51af59f70998ff0576f0aa7cd}\label{class_course_a1c7830a51af59f70998ff0576f0aa7cd}} 
+\index{Course@{Course}!chrono\+Creer@{chrono\+Creer}}
+\index{chrono\+Creer@{chrono\+Creer}!Course@{Course}}
+\paragraph{\texorpdfstring{chrono\+Creer}{chronoCreer}}
+{\footnotesize\ttfamily void Course\+::chrono\+Creer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_course_ada484058a0180a31a98ee77c4fad93f8}{a\+Chrono\+Cree()}, et \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course()}.
+
+\mbox{\Hypertarget{class_course_a589447dd63dca89395119ffd4e4a8c8c}\label{class_course_a589447dd63dca89395119ffd4e4a8c8c}} 
+\index{Course@{Course}!chronometrer@{chronometrer}}
+\index{chronometrer@{chronometrer}!Course@{Course}}
+\paragraph{\texorpdfstring{chronometrer()}{chronometrer()}}
+{\footnotesize\ttfamily void Course\+::chronometrer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode chronometrer de la classe \hyperlink{class_course}{Course}. 
+
+Méthode qui permet de lancer le chrono de la course 
+
+Références \hyperlink{class_chrono_a2ee875c24eb14f09011a40dfb3f1921f}{Chrono\+::demarrer()}, et \hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{mon\+Chrono}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_ace90922ce4c4ffeed6f1e8eb84c8c7a5}{I\+H\+M\+Chrono\+Cross\+::lancer\+Course()}.
+
+
+\begin{DoxyCode}
+00102 \{
+00103     \textcolor{keywordflow}{if}(\hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono}->\hyperlink{class_chrono_a2ee875c24eb14f09011a40dfb3f1921f}{demarrer}())
+00104     \{
+00105         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Valide"};
+00106     \}
+00107     \textcolor{keywordflow}{else}
+00108         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Erreur lancement chrono"};
+00109 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a178f2015d20ef5d838564671567f6831}\label{class_course_a178f2015d20ef5d838564671567f6831}} 
+\index{Course@{Course}!chrono\+Recommence@{chrono\+Recommence}}
+\index{chrono\+Recommence@{chrono\+Recommence}!Course@{Course}}
+\paragraph{\texorpdfstring{chrono\+Recommence}{chronoRecommence}}
+{\footnotesize\ttfamily void Course\+::chrono\+Recommence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course()}, et \hyperlink{class_course_addeae907c4bc0a268f51479041de389c}{recommencer\+Chrono()}.
+
+\mbox{\Hypertarget{class_course_a630aea833dccd20e52ada1548c334c78}\label{class_course_a630aea833dccd20e52ada1548c334c78}} 
+\index{Course@{Course}!classement\+Arrete@{classement\+Arrete}}
+\index{classement\+Arrete@{classement\+Arrete}!Course@{Course}}
+\paragraph{\texorpdfstring{classement\+Arrete}{classementArrete}}
+{\footnotesize\ttfamily void Course\+::classement\+Arrete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_course_a43696137587262b721767f6113621772}{a\+Classement\+Arrete()}.
+
+\mbox{\Hypertarget{class_course_ab98bbd1a92e468df7b8b45bb7877afef}\label{class_course_ab98bbd1a92e468df7b8b45bb7877afef}} 
+\index{Course@{Course}!convertir\+Temps@{convertir\+Temps}}
+\index{convertir\+Temps@{convertir\+Temps}!Course@{Course}}
+\paragraph{\texorpdfstring{convertir\+Temps()}{convertirTemps()}}
+{\footnotesize\ttfamily Q\+String Course\+::convertir\+Temps (\begin{DoxyParamCaption}\item[{Q\+String}]{temps\+MS }\end{DoxyParamCaption})}
+
+
+
+Méthode \hyperlink{class_course_ab98bbd1a92e468df7b8b45bb7877afef}{convertir\+Temps()} de la classe \hyperlink{class_course}{Course}. 
+
+Permet de convertir le temps recu sous le format H\+H\+:\+MM\+:S\+S.\+D\+D\+D\+DD en H\+H\+:\+MM\+:SS 
+\begin{DoxyParams}{Paramètres}
+{\em temps\+MS} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Retourne le temps converti 
+\end{DoxyReturn}
+
+
+Référencé par \hyperlink{class_course_a60073d16efd4ccefa81bddb4aaa88fab}{traiter\+Arrivee\+Coureur()}.
+
+
+\begin{DoxyCode}
+00197 \{
+00198     QString tempsS;
+00199     QString tempsFinal;
+00200 
+00201     \textcolor{keywordtype}{bool} tempsConverti = \textcolor{keyword}{false};
+00202     \textcolor{keywordtype}{int} i = 0;
+00203 
+00204     \textcolor{keywordflow}{while}(!tempsConverti)
+00205     \{
+00206         \textcolor{keywordflow}{if}(tempsMS[i] == \textcolor{charliteral}{'.'})
+00207         \{
+00208             tempsConverti = \textcolor{keyword}{true};
+00209         \}
+00210         \textcolor{keywordflow}{else}
+00211         \{
+00212             tempsS[i] = tempsMS[i];
+00213             i += 1;
+00214         \}
+00215     \}
+00216 
+00217     \textcolor{keywordflow}{if}(tempsS.length() <2)
+00218     \{
+00219         tempsFinal = \textcolor{stringliteral}{"00:00:0"} + tempsS;
+00220         \textcolor{keywordflow}{return} tempsFinal;
+00221     \}
+00222     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (tempsS.length() <3)
+00223     \{
+00224         tempsFinal = \textcolor{stringliteral}{"00:00:"} + tempsS;
+00225         \textcolor{keywordflow}{return} tempsFinal;
+00226     \}
+00227     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (tempsS.length() <5)
+00228     \{
+00229         tempsFinal = \textcolor{stringliteral}{"00:0"} + tempsS;
+00230         \textcolor{keywordflow}{return} tempsFinal;
+00231     \}
+00232     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (tempsS.length() <6)
+00233     \{
+00234         tempsFinal = \textcolor{stringliteral}{"00:"} + tempsS;
+00235         \textcolor{keywordflow}{return} tempsFinal;
+00236     \}
+00237     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (tempsS.length() <8)
+00238     \{
+00239         tempsFinal = \textcolor{stringliteral}{"0"} + tempsS;
+00240         \textcolor{keywordflow}{return} tempsFinal;
+00241     \}
+00242     \textcolor{keywordflow}{else}
+00243         \textcolor{keywordflow}{return} tempsS;
+00244 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a2056f5c20f56e2c7eeea8195a55857bc}\label{class_course_a2056f5c20f56e2c7eeea8195a55857bc}} 
+\index{Course@{Course}!course\+Commence@{course\+Commence}}
+\index{course\+Commence@{course\+Commence}!Course@{Course}}
+\paragraph{\texorpdfstring{course\+Commence}{courseCommence}}
+{\footnotesize\ttfamily void Course\+::course\+Commence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_course_a8df970d7150703c3279903b09aa38855}{a\+Commencee()}.
+
+\mbox{\Hypertarget{class_course_aa66c89bb34e692f17caabb21b11feeb2}\label{class_course_aa66c89bb34e692f17caabb21b11feeb2}} 
+\index{Course@{Course}!course\+Finie@{course\+Finie}}
+\index{course\+Finie@{course\+Finie}!Course@{Course}}
+\paragraph{\texorpdfstring{course\+Finie}{courseFinie}}
+{\footnotesize\ttfamily void Course\+::course\+Finie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_course_abbcfaecd40b5ec5e47419068423e767f}{est\+Finie()}.
+
+\mbox{\Hypertarget{class_course_a6eb96222d8dc1f352e28f36e9b414448}\label{class_course_a6eb96222d8dc1f352e28f36e9b414448}} 
+\index{Course@{Course}!creer\+Chrono@{creer\+Chrono}}
+\index{creer\+Chrono@{creer\+Chrono}!Course@{Course}}
+\paragraph{\texorpdfstring{creer\+Chrono()}{creerChrono()}}
+{\footnotesize\ttfamily void Course\+::creer\+Chrono (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode \hyperlink{class_course_a6eb96222d8dc1f352e28f36e9b414448}{creer\+Chrono()} de la classe \hyperlink{class_course}{Course}. 
+
+Utilise la méthode \hyperlink{class_course_a6eb96222d8dc1f352e28f36e9b414448}{creer\+Chrono()} de la classe \hyperlink{class_chrono}{Chrono} 
+
+Références \hyperlink{class_chrono_a74d85a4e856e2e59afacaa061feb7b75}{Chrono\+::creer()}, et \hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{mon\+Chrono}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a3fc01e539c59645e0655e56e440f4b83}{I\+H\+M\+Chrono\+Cross\+::creer\+Course()}.
+
+
+\begin{DoxyCode}
+00066 \{
+00067     \hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono}->\hyperlink{class_chrono_a74d85a4e856e2e59afacaa061feb7b75}{creer}();
+00068 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a44a14d431bd64a507f2c2aa5f465b1b0}\label{class_course_a44a14d431bd64a507f2c2aa5f465b1b0}} 
+\index{Course@{Course}!est\+Chronometrage\+Pret@{est\+Chronometrage\+Pret}}
+\index{est\+Chronometrage\+Pret@{est\+Chronometrage\+Pret}!Course@{Course}}
+\paragraph{\texorpdfstring{est\+Chronometrage\+Pret()}{estChronometragePret()}}
+{\footnotesize\ttfamily bool Course\+::est\+Chronometrage\+Pret (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode \hyperlink{class_course_a44a14d431bd64a507f2c2aa5f465b1b0}{est\+Chronometrage\+Pret()} de la classe \hyperlink{class_course}{Course}. 
+
+Méthode qui indique si le chrono est prêt à chronométrer cette course (utilise a métode est\+Connecte de la classe \hyperlink{class_chrono}{Chrono}) 
+
+Références \hyperlink{class_chrono_aaad6d9079f2de1c09092f97614009f62}{Chrono\+::est\+Connecte()}, et \hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{mon\+Chrono}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_adde019cc3799befac3fd9555e392eab9}{I\+H\+M\+Chrono\+Cross\+::initialiser\+Course()}.
+
+
+\begin{DoxyCode}
+00091 \{
+00092     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Etat :\(\backslash\)t"} << \hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono}->\hyperlink{class_chrono_aaad6d9079f2de1c09092f97614009f62}{estConnecte}();
+00093     \textcolor{keywordflow}{return} \hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono}->\hyperlink{class_chrono_aaad6d9079f2de1c09092f97614009f62}{estConnecte}();
+00094 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_abbcfaecd40b5ec5e47419068423e767f}\label{class_course_abbcfaecd40b5ec5e47419068423e767f}} 
+\index{Course@{Course}!est\+Finie@{est\+Finie}}
+\index{est\+Finie@{est\+Finie}!Course@{Course}}
+\paragraph{\texorpdfstring{est\+Finie}{estFinie}}
+{\footnotesize\ttfamily void Course\+::est\+Finie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+S\+L\+OT \hyperlink{class_course_abbcfaecd40b5ec5e47419068423e767f}{est\+Finie()} de la classe \hyperlink{class_course}{Course}. 
+
+Emet le signal \hyperlink{class_course_aa66c89bb34e692f17caabb21b11feeb2}{course\+Finie()}. 
+
+Références \hyperlink{class_course_aa66c89bb34e692f17caabb21b11feeb2}{course\+Finie()}.
+
+
+
+Référencé par \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course()}.
+
+
+\begin{DoxyCode}
+00523 \{
+00524     emit \hyperlink{class_course_aa66c89bb34e692f17caabb21b11feeb2}{courseFinie}();
+00525 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a2ce9c62ead2c878a30af9d9c11b81644}\label{class_course_a2ce9c62ead2c878a30af9d9c11b81644}} 
+\index{Course@{Course}!formuler\+Requete\+Select@{formuler\+Requete\+Select}}
+\index{formuler\+Requete\+Select@{formuler\+Requete\+Select}!Course@{Course}}
+\paragraph{\texorpdfstring{formuler\+Requete\+Select()}{formulerRequeteSelect()}}
+{\footnotesize\ttfamily Q\+String Course\+::formuler\+Requete\+Select (\begin{DoxyParamCaption}\item[{Q\+String}]{renseignements,  }\item[{Q\+String}]{sources,  }\item[{Q\+String}]{conditions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Méthode formuler\+Requete\+Select de la classe \hyperlink{class_course}{Course}. 
+
+Méthode qui renvoie la requête S\+QL formatée avec les arguments demandés. 
+\begin{DoxyParams}{Paramètres}
+{\em renseignements} & Q\+String informations que l\textquotesingle{}on recherche \\
+\hline
+{\em sources} & Q\+String où se trouve l\textquotesingle{}information recherchée \\
+\hline
+{\em conditions} & Q\+String paramètres de recherche \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La requête S\+QL 
+\end{DoxyReturn}
+
+
+Référencé par \hyperlink{class_course_ac99042bf8b20e8d3a54e72c8a80f7ee7}{ajoute\+Arrivee\+B\+D\+D()}, \hyperlink{class_course_af20fcd6d6eb2dfbd3b0f12e273f12b27}{get\+Distance()}, \hyperlink{class_course_afc21f8195edd50c9fd266cff0c401b7c}{get\+Heure()}, \hyperlink{class_course_a7ba5d2c9865065e95f49a24fbeec7857}{get\+Information\+Coureur()}, \hyperlink{class_course_ae5e74946d973166ad3000e38600acf20}{get\+Liste\+Courses()}, \hyperlink{class_course_a0d995ef72152208e02eb3b10315dfabb}{get\+Liste\+Manifestations()}, \hyperlink{class_course_ad0ff4153f1e02826d551f478f95ad260}{get\+Nb\+Inscrit()}, \hyperlink{class_course_a7b4485a0b38bc3b908131962b705d880}{get\+Nom\+Course()}, \hyperlink{class_course_a36cf16c971841431947b6fbe2b3f3d27}{set\+Id\+Course()}, et \hyperlink{class_course_a6cb3ede6a11e4813f95be92f4459a3c2}{verifier\+Dossard()}.
+
+
+\begin{DoxyCode}
+00055 \{
+00056     QString requete = QString(\textcolor{stringliteral}{"SELECT %1 FROM %2 WHERE %3"}).arg(renseignements).arg(sources).arg(conditions
+      );
+00057     \textcolor{keywordflow}{return} requete;
+00058 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_af20fcd6d6eb2dfbd3b0f12e273f12b27}\label{class_course_af20fcd6d6eb2dfbd3b0f12e273f12b27}} 
+\index{Course@{Course}!get\+Distance@{get\+Distance}}
+\index{get\+Distance@{get\+Distance}!Course@{Course}}
+\paragraph{\texorpdfstring{get\+Distance()}{getDistance()}}
+{\footnotesize\ttfamily int Course\+::get\+Distance (\begin{DoxyParamCaption}\item[{Q\+String}]{course }\end{DoxyParamCaption})}
+
+
+
+Méthode \hyperlink{class_course_af20fcd6d6eb2dfbd3b0f12e273f12b27}{get\+Distance()} de la classe \hyperlink{class_course}{Course}. 
+
+Permet de retourner la distance d\textquotesingle{}une course d\textquotesingle{}arpsè son nom 
+\begin{DoxyParams}{Paramètres}
+{\em course} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Retourne la distance d\textquotesingle{}une course 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{B\+DD}, \hyperlink{class_course_af2f7b814a0ec0d76291a2743c61615a8}{distance}, \hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formuler\+Requete\+Select()}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_afe18e84e4df15c15921f2bdcfc6f4396}{I\+H\+M\+Chrono\+Cross\+::afficher\+Informations\+Course()}.
+
+
+\begin{DoxyCode}
+00277 \{
+00278     QString condition = QString(\textcolor{stringliteral}{"Nom = '%1'"}).arg(course);
+00279 
+00280     \textcolor{keywordtype}{bool} retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(this->\hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formulerRequeteSelect}(\textcolor{stringliteral}{"Distance"}, \textcolor{stringliteral}{"
+      Course"}, condition), \hyperlink{class_course_af2f7b814a0ec0d76291a2743c61615a8}{distance});
+00281     \textcolor{keywordflow}{if}(retour)
+00282         \textcolor{keywordflow}{return} \hyperlink{class_course_af2f7b814a0ec0d76291a2743c61615a8}{distance}.toInt();
+00283     \textcolor{keywordflow}{else}
+00284         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Erreur"};
+00285         \textcolor{keywordflow}{return} 0;
+00286 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_afc21f8195edd50c9fd266cff0c401b7c}\label{class_course_afc21f8195edd50c9fd266cff0c401b7c}} 
+\index{Course@{Course}!get\+Heure@{get\+Heure}}
+\index{get\+Heure@{get\+Heure}!Course@{Course}}
+\paragraph{\texorpdfstring{get\+Heure()}{getHeure()}}
+{\footnotesize\ttfamily Q\+String Course\+::get\+Heure (\begin{DoxyParamCaption}\item[{Q\+String}]{course }\end{DoxyParamCaption})}
+
+
+
+Méthode \hyperlink{class_course_afc21f8195edd50c9fd266cff0c401b7c}{get\+Heure()} de la classe \hyperlink{class_course}{Course}. 
+
+Permet de retourner l\textquotesingle{}heure de départ d\textquotesingle{}une course d\textquotesingle{}après son nom 
+\begin{DoxyParams}{Paramètres}
+{\em course} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Retourne l\textquotesingle{}heure de départ d\textquotesingle{}une course 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{B\+DD}, \hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formuler\+Requete\+Select()}, \hyperlink{class_course_aa2da10dd2fc8c1ca1d5831249181e61f}{heure\+Depart}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_afe18e84e4df15c15921f2bdcfc6f4396}{I\+H\+M\+Chrono\+Cross\+::afficher\+Informations\+Course()}.
+
+
+\begin{DoxyCode}
+00296 \{
+00297     QString condition = QString(\textcolor{stringliteral}{"Nom = '%1'"}).arg(course);
+00298 
+00299     \textcolor{keywordtype}{bool} retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(this->\hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formulerRequeteSelect}(\textcolor{stringliteral}{"HeureDepart"}
+      , \textcolor{stringliteral}{"Course"}, condition), \hyperlink{class_course_aa2da10dd2fc8c1ca1d5831249181e61f}{heureDepart});
+00300 
+00301     \textcolor{keywordflow}{if}(retour)
+00302         \textcolor{keywordflow}{return} \hyperlink{class_course_aa2da10dd2fc8c1ca1d5831249181e61f}{heureDepart};
+00303     \textcolor{keywordflow}{else}
+00304         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Erreur"};
+00305         \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+00306 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a7ba5d2c9865065e95f49a24fbeec7857}\label{class_course_a7ba5d2c9865065e95f49a24fbeec7857}} 
+\index{Course@{Course}!get\+Information\+Coureur@{get\+Information\+Coureur}}
+\index{get\+Information\+Coureur@{get\+Information\+Coureur}!Course@{Course}}
+\paragraph{\texorpdfstring{get\+Information\+Coureur}{getInformationCoureur}}
+{\footnotesize\ttfamily void Course\+::get\+Information\+Coureur (\begin{DoxyParamCaption}\item[{Q\+String}]{dossard,  }\item[{Q\+String}]{temps\+Arrivee }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+S\+L\+OT \hyperlink{class_course_a7ba5d2c9865065e95f49a24fbeec7857}{get\+Information\+Coureur(\+Q\+String dossard, Q\+String temps\+Arrivee)} de la classe \hyperlink{class_course}{Course}. 
+
+Récupere les informations d\textquotesingle{}un coureur d\textquotesingle{}après son numéro de dossard, puis émet un signal contenant les informations 
+\begin{DoxyParams}{Paramètres}
+{\em dossard} & \\
+\hline
+{\em temps\+Arrivee} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{B\+DD}, \hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formuler\+Requete\+Select()}, \hyperlink{course_8h_a2d7a26b028c89e758ebca4fe8455b861}{I\+N\+F\+O\+R\+M\+A\+T\+I\+O\+N\+\_\+\+C\+O\+U\+R\+E\+U\+R\+\_\+\+A\+R\+R\+I\+V\+E\+E\+\_\+\+C\+L\+A\+S\+SE}, \hyperlink{class_course_a14838cc0c491a76baf7e5f12d8d08ab4}{information\+Coureur\+Arrive}, \hyperlink{class_course_a9073b7cb57b9b8a2aee33582bb61eb20}{information\+Coureur\+Recuperees()}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course()}.
+
+
+\begin{DoxyCode}
+00556 \{
+00557     \hyperlink{class_course_a14838cc0c491a76baf7e5f12d8d08ab4}{informationCoureurArrive} << tempsArrivee << dossard;
+00558     QString idCoureur;
+00559     \textcolor{keywordtype}{bool} retour;
+00560 
+00561     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"informationCoureurArrive"} << 
+      \hyperlink{class_course_a14838cc0c491a76baf7e5f12d8d08ab4}{informationCoureurArrive};
+00562 
+00563     QString condition = QString(\textcolor{stringliteral}{"NumeroDossard = %1"}).arg(dossard);
+00564     retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(this->\hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formulerRequeteSelect}(\textcolor{stringliteral}{"idCoureur"}, \textcolor{stringliteral}{"
+      Inscrit"}, condition), idCoureur);
+00565     \textcolor{keywordflow}{if}(!retour)
+00566         \textcolor{keywordflow}{return};
+00567 
+00568     condition = QString(\textcolor{stringliteral}{"idCoureur = %1"}).arg(idCoureur);
+00569     retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(this->\hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formulerRequeteSelect}(\textcolor{stringliteral}{"
+      Nom,Prenom,idClasse"},\textcolor{stringliteral}{"Coureur"},condition), informationCoureurArrive);
+00570     \textcolor{keywordflow}{if}(!retour)
+00571         \textcolor{keywordflow}{return};
+00572 
+00573     condition = QString(\textcolor{stringliteral}{"idClasse = %1"}).arg(informationCoureurArrive[
+      \hyperlink{course_8h_a2d7a26b028c89e758ebca4fe8455b861}{INFORMATION\_COUREUR\_ARRIVEE\_CLASSE}]);
+00574     retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(this->\hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formulerRequeteSelect}(\textcolor{stringliteral}{"Nom"}, \textcolor{stringliteral}{"Classe"}, 
+      condition), informationCoureurArrive[INFORMATION\_COUREUR\_ARRIVEE\_CLASSE]);
+00575     \textcolor{keywordflow}{if}(!retour)
+00576         \textcolor{keywordflow}{return};
+00577 
+00578     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"idCoureur"} << idCoureur << \textcolor{stringliteral}{"informationCoureurArrive"} << 
+      \hyperlink{class_course_a14838cc0c491a76baf7e5f12d8d08ab4}{informationCoureurArrive};
+00579 
+00580     emit \hyperlink{class_course_a9073b7cb57b9b8a2aee33582bb61eb20}{informationCoureurRecuperees}(informationCoureurArrive);
+00581     informationCoureurArrive.clear();
+00582 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_ae5e74946d973166ad3000e38600acf20}\label{class_course_ae5e74946d973166ad3000e38600acf20}} 
+\index{Course@{Course}!get\+Liste\+Courses@{get\+Liste\+Courses}}
+\index{get\+Liste\+Courses@{get\+Liste\+Courses}!Course@{Course}}
+\paragraph{\texorpdfstring{get\+Liste\+Courses()}{getListeCourses()}}
+{\footnotesize\ttfamily Q\+Vector$<$ Q\+String $>$ Course\+::get\+Liste\+Courses (\begin{DoxyParamCaption}\item[{Q\+String}]{manifestation }\end{DoxyParamCaption})}
+
+
+
+Méthode \hyperlink{class_course_ae5e74946d973166ad3000e38600acf20}{get\+Liste\+Courses()} de la classe \hyperlink{class_course}{Course}. 
+
+Permet de récuperer les listes de courses d\textquotesingle{}après le nom de la manifestation 
+\begin{DoxyParams}{Paramètres}
+{\em manifestation} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Retourne un vector de Q\+String contenant le nom des courses de la manifestation choisi 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{A faire}
+\item[\hyperlink{todo__todo000001}{A faire}]verifier date \end{DoxyRefDesc}
+
+
+Références \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{B\+DD}, \hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formuler\+Requete\+Select()}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a1b9f117d7097b63ddabe168a5349a7e8}{I\+H\+M\+Chrono\+Cross\+::lister\+Courses()}.
+
+
+\begin{DoxyCode}
+00436 \{
+00437     QString condition = QString(\textcolor{stringliteral}{"Nom = '%1'"}).arg(manifestation);
+00438     QString idManifestation;
+00439     QVector<QString> courses;
+00440 
+00441     \textcolor{keywordtype}{bool} retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(this->\hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formulerRequeteSelect}(\textcolor{stringliteral}{"
+      idManifestation"}, \textcolor{stringliteral}{"Manifestation"}, condition), idManifestation);
+00442     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Etat requeteIdManifestation : "} << retour << \textcolor{stringliteral}{"\(\backslash\)t info : "} << 
+      idManifestation;
+00443 
+00444     condition = QString(\textcolor{stringliteral}{"`idManifestation` = %1 AND `Etat` = 'ACourir'"}).arg(idManifestation);
+00445     retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(this->\hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formulerRequeteSelect}(\textcolor{stringliteral}{"Nom"}, \textcolor{stringliteral}{"Course"}, 
+      condition), courses);
+00446     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Etat requeteNomCourses : "} << retour << \textcolor{stringliteral}{"\(\backslash\)t info : "} << courses;
+00447 
+00451 \textcolor{comment}{/*}
+00452 \textcolor{comment}{QDate date = QDate::currentDate();}
+00453 \textcolor{comment}{qDebug() << "\(\backslash\)r\(\backslash\)n\(\backslash\)r\(\backslash\)n" << date << "\(\backslash\)r\(\backslash\)n\(\backslash\)r\(\backslash\)n" << "\(\backslash\)r\(\backslash\)n\(\backslash\)r\(\backslash\)n";}
+00454 \textcolor{comment}{*/}
+00455 
+00456     \textcolor{keywordflow}{return} courses;
+00457 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a0d995ef72152208e02eb3b10315dfabb}\label{class_course_a0d995ef72152208e02eb3b10315dfabb}} 
+\index{Course@{Course}!get\+Liste\+Manifestations@{get\+Liste\+Manifestations}}
+\index{get\+Liste\+Manifestations@{get\+Liste\+Manifestations}!Course@{Course}}
+\paragraph{\texorpdfstring{get\+Liste\+Manifestations()}{getListeManifestations()}}
+{\footnotesize\ttfamily Q\+String\+List Course\+::get\+Liste\+Manifestations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode \hyperlink{class_course_a0d995ef72152208e02eb3b10315dfabb}{get\+Liste\+Manifestations()} de la classe \hyperlink{class_course}{Course}. 
+
+Permet de récupérer la liste des manifestations
+
+\begin{DoxyReturn}{Renvoie}
+Retourne un Q\+String\+List liste\+Manifestations contenant toute les manifestations 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{B\+DD}, \hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formuler\+Requete\+Select()}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_adb47e6ee9c2a917a6df77b64930c3c48}{I\+H\+M\+Chrono\+Cross\+::lister\+Manifestations()}.
+
+
+\begin{DoxyCode}
+00409 \{
+00410     QStringList listeManifestations;
+00411     QString i;
+00412 
+00413     \textcolor{keywordtype}{bool} retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(\textcolor{stringliteral}{"SELECT COUNT(*) FROM `Manifestation` WHERE 1"}, i);
+00414 
+00415     \textcolor{keywordtype}{int} j = i.toInt();
+00416 
+00417     qDebug() << Q\_FUNC\_INFO << retour << listeManifestations;
+00418 
+00419     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 1; i <= j; i += 1)
+00420     \{
+00421         QString condition = QString(\textcolor{stringliteral}{"idManifestation = %1"}).arg(i);
+00422         retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(this->\hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formulerRequeteSelect}(\textcolor{stringliteral}{"NOM"}, \textcolor{stringliteral}{"
+      Manifestation"}, condition), listeManifestations);
+00423         qDebug() << Q\_FUNC\_INFO << retour << \textcolor{stringliteral}{"i ="} << i << \textcolor{stringliteral}{"j ="} << j << listeManifestations;
+00424     \}
+00425     \textcolor{keywordflow}{return}  listeManifestations;
+00426 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_ad8dd87e7f299bc938f40423f28c837e8}\label{class_course_ad8dd87e7f299bc938f40423f28c837e8}} 
+\index{Course@{Course}!get\+Nb\+Arrivee@{get\+Nb\+Arrivee}}
+\index{get\+Nb\+Arrivee@{get\+Nb\+Arrivee}!Course@{Course}}
+\paragraph{\texorpdfstring{get\+Nb\+Arrivee()}{getNbArrivee()}}
+{\footnotesize\ttfamily int Course\+::get\+Nb\+Arrivee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode \hyperlink{class_course_ad8dd87e7f299bc938f40423f28c837e8}{get\+Nb\+Arrivee()} de la classe \hyperlink{class_course}{Course}. 
+
+Permet de récupérer le nombre de coureur de la table Arrivee \begin{DoxyReturn}{Renvoie}
+Le nombre d\textquotesingle{}arrivee 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{B\+DD}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a479fc90733fba3e65fb06aa4a3adc02e}{I\+H\+M\+Chrono\+Cross\+::\+I\+H\+M\+Chrono\+Cross()}.
+
+
+\begin{DoxyCode}
+00315 \{
+00316     QString information;
+00317     \textcolor{keywordtype}{int} nbArrivee;
+00318     \textcolor{keywordtype}{bool} retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(\textcolor{stringliteral}{"SELECT COUNT(*) FROM Arrivee WHERE 1;"}, information);
+00319     \textcolor{keywordflow}{if}(retour)
+00320     \{
+00321         nbArrivee = information.toInt();
+00322         \textcolor{keywordflow}{return} nbArrivee;
+00323     \}
+00324     \textcolor{keywordflow}{else}
+00325         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Erreur"};
+00326         \textcolor{keywordflow}{return} 0;
+00327 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_ad0ff4153f1e02826d551f478f95ad260}\label{class_course_ad0ff4153f1e02826d551f478f95ad260}} 
+\index{Course@{Course}!get\+Nb\+Inscrit@{get\+Nb\+Inscrit}}
+\index{get\+Nb\+Inscrit@{get\+Nb\+Inscrit}!Course@{Course}}
+\paragraph{\texorpdfstring{get\+Nb\+Inscrit()}{getNbInscrit()}}
+{\footnotesize\ttfamily int Course\+::get\+Nb\+Inscrit (\begin{DoxyParamCaption}\item[{Q\+String}]{course }\end{DoxyParamCaption})}
+
+
+
+Méthode get\+Nb\+Inscrit de la classe \hyperlink{class_course}{Course}. 
+
+Méthode qui renvoie le nombre d\textquotesingle{}inscrit d\textquotesingle{}une course d\textquotesingle{}après son ID depuis la base de donnée. 
+\begin{DoxyParams}{Paramètres}
+{\em course} & string nom d\textquotesingle{}une course \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Le nombre d\textquotesingle{}inscrit dans une course 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{B\+DD}, \hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formuler\+Requete\+Select()}, \hyperlink{class_course_a1f80798e50be6db9911a882a2491c698}{id\+Course}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_afe18e84e4df15c15921f2bdcfc6f4396}{I\+H\+M\+Chrono\+Cross\+::afficher\+Informations\+Course()}.
+
+
+\begin{DoxyCode}
+00254 \{
+00255     QString condition = QString(\textcolor{stringliteral}{"Nom = '%1'"}).arg(course);
+00256     QString nbInscrit;
+00257 
+00258     \textcolor{keywordtype}{bool} retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(this->\hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formulerRequeteSelect}(\textcolor{stringliteral}{"idCourse"}, \textcolor{stringliteral}{"
+      Course"}, condition), \hyperlink{class_course_a1f80798e50be6db9911a882a2491c698}{idCourse});
+00259 
+00260     \textcolor{keywordflow}{if}(retour)
+00261     \{
+00262         retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString(\textcolor{stringliteral}{"SELECT COUNT(*) FROM Inscrit WHERE idCourse = %1"}).arg
+      (\hyperlink{class_course_a1f80798e50be6db9911a882a2491c698}{idCourse}),nbInscrit);
+00263     \}
+00264 
+00265     \textcolor{keywordtype}{int} nb = nbInscrit.toInt();
+00266     \textcolor{keywordflow}{return} nb;
+00267 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a7b4485a0b38bc3b908131962b705d880}\label{class_course_a7b4485a0b38bc3b908131962b705d880}} 
+\index{Course@{Course}!get\+Nom\+Course@{get\+Nom\+Course}}
+\index{get\+Nom\+Course@{get\+Nom\+Course}!Course@{Course}}
+\paragraph{\texorpdfstring{get\+Nom\+Course()}{getNomCourse()}}
+{\footnotesize\ttfamily Q\+String Course\+::get\+Nom\+Course (\begin{DoxyParamCaption}\item[{Q\+String}]{dossard }\end{DoxyParamCaption})}
+
+
+
+Méthode \hyperlink{class_course_a7b4485a0b38bc3b908131962b705d880}{get\+Nom\+Course()} de la classe \hyperlink{class_course}{Course}. 
+
+Permet de retourner le nom d\textquotesingle{}une course d\textquotesingle{}après le numéro de dossard d\textquotesingle{}un inscrit 
+\begin{DoxyParams}{Paramètres}
+{\em dossard} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Retourne le nom de la course ou rien selon l\textquotesingle{}état de la requête S\+QL 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{B\+DD}, \hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formuler\+Requete\+Select()}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a9f7f1ad130b60300a879694b6234f161}{I\+H\+M\+Chrono\+Cross\+::associer\+Arrivee\+Dossard()}.
+
+
+\begin{DoxyCode}
+00337 \{
+00338     QString id;
+00339     QString nomCourse;
+00340     QString condition = QString(\textcolor{stringliteral}{"NumeroDossard = %1;"}).arg(dossard);
+00341     \textcolor{keywordtype}{bool} retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(this->\hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formulerRequeteSelect}(\textcolor{stringliteral}{"idCourse"}, \textcolor{stringliteral}{"
+      Inscrit"}, condition), \textcolor{keywordtype}{id});
+00342     \textcolor{keywordflow}{if}(retour)
+00343     \{
+00344         condition = QString(\textcolor{stringliteral}{"idCourse = %1"}).arg(\textcolor{keywordtype}{id});
+00345         retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(this->\hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formulerRequeteSelect}(\textcolor{stringliteral}{"Nom"}, \textcolor{stringliteral}{"Course
+      "}, condition), nomCourse);
+00346         \textcolor{keywordflow}{if}(retour)
+00347             \textcolor{keywordflow}{return} nomCourse;
+00348         \textcolor{keywordflow}{else}
+00349         \{
+00350             qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ERREUR"};
+00351             \textcolor{keywordflow}{return} nomCourse;
+00352         \}
+00353     \}
+00354     \textcolor{keywordflow}{else}
+00355     \{
+00356         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"ERREUR"};
+00357         \textcolor{keywordflow}{return} nomCourse;
+00358     \}
+00359 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a9073b7cb57b9b8a2aee33582bb61eb20}\label{class_course_a9073b7cb57b9b8a2aee33582bb61eb20}} 
+\index{Course@{Course}!information\+Coureur\+Recuperees@{information\+Coureur\+Recuperees}}
+\index{information\+Coureur\+Recuperees@{information\+Coureur\+Recuperees}!Course@{Course}}
+\paragraph{\texorpdfstring{information\+Coureur\+Recuperees}{informationCoureurRecuperees}}
+{\footnotesize\ttfamily void Course\+::information\+Coureur\+Recuperees (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{information\+Coureur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_course_a7ba5d2c9865065e95f49a24fbeec7857}{get\+Information\+Coureur()}.
+
+\mbox{\Hypertarget{class_course_abea30de9b6cec333bf19134608e5bccf}\label{class_course_abea30de9b6cec333bf19134608e5bccf}} 
+\index{Course@{Course}!nouveau\+Temps\+Arrivee@{nouveau\+Temps\+Arrivee}}
+\index{nouveau\+Temps\+Arrivee@{nouveau\+Temps\+Arrivee}!Course@{Course}}
+\paragraph{\texorpdfstring{nouveau\+Temps\+Arrivee}{nouveauTempsArrivee}}
+{\footnotesize\ttfamily void Course\+::nouveau\+Temps\+Arrivee (\begin{DoxyParamCaption}\item[{Q\+String}]{temps\+Arrivee }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_course_a60073d16efd4ccefa81bddb4aaa88fab}{traiter\+Arrivee\+Coureur()}.
+
+\mbox{\Hypertarget{class_course_a50596f54553b48fa29170a6b42b6e9d4}\label{class_course_a50596f54553b48fa29170a6b42b6e9d4}} 
+\index{Course@{Course}!preparer\+Chrono@{preparer\+Chrono}}
+\index{preparer\+Chrono@{preparer\+Chrono}!Course@{Course}}
+\paragraph{\texorpdfstring{preparer\+Chrono()}{preparerChrono()}}
+{\footnotesize\ttfamily void Course\+::preparer\+Chrono (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Méthode \hyperlink{class_course_a50596f54553b48fa29170a6b42b6e9d4}{preparer\+Chrono()} de la classe \hyperlink{class_course}{Course}. 
+
+Méthode qui appelle la méthode synchroniser de la classe \hyperlink{class_chrono}{Chrono} 
+
+Références \hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{mon\+Chrono}, et \hyperlink{class_chrono_a858a209a6d366b3adb95bcf593645d6a}{Chrono\+::synchroniser()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a4926e7524f4fd76ccceb0aef5ebcb203}{I\+H\+M\+Chrono\+Cross\+::preparer\+Course()}.
+
+
+\begin{DoxyCode}
+00076 \{
+00077     \textcolor{keywordflow}{if}(\hyperlink{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}{monChrono}->\hyperlink{class_chrono_a858a209a6d366b3adb95bcf593645d6a}{synchroniser}())
+00078     \{
+00079         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"SYNCHRO OK"};
+00080     \}
+00081     \textcolor{keywordflow}{else}
+00082         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"SYNCHRO ERREUR"};
+00083 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_addeae907c4bc0a268f51479041de389c}\label{class_course_addeae907c4bc0a268f51479041de389c}} 
+\index{Course@{Course}!recommencer\+Chrono@{recommencer\+Chrono}}
+\index{recommencer\+Chrono@{recommencer\+Chrono}!Course@{Course}}
+\paragraph{\texorpdfstring{recommencer\+Chrono}{recommencerChrono}}
+{\footnotesize\ttfamily void Course\+::recommencer\+Chrono (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+S\+L\+OT \hyperlink{class_course_addeae907c4bc0a268f51479041de389c}{recommencer\+Chrono()} de la classe \hyperlink{class_course}{Course}. 
+
+Emet le signal \hyperlink{class_course_a178f2015d20ef5d838564671567f6831}{chrono\+Recommence()}. 
+
+Références \hyperlink{class_course_a178f2015d20ef5d838564671567f6831}{chrono\+Recommence()}.
+
+
+
+Référencé par \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course()}.
+
+
+\begin{DoxyCode}
+00533 \{
+00534     emit \hyperlink{class_course_a178f2015d20ef5d838564671567f6831}{chronoRecommence}();
+00535 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a3ebcde1fa443cb20d71fb98af4d0c418}\label{class_course_a3ebcde1fa443cb20d71fb98af4d0c418}} 
+\index{Course@{Course}!set\+Etat@{set\+Etat}}
+\index{set\+Etat@{set\+Etat}!Course@{Course}}
+\paragraph{\texorpdfstring{set\+Etat}{setEtat}}
+{\footnotesize\ttfamily bool Course\+::set\+Etat (\begin{DoxyParamCaption}\item[{Q\+String}]{etat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+S\+L\+OT set\+Etat de la classe \hyperlink{class_course}{Course}. 
+
+Change l\textquotesingle{}état d\textquotesingle{}une course dans la table \hyperlink{class_course}{Course} 
+\begin{DoxyParams}{Paramètres}
+{\em etat} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}état de la requête 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{B\+DD}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, et \hyperlink{class_course_a1f80798e50be6db9911a882a2491c698}{id\+Course}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_ad3d8f287d08dd9aa0c6b10c9973672a4}{I\+H\+M\+Chrono\+Cross\+::arreter\+Course()}, \hyperlink{class_i_h_m_chrono_cross_adde019cc3799befac3fd9555e392eab9}{I\+H\+M\+Chrono\+Cross\+::initialiser\+Course()}, \hyperlink{class_i_h_m_chrono_cross_ace90922ce4c4ffeed6f1e8eb84c8c7a5}{I\+H\+M\+Chrono\+Cross\+::lancer\+Course()}, et \hyperlink{class_i_h_m_chrono_cross_ac89c6ec3040e8b787f1fbdb670405023}{I\+H\+M\+Chrono\+Cross\+::terminer\+Course()}.
+
+
+\begin{DoxyCode}
+00592 \{
+00593     \textcolor{keywordtype}{bool} retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(QString(\textcolor{stringliteral}{"UPDATE `Course` SET `Etat`= '%1' WHERE `idCourse` = %2;
+      "}).arg(etat).arg(\hyperlink{class_course_a1f80798e50be6db9911a882a2491c698}{idCourse}));
+00594     \textcolor{keywordflow}{return} retour;
+00595 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a36cf16c971841431947b6fbe2b3f3d27}\label{class_course_a36cf16c971841431947b6fbe2b3f3d27}} 
+\index{Course@{Course}!set\+Id\+Course@{set\+Id\+Course}}
+\index{set\+Id\+Course@{set\+Id\+Course}!Course@{Course}}
+\paragraph{\texorpdfstring{set\+Id\+Course()}{setIdCourse()}}
+{\footnotesize\ttfamily void Course\+::set\+Id\+Course (\begin{DoxyParamCaption}\item[{Q\+String}]{nom\+Course }\end{DoxyParamCaption})}
+
+
+
+Méthode \hyperlink{class_course_a36cf16c971841431947b6fbe2b3f3d27}{set\+Id\+Course()} de la classe \hyperlink{class_course}{Course}. 
+
+Permet d\textquotesingle{}initialiser l\textquotesingle{}id de la course 
+\begin{DoxyParams}{Paramètres}
+{\em nom\+Course} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{B\+DD}, \hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formuler\+Requete\+Select()}, \hyperlink{class_course_a1f80798e50be6db9911a882a2491c698}{id\+Course}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_afe18e84e4df15c15921f2bdcfc6f4396}{I\+H\+M\+Chrono\+Cross\+::afficher\+Informations\+Course()}.
+
+
+\begin{DoxyCode}
+00368 \{
+00369     QString condition = QString(\textcolor{stringliteral}{"Nom = '%1'"}).arg(nomCourse);
+00370     \textcolor{keywordtype}{bool} retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(this->\hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formulerRequeteSelect}(\textcolor{stringliteral}{"idCourse"}, \textcolor{stringliteral}{"
+      Course"}, condition), \hyperlink{class_course_a1f80798e50be6db9911a882a2491c698}{idCourse});
+00371     qDebug() << Q\_FUNC\_INFO << retour;
+00372 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a60073d16efd4ccefa81bddb4aaa88fab}\label{class_course_a60073d16efd4ccefa81bddb4aaa88fab}} 
+\index{Course@{Course}!traiter\+Arrivee\+Coureur@{traiter\+Arrivee\+Coureur}}
+\index{traiter\+Arrivee\+Coureur@{traiter\+Arrivee\+Coureur}!Course@{Course}}
+\paragraph{\texorpdfstring{traiter\+Arrivee\+Coureur}{traiterArriveeCoureur}}
+{\footnotesize\ttfamily void Course\+::traiter\+Arrivee\+Coureur (\begin{DoxyParamCaption}\item[{Q\+String}]{temps\+Arrivee }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+S\+L\+OT \hyperlink{class_course_a60073d16efd4ccefa81bddb4aaa88fab}{traiter\+Arrivee\+Coureur(\+Q\+String temps\+Arrivee)} de la classe \hyperlink{class_course}{Course}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em temps\+Arrivee} & Q\+String le temps d\textquotesingle{}arrivée \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_course_ab98bbd1a92e468df7b8b45bb7877afef}{convertir\+Temps()}, et \hyperlink{class_course_abea30de9b6cec333bf19134608e5bccf}{nouveau\+Temps\+Arrivee()}.
+
+
+
+Référencé par \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course()}.
+
+
+\begin{DoxyCode}
+00543 \{
+00544     QString temps = this->\hyperlink{class_course_ab98bbd1a92e468df7b8b45bb7877afef}{convertirTemps}(tempsArrivee);
+00545     emit \hyperlink{class_course_abea30de9b6cec333bf19134608e5bccf}{nouveauTempsArrivee}(temps);
+00546 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_course_a6cb3ede6a11e4813f95be92f4459a3c2}\label{class_course_a6cb3ede6a11e4813f95be92f4459a3c2}} 
+\index{Course@{Course}!verifier\+Dossard@{verifier\+Dossard}}
+\index{verifier\+Dossard@{verifier\+Dossard}!Course@{Course}}
+\paragraph{\texorpdfstring{verifier\+Dossard()}{verifierDossard()}}
+{\footnotesize\ttfamily int Course\+::verifier\+Dossard (\begin{DoxyParamCaption}\item[{Q\+String}]{dossard }\end{DoxyParamCaption})}
+
+
+
+Méthode \hyperlink{class_course_a6cb3ede6a11e4813f95be92f4459a3c2}{verifier\+Dossard()} de la classe \hyperlink{class_course}{Course}. 
+
+Permet de verifier si un numéro de dossard est valide, si il est associer à la bonne course et si il n\textquotesingle{}a pas déjà été utilisé 
+\begin{DoxyParams}{Paramètres}
+{\em dossard} & Q\+String numero de dossard \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Renvoi le résultat de la verification sous la forme d\textquotesingle{}un booléen 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{B\+DD}, \hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formuler\+Requete\+Select()}, \hyperlink{class_course_a1f80798e50be6db9911a882a2491c698}{id\+Course}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_i_h_m_chrono_cross_a9f7f1ad130b60300a879694b6234f161}{I\+H\+M\+Chrono\+Cross\+::associer\+Arrivee\+Dossard()}.
+
+
+\begin{DoxyCode}
+00139 \{
+00140     \textcolor{comment}{// 0 = Invalide , 1 = numéro valide mais mauvaise course , 2 = valide mais dossard déjà entré , 3 =
+       valide}
+00141     \textcolor{keywordtype}{int} verification = 0;
+00142 
+00143     QString idInscrit;
+00144     QString coureurs;
+00145     QString condition = QString(\textcolor{stringliteral}{"NumeroDossard = %1"}).arg(dossard);
+00146 
+00147     \textcolor{keywordtype}{bool} retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(this->\hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formulerRequeteSelect}(\textcolor{stringliteral}{"idInscrit"}, \textcolor{stringliteral}{
+      "Inscrit"}, condition),idInscrit);
+00148 
+00149     \textcolor{keywordflow}{if}(retour)
+00150     \{
+00151         \textcolor{comment}{// le numéro de dossard existe}
+00152         verification = 1;
+00153         condition = QString(\textcolor{stringliteral}{"idCourse = %1 AND idInscrit = %2;"}).arg(\hyperlink{class_course_a1f80798e50be6db9911a882a2491c698}{idCourse}).arg(idInscrit);
+00154         retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(this->\hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formulerRequeteSelect}(\textcolor{stringliteral}{"*"}, \textcolor{stringliteral}{"Inscrit"}
+      , condition), coureurs);
+00155         \textcolor{keywordflow}{if}(!coureurs.isEmpty())
+00156         \{
+00157             \textcolor{comment}{// le numéro de dossard est enregistré pour la bonne course}
+00158             verification = 2;
+00159             coureurs.clear();
+00160             condition = QString(\textcolor{stringliteral}{"idInscrit = %1"}).arg(idInscrit);
+00161             retour = \hyperlink{class_course_a28a58b06494361b7a7eb81844d571dd4}{BDD}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(this->\hyperlink{class_course_a2ce9c62ead2c878a30af9d9c11b81644}{formulerRequeteSelect}(\textcolor{stringliteral}{"*"},\textcolor{stringliteral}{"
+      Arrivee"},condition), coureurs);
+00162             qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"coureur : "} << coureurs << coureurs.isEmpty();
+00163             \textcolor{keywordflow}{if}(coureurs.isEmpty())
+00164             \{
+00165                 \textcolor{comment}{// le coureur n'a pas déjà franchi la ligne d'arrivée}
+00166                 verification = 3;
+00167                 qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Dossard validé"};
+00168                 \textcolor{keywordflow}{return}  verification;
+00169             \}
+00170             \textcolor{keywordflow}{else}
+00171             \{
+00172                 qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Dossard valide mais ce dossard a déjà franchi la ligne
+       d'arrivée."};
+00173                 \textcolor{keywordflow}{return} verification;
+00174             \}
+00175         \}
+00176         \textcolor{keywordflow}{else}
+00177         \{
+00178             qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Dossard valide mais pas inscrit pour cette course."};
+00179             \textcolor{keywordflow}{return} verification;
+00180         \}
+00181     \}
+00182     \textcolor{keywordflow}{else}
+00183     \{
+00184         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Numéro dossard invalide"};
+00185         \textcolor{keywordflow}{return} verification;
+00186     \}
+00187 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_course_a28a58b06494361b7a7eb81844d571dd4}\label{class_course_a28a58b06494361b7a7eb81844d571dd4}} 
+\index{Course@{Course}!B\+DD@{B\+DD}}
+\index{B\+DD@{B\+DD}!Course@{Course}}
+\paragraph{\texorpdfstring{B\+DD}{BDD}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Course\+::\+B\+DD\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+agrégation \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} 
+
+
+
+Référencé par \hyperlink{class_course_ac99042bf8b20e8d3a54e72c8a80f7ee7}{ajoute\+Arrivee\+B\+D\+D()}, \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course()}, \hyperlink{class_course_af20fcd6d6eb2dfbd3b0f12e273f12b27}{get\+Distance()}, \hyperlink{class_course_afc21f8195edd50c9fd266cff0c401b7c}{get\+Heure()}, \hyperlink{class_course_a7ba5d2c9865065e95f49a24fbeec7857}{get\+Information\+Coureur()}, \hyperlink{class_course_ae5e74946d973166ad3000e38600acf20}{get\+Liste\+Courses()}, \hyperlink{class_course_a0d995ef72152208e02eb3b10315dfabb}{get\+Liste\+Manifestations()}, \hyperlink{class_course_ad8dd87e7f299bc938f40423f28c837e8}{get\+Nb\+Arrivee()}, \hyperlink{class_course_ad0ff4153f1e02826d551f478f95ad260}{get\+Nb\+Inscrit()}, \hyperlink{class_course_a7b4485a0b38bc3b908131962b705d880}{get\+Nom\+Course()}, \hyperlink{class_course_a3ebcde1fa443cb20d71fb98af4d0c418}{set\+Etat()}, \hyperlink{class_course_a36cf16c971841431947b6fbe2b3f3d27}{set\+Id\+Course()}, et \hyperlink{class_course_a6cb3ede6a11e4813f95be92f4459a3c2}{verifier\+Dossard()}.
+
+\mbox{\Hypertarget{class_course_af2f7b814a0ec0d76291a2743c61615a8}\label{class_course_af2f7b814a0ec0d76291a2743c61615a8}} 
+\index{Course@{Course}!distance@{distance}}
+\index{distance@{distance}!Course@{Course}}
+\paragraph{\texorpdfstring{distance}{distance}}
+{\footnotesize\ttfamily Q\+String Course\+::distance\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Distance de la course. 
+
+
+
+Référencé par \hyperlink{class_course_af20fcd6d6eb2dfbd3b0f12e273f12b27}{get\+Distance()}.
+
+\mbox{\Hypertarget{class_course_aa2da10dd2fc8c1ca1d5831249181e61f}\label{class_course_aa2da10dd2fc8c1ca1d5831249181e61f}} 
+\index{Course@{Course}!heure\+Depart@{heure\+Depart}}
+\index{heure\+Depart@{heure\+Depart}!Course@{Course}}
+\paragraph{\texorpdfstring{heure\+Depart}{heureDepart}}
+{\footnotesize\ttfamily Q\+String Course\+::heure\+Depart\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+L\textquotesingle{}heure de départ de la course. 
+
+
+
+Référencé par \hyperlink{class_course_afc21f8195edd50c9fd266cff0c401b7c}{get\+Heure()}.
+
+\mbox{\Hypertarget{class_course_a1f80798e50be6db9911a882a2491c698}\label{class_course_a1f80798e50be6db9911a882a2491c698}} 
+\index{Course@{Course}!id\+Course@{id\+Course}}
+\index{id\+Course@{id\+Course}!Course@{Course}}
+\paragraph{\texorpdfstring{id\+Course}{idCourse}}
+{\footnotesize\ttfamily Q\+String Course\+::id\+Course\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifiant de la course. 
+
+
+
+Référencé par \hyperlink{class_course_ad0ff4153f1e02826d551f478f95ad260}{get\+Nb\+Inscrit()}, \hyperlink{class_course_a3ebcde1fa443cb20d71fb98af4d0c418}{set\+Etat()}, \hyperlink{class_course_a36cf16c971841431947b6fbe2b3f3d27}{set\+Id\+Course()}, et \hyperlink{class_course_a6cb3ede6a11e4813f95be92f4459a3c2}{verifier\+Dossard()}.
+
+\mbox{\Hypertarget{class_course_a14838cc0c491a76baf7e5f12d8d08ab4}\label{class_course_a14838cc0c491a76baf7e5f12d8d08ab4}} 
+\index{Course@{Course}!information\+Coureur\+Arrive@{information\+Coureur\+Arrive}}
+\index{information\+Coureur\+Arrive@{information\+Coureur\+Arrive}!Course@{Course}}
+\paragraph{\texorpdfstring{information\+Coureur\+Arrive}{informationCoureurArrive}}
+{\footnotesize\ttfamily Q\+String\+List Course\+::information\+Coureur\+Arrive\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Informations d\textquotesingle{}un coure. 
+
+
+
+Référencé par \hyperlink{class_course_a7ba5d2c9865065e95f49a24fbeec7857}{get\+Information\+Coureur()}.
+
+\mbox{\Hypertarget{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}\label{class_course_a0c9b246b0f1ec612bd6e6c613a94d52b}} 
+\index{Course@{Course}!mon\+Chrono@{mon\+Chrono}}
+\index{mon\+Chrono@{mon\+Chrono}!Course@{Course}}
+\paragraph{\texorpdfstring{mon\+Chrono}{monChrono}}
+{\footnotesize\ttfamily \hyperlink{class_chrono}{Chrono}$\ast$ Course\+::mon\+Chrono\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+association \hyperlink{class_chrono}{Chrono} 
+
+
+
+Référencé par \hyperlink{class_course_a90c66d620f0726d92c40069f052e0cd0}{a\+Chrono\+Synchronise()}, \hyperlink{class_course_a939635ac8301a7018475cc2ce347375f}{arreter\+Chrono()}, \hyperlink{class_course_a4426310a411d8ecf7f4a2dc64c24a42d}{arreter\+Classement()}, \hyperlink{class_course_a589447dd63dca89395119ffd4e4a8c8c}{chronometrer()}, \hyperlink{class_course_af6317ecab95f8a2eb205b4f91b530992}{Course()}, \hyperlink{class_course_a6eb96222d8dc1f352e28f36e9b414448}{creer\+Chrono()}, \hyperlink{class_course_a44a14d431bd64a507f2c2aa5f465b1b0}{est\+Chronometrage\+Pret()}, et \hyperlink{class_course_a50596f54553b48fa29170a6b42b6e9d4}{preparer\+Chrono()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{course_8h}{course.\+h}\item 
+\hyperlink{course_8cpp}{course.\+cpp}\end{DoxyCompactItemize}

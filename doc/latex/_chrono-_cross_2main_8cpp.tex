@@ -1,0 +1,57 @@
+\hypertarget{_chrono-_cross_2main_8cpp}{}\subsection{Référence du fichier main.\+cpp}
+\label{_chrono-_cross_2main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+Programme principal Chrono-\/\+Cross.  
+
+
+{\ttfamily \#include $<$Q\+Application$>$}\newline
+{\ttfamily \#include \char`\"{}ihmchronocross.\+h\char`\"{}}\newline
+\subsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_chrono-_cross_2main_8cpp_ae0665038b72011f5c680c660fcb59459}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Programme principal Chrono-\/\+Cross. 
+
+Chronomètre les courses et classe les coureurs à l\textquotesingle{}arrivée
+
+\begin{DoxyAuthor}{Auteur}
+A\+N\+D\+R\+EO Michaël \href{mailto:andreo.michael@outlook.fr}{\tt andreo.\+michael@outlook.\+fr}
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des fonctions}
+\mbox{\Hypertarget{_chrono-_cross_2main_8cpp_ae0665038b72011f5c680c660fcb59459}\label{_chrono-_cross_2main_8cpp_ae0665038b72011f5c680c660fcb59459}} 
+\index{Chrono-\/\+Cross/main.\+cpp@{Chrono-\/\+Cross/main.\+cpp}!main@{main}}
+\index{main@{main}!Chrono-\/\+Cross/main.\+cpp@{Chrono-\/\+Cross/main.\+cpp}}
+\paragraph{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em argc} & \\
+\hline
+{\em argv\mbox{[}$\,$\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+00023 \{
+00024     QApplication a(argc, argv);
+00025 
+00026     \hyperlink{class_i_h_m_chrono_cross}{IHMChronoCross} w; \textcolor{comment}{// instancie la fenêtre principale de l'application}
+00027     w.show(); \textcolor{comment}{// affiche la fenêtre principale de l'application}
+00028 
+00029     \textcolor{keywordflow}{return} a.exec(); \textcolor{comment}{// exécute l'application}
+00030 \}
+\end{DoxyCode}

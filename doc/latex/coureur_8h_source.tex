@@ -1,0 +1,43 @@
+\hypertarget{coureur_8h_source}{}\subsection{coureur.\+h}
+\label{coureur_8h_source}\index{coureur.\+h@{coureur.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef COUREUR\_H}
+00002 \textcolor{preprocessor}{#define COUREUR\_H}
+00003 
+00016 \textcolor{preprocessor}{#include <QObject>}
+00017 
+00018 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00019 
+\Hypertarget{coureur_8h_source_l00020}\hyperlink{class_coureur}{00020} \textcolor{keyword}{class }\hyperlink{class_coureur}{Coureur} : \textcolor{keyword}{public} \hyperlink{class_q_object}{QObject}
+00021 \{
+00022     Q\_OBJECT
+00023 
+00024 \textcolor{keyword}{private}:
+\Hypertarget{coureur_8h_source_l00025}\hyperlink{class_coureur_ac96ff159efad8a6fd3abbe1a37b51c24}{00025}     QString \hyperlink{class_coureur_ac96ff159efad8a6fd3abbe1a37b51c24}{nom};
+\Hypertarget{coureur_8h_source_l00026}\hyperlink{class_coureur_a5e37d256b17765909423e183879c9e58}{00026}     QString \hyperlink{class_coureur_a5e37d256b17765909423e183879c9e58}{prenom};
+\Hypertarget{coureur_8h_source_l00027}\hyperlink{class_coureur_ac4028301fbd425848c2a81d69f8f94ac}{00027}     QString \hyperlink{class_coureur_ac4028301fbd425848c2a81d69f8f94ac}{INE};
+\Hypertarget{coureur_8h_source_l00028}\hyperlink{class_coureur_a274255068bb91a5c66a365cd10528280}{00028}     QString \hyperlink{class_coureur_a274255068bb91a5c66a365cd10528280}{classe};
+\Hypertarget{coureur_8h_source_l00029}\hyperlink{class_coureur_a9890c210d97e593644b22cb0e8228527}{00029}     \hyperlink{class_base_de_donnees}{BaseDeDonnees} *\hyperlink{class_coureur_a9890c210d97e593644b22cb0e8228527}{BDD}; 
+00030     QString \hyperlink{class_coureur_ad46f9151c1d00fbddb31c352ba331d78}{formulerRequeteSelect}(QString renseignements, QString sources, QString 
+      conditions);
+00031 
+00032 \textcolor{keyword}{public}:
+00033     \textcolor{keyword}{explicit} \hyperlink{class_coureur_af3a5607d96a0960b1666164f6a74d539}{Coureur}(\hyperlink{class_q_object}{QObject} *parent = \textcolor{keyword}{nullptr});
+00034     \hyperlink{class_coureur_acbaa69246e4da18c0951f651f9ab3d69}{~Coureur}();
+00035 
+00036     \textcolor{comment}{// TODO faire le constructeur avec les attributs}
+00037     QString \hyperlink{class_coureur_a1808f13910638c6f2a57e87be522adf3}{getNom}() \textcolor{keyword}{const};
+00038     QString \hyperlink{class_coureur_a54a92a0fcaf7db9079f9d3f5d043539c}{getPrenom}() \textcolor{keyword}{const};
+00039     QString \hyperlink{class_coureur_a724d13c5c34757fcd70491da44a918e3}{getINE}() \textcolor{keyword}{const};
+00040     QString \hyperlink{class_coureur_aa611e208767c4db4999e00296aa12632}{getClasse}() \textcolor{keyword}{const};
+00041 
+00042     QVector<QString> \hyperlink{class_coureur_a1d9f2cb15f74ff1c7b20fde081b5c5d6}{getListeCoureurs}(QString \hyperlink{class_coureur}{Coureur});
+00043 
+00044 signals:
+00045 
+00046 \textcolor{keyword}{public} slots:
+00047     QStringList \hyperlink{class_coureur_a1d9f2cb15f74ff1c7b20fde081b5c5d6}{getListeCoureurs}(QString, QString, QString, QString);
+00048 \};
+00049 \textcolor{preprocessor}{#endif // COUREUR\_H}
+\end{DoxyCode}
